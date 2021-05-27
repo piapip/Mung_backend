@@ -61,7 +61,7 @@ router.post('/', upload, async (req, res) => {
 })
 
 const { Audio } = require("./../models/Audio");
-const { Chatroom } = require("./../models/Chatroom");
+// const { Chatroom } = require("./../models/Chatroom");
 
 const saveAudioMongo = async (userID, link) => {
 
@@ -79,31 +79,31 @@ const saveAudioMongo = async (userID, link) => {
   return audio._id
 }
 
-const updateRoomInfo = (roomID, audioID) => {
+// const updateRoomInfo = (roomID, audioID) => {
   
-  Chatroom.findById(roomID)
-  .then(roomFound => {
-    if(!roomFound) {
-      console.log("Room not found!!!")
-      // IMPLEMENT ERROR HANDLING HERE!!
-      return "Room not found!"
-    } else {
-      roomFound.audioList.push(audioID);
-      return roomFound.save();
-    }
-  })
-  .then((roomUpdated) => {
-    if (!roomUpdated) {
-      console.log("Can't update room information after upload audio!!!")
-      return
-    }
-  })
-  .catch(err => {
-    console.log("Unable to update audio information to room")
-    console.log(err)
-    return err
-  });
-}
+//   Chatroom.findById(roomID)
+//   .then(roomFound => {
+//     if(!roomFound) {
+//       console.log("Room not found!!!")
+//       // IMPLEMENT ERROR HANDLING HERE!!
+//       return "Room not found!"
+//     } else {
+//       roomFound.audioList.push(audioID);
+//       return roomFound.save();
+//     }
+//   })
+//   .then((roomUpdated) => {
+//     if (!roomUpdated) {
+//       console.log("Can't update room information after upload audio!!!")
+//       return
+//     }
+//   })
+//   .catch(err => {
+//     console.log("Unable to update audio information to room")
+//     console.log(err)
+//     return err
+//   });
+// }
 
 let download = function(uri, filename, callback){
   request.head(uri, function(err, res, body){

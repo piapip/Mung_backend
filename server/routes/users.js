@@ -109,7 +109,9 @@ router.get("/accessToken", (req, res) => {
       if (userFound.length === 0) {
         res.status(404).send({ isAuth: false, userFound: null });
         return;
-      } else res.status(201).send({ isAuth: true, userFound: userFound[0] })
+      } else {
+        res.status(201).send({ isAuth: true, userFound: userFound[0] })
+      }
     });
   });
 });

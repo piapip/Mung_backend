@@ -35,6 +35,11 @@ const audioSchema = new mongoose.Schema({
     default: false,
   },
 
+  googleTranscript: {
+    type: String,
+    default: " ",
+  },
+
   transcript: {
     type: String,
     default: " ",

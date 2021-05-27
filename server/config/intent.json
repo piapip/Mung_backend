@@ -1,0 +1,10 @@
+[
+  {
+    "intent": "Test 1",
+    "description": "Just a test 1"
+  },
+  {
+    "intent": "Test 2",
+    "description": "Just a test 2"
+  }
+]

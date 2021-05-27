@@ -18,8 +18,6 @@ mongoose.connect(config.mongoURI,
     .catch(err => console.log(err));
 
 
-require("./models/Message")
-
 app.use(cors())
 
 //to not get any deprecation warning or error
@@ -38,7 +36,7 @@ app.use(cookieParser());
 // }))
 
 
-const port = process.env.PORT || 6000;
+const port = process.env.PORT || 2000;
 
 app.use("*", (req, res, next) => {
   // console.log(req)
@@ -48,10 +46,8 @@ app.use("*", (req, res, next) => {
 })
 
 app.use('/api/users', require('./routes/users'));
-app.use('/api/chatroom', require("./routes/chatroom"));
 app.use('/api/v1/uploads/file', require('./routes/upload'));
 // app.use(config.uploadAPI, require('./routes/upload'));
-app.use('/api/message', require('./routes/message'));
 app.use('/api/audio', require('./routes/audio'));
 app.use('/api/intent', require('./routes/intent'));
 app.use('/api/aws/upload', require('./routes/upload_aws'));
@@ -80,9 +76,6 @@ app.use(express.static(__dirname))
 const server = app.listen(port, () => {
   console.log(`Server Listening on ${port}`)
 });
-
-var sockets = require('./socket/mainSocket')
-sockets.init(server)
 
 // Generate Room ID
 // function uuidv4() {
