@@ -1,4 +1,4 @@
-PORT=5000
+PORT=6000
 
 MONGO_URI=mongodb://localhost:27017/data-collection-SLU
 JWT_SECRET_KEY=9d5067a5a36f2bd6f5e93008865536c7

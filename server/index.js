@@ -38,7 +38,7 @@ app.use(cookieParser());
 // }))
 
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 6000;
 
 app.use("*", (req, res, next) => {
   // console.log(req)

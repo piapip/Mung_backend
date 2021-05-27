@@ -1,7 +1,7 @@
 import requests
 import os
 
-BACKEND_URL = 'http://localhost:5000'
+BACKEND_URL = 'http://localhost:6000'
 TRANSCRIPT_FOLDER = './server/transcript'
 
 # get all file in the folder

@@ -3,7 +3,7 @@ const router = express.Router();
 const uploadService = require('../services/upload');
 const multer = require('multer');
 
-const DOMAIN_NAME = 'http://localhost:5000';
+const DOMAIN_NAME = 'http://localhost:6000';
 
 const upload_local = uploadService.upload.single('file');
 
