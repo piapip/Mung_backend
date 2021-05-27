@@ -9,11 +9,6 @@ const audioSchema = new mongoose.Schema({
     required: true,
   },
 
-  prevIntent: {
-    type: String,
-    default: "",
-  },
-
   link: {
     type: String,
     required: true,
@@ -26,9 +21,9 @@ const audioSchema = new mongoose.Schema({
     default: null,
   },
 
-  // revertable means whether the room's currentIntent needs to be changed if the audio is deleted
-  // false: audio gone and room's currentIntent stays the same.
-  // true: audio gone and room's currentIntent will be changed. 
+  // revertable: 
+  //  TRUE - already checked and correct, 
+  //  FALSE - not correct yet
   revertable: {
     type: Boolean,
     required: true,

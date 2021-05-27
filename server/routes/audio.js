@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { Audio } = require("../models/Audio");
 const { User } = require("../models/User");
-// const { Intent } = require("../models/Intent");
+const { Intent } = require("../models/Intent");
 const axios = require('axios');
 const config = require('./../config/key');
 // const intentSamplePool = require("./../config/intent");
@@ -41,9 +41,41 @@ router.put("/transcript", (req, res) => {
   const { audioLink, audioID } = req.body;
   
   // getTranscript(audioLink, audioID);
-  getTranscriptWithGGAPI(audioLink, audioID);
+  // getTranscriptWithGGAPI(audioLink, audioID);
+  axios.get(`${config.TRANSCRIPT_API}/api/v1/stt?url=${audioLink}`, {
+    headers: {
+      Authorization: `Bearer ${config.TRANSCRIPT_API_KEY}`,
+    },
+  })
+  .then(response => {
+    const { result, status } = response.data;
 
-  res.status(200).send("")
+    if (status === 1) {
+      const { transcription } = result;
+      console.log(result)
+      Audio.findById(audioID)
+      .then(audioFound => {
+        if(!audioFound) {
+          console.log("Can't find audio for transcript!");
+          res.status(400).send("Can't update transcript");
+          return
+        } else {
+          audioFound.googleTranscript = transcription;
+          audioFound.save();
+          res.status(200).send({ transcription });
+          return
+        }
+      })
+      .catch(err => {
+        console.log(`Error while updating audio ${audioID} transcript... ${err}`)
+        res.status(500).send("Can't update transcript");
+        throw err
+      })
+    } else {
+      console.log("Can't get transcript. Here's the error code: ", status);
+      res.status(500).send("Can't get transcript");
+    }
+  })
 })
 
 // fix all servant's audio's revertable
@@ -98,7 +130,7 @@ router.put("/updateDuration", (req, res) => {
 router.put("/:audioID", (req, res) => {
 
   const audioID = req.params.audioID;
-  const { transcript } = req.body;
+  const { transcript, userID } = req.body;
   Audio.findById(audioID)
   .then(audioFound => {
     
@@ -108,6 +140,7 @@ router.put("/:audioID", (req, res) => {
       throw "Can't find audio"
     } else {
       audioFound.transcript = transcript;
+      audioFound.fixBy = userID;
       return audioFound.save();
     }
   })
@@ -121,9 +154,6 @@ router.put("/:audioID", (req, res) => {
 let download = function(uri, filename, callback){
   request.head(uri, function(err, res, body){
     if (err) throw "Something's wrong while uploading audio uri..."
-    // console.log('content-type:', res.headers['content-type']);
-    // console.log('content-length:', res.headers['content-length']);
-
     request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
   });
 };
@@ -153,71 +183,36 @@ router.put("/:audioID/:userID", (req, res) => {
   })
 })
 
-// const getLabel = (slot) => {
-//   const slotIndex = intentSamplePool.SLOT_LABEL.findIndex((item) => {
-//     return item.tag.toUpperCase() === slot.toUpperCase();
-//   });
-
-//   return slotIndex === -1 ? '' : intentSamplePool.SLOT_LABEL[slotIndex].name;
-// };
-
-// const flattenIntent = (currentIntent) => {
-//   const properties = ["intent", "generic_intent", "loan_purpose", "loan_type", "card_type", "card_usage", "digital_bank", "card_activation_type", "district", "city", "name", "cmnd", "four_last_digits"];
-//   let result = '';
-//   for (let key in properties) {
-//     if(currentIntent[properties[key]] !== null && currentIntent[properties[key]] !== undefined) {
-//       const slot = properties[key];
-//       switch(slot) {
-//         case "city":
-//         case "district":
-//           result = result + `'${getLabel(slot)}': '${currentIntent[slot]}', `
-//           break;
-//         case "generic_intent":
-//           result = result + `'${getLabel(slot)}': '${intentSamplePool["GENERIC_INTENT"][currentIntent[slot]]}', `
-//           break;
-//         default:
-//           if (intentSamplePool[slot.toUpperCase()] === undefined || currentIntent[slot] === -1) {
-//             result = result + `'${getLabel(slot)}': '${currentIntent[slot]}', `
-//           } else {
-//             result = result + `'${getLabel(slot)}': '${intentSamplePool[slot.toUpperCase()][currentIntent[slot]].name}', `
-//           }
-//       }
-//     }
-//   }
-//   result = "{" + result.substring(0, result.length - 2) + "}";
-//   return result;
-// }
-
 // Upload an audio for solo feature
-// router.post("/solo", async (req, res) => {
-//   const { userID, prevIntent, link, nextIntent } = req.body;
+router.post("/solo", async (req, res) => {
+  const { userID, link, duration } = req.body;
 
-//   const { intent, loan_purpose, loan_type, card_type, card_usage, digital_bank, card_activation_type, district, city, name, cmnd, four_last_digits, generic_intent } = nextIntent;
-//   const newIntent = await Intent.create({ intent, loan_purpose, loan_type, card_type, card_usage, digital_bank, card_activation_type, district, city, name, cmnd, four_last_digits, generic_intent });
-//   Audio.create({ 
-//     user: userID,
-//     prevIntent: flattenIntent(prevIntent),
-//     link,
-//     intent: newIntent._id,
-//   }).then(audioCreated => {
-//     if (!audioCreated) {
-//       res.status(500).send({ success: false, error: "Can't save audio information to the db!"});
-//     } else {
-//       User.findById(userID)
-//       .then(userFound => {
-//         if (!userFound) res.status(404).send("Can't find user!!!")
-//         else {
-//           userFound.soloCount++;
-//           return userFound.save();
-//         }
-//       })
-//         return res.status(200).send({
-//           audioID: audioCreated._id
-//         });
-//       }
-//     }
-//   );
-// })
+  const { intent, description } = req.body.intent;
+  const newIntent = await Intent.create({ intent, description });
+  Audio.create({ 
+    user: userID,
+    link,
+    intent: newIntent._id,
+    duration,
+  }).then(audioCreated => {
+    if (!audioCreated) {
+      res.status(500).send({ success: false, error: "Can't save audio information to the db!"});
+    } else {
+      User.findById(userID)
+      .then(userFound => {
+        if (!userFound) res.status(404).send("Can't find user!!!")
+        else {
+          userFound.soloCount++;
+          return userFound.save();
+        }
+      })
+        return res.status(200).send({
+          audioID: audioCreated._id
+        });
+      }
+    }
+  );
+})
 
 router.post("/accept", (req, res) => {
   const { audioID, userID } = req.body;
@@ -274,19 +269,24 @@ router.get("/sample/:userID", async (req, res) => {
   const { userID } = req.params;
   Audio.countDocuments({ 
     $and: [
+      {user: { $ne: userID }},
       {revertable: false},
       {rejectBy: {
-        $ne: userID,
+        $size: 0,
       }}
     ],
   }).exec(async (err, count) =>{
-    if (err) res.status(500).send({ success: false, message: "Can't estimate audio document count", err })
+    if (err) {
+      res.status(500).send({ success: false, message: "Can't estimate audio document count", err })
+      throw err
+    }
     const random = Math.floor(Math.random() * count);
     Audio.findOne({
       $and: [
+        {user: { $ne: userID }},
         {revertable: false},
         {rejectBy: {
-          $ne: userID,
+          $size: 0,
         }}
       ],
     }).skip(random).populate('intent')
@@ -294,14 +294,10 @@ router.get("/sample/:userID", async (req, res) => {
       if (err) res.status(500).send({ success: false, message: "Can't proceed to find any audio", err })
       else if (!audioFound) {
         return res.status(404).send({ status: -1, error: "Hiện tại mình không có audio nào để bạn kiểm tra :<" });
-      } else if (testIntent(audioFound.intent)) {
-        const { intent, link, transcript, prevIntent } = audioFound;
-        const parseVersion = JSON.parse(prevIntent.replace(new RegExp(`'`, 'g'), `"`));
-        return res.status(200).send({ status: 1, audioID: audioFound._id, prevIntent: parseVersion, intent, link, transcript });
       } else {
-        audioFound.revertable = true;
-        audioFound.save();
-        return res.status(500).send({ status: 0 });
+        const { intent, link, transcript, googleTranscript } = audioFound;
+        const confirmedTranscript = transcript !== " " ? transcript : googleTranscript;
+        return res.status(200).send({ status: 1, audioID: audioFound._id, intent, link, transcript: confirmedTranscript });
       }
     })
   });
