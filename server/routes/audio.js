@@ -215,7 +215,8 @@ router.post("/solo", async (req, res) => {
 })
 
 router.post("/accept", (req, res) => {
-  const { audioID, userID } = req.body;
+  const { audioID, transcript, userID } = req.body;
+  console.log("Accepting... ", audioID)
   Audio.findById(audioID)
   .then((audioFound) => {
     if (!audioFound) {
@@ -228,6 +229,10 @@ router.post("/accept", (req, res) => {
         if (!userFound) res.status(404).send({ status: 0 })
         else {
           audioFound.revertable = true;
+          if (audioFound.transcript !== transcript) {
+            audioFound.transcript = transcript;
+            audioFound.fixBy = userID;
+          }
           audioFound.save();
           userFound.verifyCount++;
           userFound.save();
@@ -239,7 +244,8 @@ router.post("/accept", (req, res) => {
 })
 
 router.post("/reject", (req, res) => {
-  const { audioID, userID } = req.body;
+  console.log("Rejecting... ", audioID)
+  const { audioID, transcript, userID } = req.body;
   Audio.findById(audioID)
   .then((audioFound) => {
     if (!audioFound) {
@@ -253,6 +259,10 @@ router.post("/reject", (req, res) => {
         else {
           if (!audioFound.rejectBy.includes(userID)) {
             audioFound.rejectBy.push(userID);
+            if (audioFound.transcript !== transcript) {
+              audioFound.transcript = transcript;
+              audioFound.fixBy = userID;
+            }
             audioFound.save();
             userFound.verifyCount++;
             userFound.save();
