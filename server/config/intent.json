@@ -5,7 +5,7 @@
   },
   {
     "intent": "Ứng dụng công nghệ thông tin",
-    "description": "Bạn đang muốn biết công nghệ thông tin có những ứng dụng gì. Hãy đặt câu hỏi để tìm hiểu điều đó"
+    "description": "Bạn đang muốn biết công nghệ thông tin có những ứng dụng gì hay dùng để làm gì. Hãy đặt câu hỏi để tìm hiểu điều đó"
   },
   {
     "intent": "Khái niệm chuyển đổi số",
@@ -24,11 +24,11 @@
     "description": "Bạn hãy đặt câu hỏi để tìm hiểu ai là người phụ trách thực hiện chuyển đổi số nhé"
   },
   {
-    "intent": "Người giải đáp câu hỏi về chuyển đổi số",
+    "intent": "Cơ quan giải đáp thắc mắc chuyển đổi số",
     "description": "Khi có câu hỏi về chuyển đổi số, nhưng bạn không biết phải hỏi ai. Hãy đặt câu hỏi để biết người đó là ai nhé"
   },
   {
-    "intent": "Thời điểm xuất hiện cụm từ Chuyển đổi số",
+    "intent": "Thời điểm xuất hiện chuyển đổi số",
     "description": "Bạn muốn biết khi nào người ta bắt đầu nói về chuyển đổi số, hãy đặt câu hỏi để tìm hiểu điều đó nhé"
   },
   {
@@ -48,7 +48,7 @@
     "description": "Bạn thắc mắc không biết ở Việt Nam đã có chương trình chuyển đổi số nào hay chưa. Hãy đặt câu hỏi để làm sáng tỏ thắc mắc đó nhé"
   },
   {
-    "intent": "Người chủ trì điều phối triển khai Chương trình chuyển đổi số Quốc gia",
+    "intent": "Cơ quan chủ trì chương trình chuyển đổi số",
     "description": "Bạn hãy đặt câu hỏi để biết ai là người được giao chù trì điều phối chương trình chuyển đổi số Quốc gia nhé"
   },
   {
@@ -64,7 +64,7 @@
     "description": "Bạn hãy đặt câu hỏi để tìm hiểu điều gì đóng vai trò quyết định trong chuyển đổi số nhé"
   },
   {
-    "intent": "Trung tâm của chuyển đổi số",
+    "intent": "Đối tượng trung tâm của chuyển đổi số",
     "description": "Bạn muốn biết trung tâm của chuyển đổi số là gì. Hãy đặt câu hỏi để làm sáng tỏ điều đó nhé"
   },
   {
@@ -72,7 +72,7 @@
     "description": "Bạn thắc mắc chuyển đổi số lấy người dân làm trung tâm là như thế nào. Hãy đặt câu hỏi để tìm hiểu về điều này nhé"
   },
   {
-    "intent": "Giải pháp đột phá thúc đẩy chuyển đổi số",
+    "intent": "Giải pháp thúc đẩy chuyển đổi số",
     "description": "Bạn muốn biết các giải pháp đột phá giúp thúc đẩy chuyển đổi số. Hãy đặt câu hỏi để có thể biết được điều đó nhé"
   },
   {
@@ -370,6 +370,10 @@
   {
     "intent": "Khái niệm nền kinh tế số",
     "description": "Bạn hãy đặt câu hỏi để tìm hiểu nền kinh tế số là gì nhé"
+  },
+  {
+    "intent": "Khái niện nền kinh tế nền tảng",
+    "description": "Bạn muốn tìm hiểu xem nền kinh tế nền tảng là gì. Hãy đặt câu hỏi để làm rõ vấn đề đó nhé"
   },
   {
     "intent": "Vai trò của nền kinh tế số",
