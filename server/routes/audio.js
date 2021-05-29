@@ -216,7 +216,7 @@ router.post("/solo", async (req, res) => {
 
 router.post("/accept", (req, res) => {
   const { audioID, transcript, userID } = req.body;
-  console.log("Accepting... ", audioID)
+  // console.log("Accepting... ", audioID)
   Audio.findById(audioID)
   .then((audioFound) => {
     if (!audioFound) {
@@ -244,8 +244,8 @@ router.post("/accept", (req, res) => {
 })
 
 router.post("/reject", (req, res) => {
-  console.log("Rejecting... ", audioID)
   const { audioID, transcript, userID } = req.body;
+  // console.log("Rejecting... ", audioID)
   Audio.findById(audioID)
   .then((audioFound) => {
     if (!audioFound) {
