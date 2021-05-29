@@ -214,6 +214,21 @@ router.post("/solo", async (req, res) => {
   );
 })
 
+router.post("/trash", async (req, res) => {
+  const { userID } = req.body;
+
+  User.findById(userID)
+  .then(userFound => {
+    if (!userFound) res.status(404).send({ status: 0 });
+    else {
+      userFound.trashCount++;
+      userFound.save();
+      res.status(200).send({ status: 1 });
+    }
+  })
+
+})
+
 router.post("/accept", (req, res) => {
   const { audioID, transcript, userID } = req.body;
   // console.log("Accepting... ", audioID)

@@ -55,6 +55,10 @@ const userSchema = mongoose.Schema({
         type: Number,
         default: 0,
     },
+    trashCount: {
+        type: Number,
+        default: 0,
+    },
     verifyCount: {
         type: Number,
         default: 0,
