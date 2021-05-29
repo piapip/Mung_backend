@@ -1,18 +1,702 @@
 [
   {
-    "intent": "Test 1",
-    "description": "Just a test 1"
+    "intent": "Khái niệm tin học hóa",
+    "description": "Bạn hãy đặt câu hỏi để tìm hiểu tin học hóa là gì"
   },
   {
-    "intent": "Test 2",
-    "description": "Just a test 2"
+    "intent": "Ứng dụng công nghệ thông tin",
+    "description": "Bạn đang muốn biết công nghệ thông tin có những ứng dụng gì. Hãy đặt câu hỏi để tìm hiểu điều đó"
   },
   {
-    "intent": "Test 3",
-    "description": "Just a test 3"
+    "intent": "Khái niệm chuyển đổi số",
+    "description": "Bạn hãy đặt câu hỏi để tìm hiểu chuyển đổi số là gì"
   },
   {
-    "intent": "Test 4",
-    "description": "Just a test 4"
+    "intent": "Chi tiết chuyển đổi số",
+    "description": "Bạn muốn tìm hiểu về chuyển đổi số một cách chi tiết, hãy đặt câu hỏi để thể hiện điều đó nhé"
+  },
+  {
+    "intent": "Lý do cần phải thực hiện chuyển đổi số",
+    "description": "Bạn thắc mắc vì sao cần chuyển đổi số, hãy đặt câu hỏi để tìm hiểu nha"
+  },
+  {
+    "intent": "Người phụ trách thực hiện chuyển đổi số",
+    "description": "Bạn hãy đặt câu hỏi để tìm hiểu ai là người phụ trách thực hiện chuyển đổi số nhé"
+  },
+  {
+    "intent": "Người giải đáp câu hỏi về chuyển đổi số",
+    "description": "Khi có câu hỏi về chuyển đổi số, nhưng bạn không biết phải hỏi ai. Hãy đặt câu hỏi để biết người đó là ai nhé"
+  },
+  {
+    "intent": "Thời điểm xuất hiện cụm từ Chuyển đổi số",
+    "description": "Bạn muốn biết khi nào người ta bắt đầu nói về chuyển đổi số, hãy đặt câu hỏi để tìm hiểu điều đó nhé"
+  },
+  {
+    "intent": "Cách chuyển đổi số",
+    "description": "Bạn hãy đặt câu hỏi để biết cách thực hiện chuyển đổi số như thế nào là đúng nhé"
+  },
+  {
+    "intent": "Thời gian thực hiện chuyển đổi số",
+    "description": "Bạn không biết cần thực hiện chuyển đổi số trong thời gian bao lâu. Hãy đặt câu hỏi để xác định thời gian này nhé"
+  },
+  {
+    "intent": "Thách thức của chuyển đổi số",
+    "description": "Bạn muốn biết việc thực hiện chuyển đổi số sẽ gặp những khó khăn, thách thức như thế nào. Hãy đặt câu hỏi để làm sáng tỏ điều này nhé"
+  },
+  {
+    "intent": "Chương trình quốc gia về chuyển đổi số",
+    "description": "Bạn thắc mắc không biết ở Việt Nam đã có chương trình chuyển đổi số nào hay chưa. Hãy đặt câu hỏi để làm sáng tỏ thắc mắc đó nhé"
+  },
+  {
+    "intent": "Người chủ trì điều phối triển khai Chương trình chuyển đổi số Quốc gia",
+    "description": "Bạn hãy đặt câu hỏi để biết ai là người được giao chù trì điều phối chương trình chuyển đổi số Quốc gia nhé"
+  },
+  {
+    "intent": "Khái niệm chuyển đổi số cấp địa phương",
+    "description": "Bạn không biết ở cấp địa phương thì chuyển đổi số sẽ được hiểu như thế nào. Hãy đặt câu hỏi để tìm hiểu về điều đó nhé"
+  },
+  {
+    "intent": "Tầm quan trọng của việc ban hành nghị quyết chuyên đề về Chuyển đổi số trước khi triển khai ở địa phương",
+    "description": "Bạn thắc mắc vì sao trước khi chuyển đổi số ở địa phương cần ban hành Nghị quyết chuyên đề về chuyển đổi số, hãy đặt câu hỏi để tìm hiểu về điều đó nhé"
+  },
+  {
+    "intent": "Vai trò quyết định trong chuyển đổi số",
+    "description": "Bạn hãy đặt câu hỏi để tìm hiểu điều gì đóng vai trò quyết định trong chuyển đổi số nhé"
+  },
+  {
+    "intent": "Trung tâm của chuyển đổi số",
+    "description": "Bạn muốn biết trung tâm của chuyển đổi số là gì. Hãy đặt câu hỏi để làm sáng tỏ điều đó nhé"
+  },
+  {
+    "intent": "Khái niệm chuyển đổi số lấy người dân làm trung tâm",
+    "description": "Bạn thắc mắc chuyển đổi số lấy người dân làm trung tâm là như thế nào. Hãy đặt câu hỏi để tìm hiểu về điều này nhé"
+  },
+  {
+    "intent": "Giải pháp đột phá thúc đẩy chuyển đổi số",
+    "description": "Bạn muốn biết các giải pháp đột phá giúp thúc đẩy chuyển đổi số. Hãy đặt câu hỏi để có thể biết được điều đó nhé"
+  },
+  {
+    "intent": "Động lực của chuyển đổi số",
+    "description": "Bạn hãy đặt câu hỏi để xác định động lực của chuyển đổi số nhé"
+  },
+  {
+    "intent": "Vấn đề then chốt trong chuyển đổi số",
+    "description": "Bạn không biết đâu là vấn đề then chốt trong chuyển đổi số và muốn làm rõ điều đó. Hãy đặt câu hỏi để làm rõ nhé"
+  },
+  {
+    "intent": "Yếu tố đảm bảo thành công của chuyển đổi số",
+    "description": "Bạn muốn biết những yếu tố nào giúp đảm bảo sự thành công của chuyển đổi số. Hãy đặt câu hỏi để thực hiện điều đó nhé"
+  },
+  {
+    "intent": "Các lĩnh vực ưu tiên trong chuyển đổi số",
+    "description": "Bạn hãy đặt câu hỏi để biết những lĩnh vực được ưu tiên trong chuyển đổi số nhé"
+  },
+  {
+    "intent": "Lợi thế khi thực hiện chuyển đổi số",
+    "description": "Bạn muốn biết Việt Nam có những lợi thế gì khi thực hiện chuyển đổi số. Hãy đặt câu hỏi để tìm hiểu về điều đó"
+  },
+  {
+    "intent": "Ngày Chuyển đổi số Quốc gia",
+    "description": "Bạn hãy đặt câu hỏi để biết Việt Nam đã có ngày chuyển đổi số quốc gia hay chưa nhé"
+  },
+  {
+    "intent": "Cập nhật lại cẩm nang chuyển đổi số",
+    "description": "Cẩm nang chuyển đổi số đã ra đời được 1 năm. Bạn muốn biết Bộ có ý định cập nhật lại nội dung của cuốn cẩm nang này hay không. Hãy đặt câu hỏi để làm sáng tỏ điều đó nhé"
+  },
+  {
+    "intent": "Hướng chuyển đổi số của doanh nghiệp nhỏ và vừa",
+    "description": "Bạn hãy đặt câu hỏi để biết doanh ngiệp nhỏ và vừa nên thực hiện chuyển đổi số theo hướng nào"
+  },
+  {
+    "intent": "Khái niệm chuyển đổi số cơ quan nhà nước",
+    "description": "Bạn muốn tìm hiểu như thế nào được gọi là chuyển đổi số cơ quan nhà nước. Bạn hãy đặt câu hỏi để làm rõ điều đó nhé"
+  },
+  {
+    "intent": "Quy định về chia sẻ dữ liệu trong cơ quan nhà nước",
+    "description": "Bạn muốn biết các quy định về việc chia sẻ dữ liệu trong cơ quan nhà nước. Hãy đặt câu hỏi để tìm hiểu về điều đó nhé"
+  },
+  {
+    "intent": "Xây dựng chiến lược chuyển đổi số",
+    "description": "Bạn hãy đặt câu hỏi để biết cách xây dựng chiến lược chuyển đối số nhé"
+  },
+  {
+    "intent": "Khái niệm số hóa",
+    "description": "Bạn muốn biết số hóa có nghĩa là gì. Hãy đặt câu hỏi để tìm hiểu về điều đó nhé"
+  },
+  {
+    "intent": "Thời điểm bắt đầu ứng dụng công nghệ thông tin",
+    "description": "Bạn muốn biết từ khi nào người ta bắt đầu ứng dụng công nghệ thông tin. Hãy đặt câu hỏi để xác định điều đó nhé"
+  },
+  {
+    "intent": "Sự khác nhau giữa chuyển đổi số và ứng dụng công nghệ thông tin",
+    "description": "Bạn chưa rõ đâu là sự khác nhau giữa chuyển đổi số và ứng dụng công nghệ thông tin. Hãy đặt câu hỏi để làm rõ điều đó nhé"
+  },
+  {
+    "intent": "Sự khác nhau giữa tin học hóa và ứng dụng công nghệ thông tin",
+    "description": "Bạn hãy đặt câu hỏi để tìm ra đâu là sự khác nhau giữa tin học hóa và ứng dụng công nghệ thông tin nhé"
+  },
+  {
+    "intent": "Chi phí cho chuyển đổi số",
+    "description": "Bạn hãy đặt câu hỏi để biết Nhà nước nên chi bao nhiêu cho chuyển đổi số thì phù hợp nhé"
+  },
+  {
+    "intent": "Đánh giá hiệu quả của các khoản chi cho chuyển đổi số",
+    "description": "Bạn muốn biết làm cách nào để xác định việc chi cho chuyển đổi số là hiệu quả. Hãy đặt câu hỏi để xác định điều này nhé"
+  },
+  {
+    "intent": "Động lực của chuyển đổi số",
+    "description": "Bạn muốn biết tại sao lại nói thể chế và công nghệ là động lực của chuyển đổi số. Hãy đặt câu hỏi để làm rõ điều này nhé"
+  },
+  {
+    "intent": "Khái niệm chuyên gia",
+    "description": "Bạn hãy đặt câu hỏi để tìm hiểu về việc ai có thể được coi là một chuyên gia nhé"
+  },
+  {
+    "intent": "Khái niệm chuyên gia công nghệ số",
+    "description": "Bạn muốn biết chuyên gia công nghệ số là ai, hãy đặt câu hỏi để làm rõ điều đó nhé"
+  },
+  {
+    "intent": "Thời điểm thuê chuyên gia tư vấn",
+    "description": "Bạn muốn biết lúc nào thì cần thuê một chuyên gia để tư vấn. Hãy đặt câu hỏi để tìm hiểu về điều đó nhé"
+  },
+  {
+    "intent": "Thành viên tham gia chuyển đổi số",
+    "description": "Trong một tổ chức, bạn muốn tìm hiểu xem những ai sẽ tham gia chuyển đổi số. Hãy đặt câu hỏi để làm sáng tỏ điều đó nhé"
+  },
+  {
+    "intent": "Nền tảng chuyển đổi số quốc gia",
+    "description": "Bạn hãy đặt câu hỏi để biết nền tảng chuyển đổi số quốc gia là gì"
+  },
+  {
+    "intent": "Khái niệm học máy",
+    "description": "Bạn chưa rõ khái niệm học máy là gì. Hãy đặt câu hỏi để tìm hiểu về điều đó nhé"
+  },
+  {
+    "intent": "Khái niệm trợ lý ảo",
+    "description": "Bạn hãy đặt câu hỏi để biết một trợ lý ảo là gì nhé"
+  },
+  {
+    "intent": "Cách theo dõi và đánh giá quá trình chuyển đổi số quốc gia",
+    "description": "Bạn muốn biết làm cách nào để theo dõi và đánh giá quá trình chuyển đổi số quốc gia. Hãy đặt câu hỏi để làm được điều này nhé"
+  },
+  {
+    "intent": "Khái niệm nền tảng số",
+    "description": "Bạn hãy đặt câu hỏi để biết nền tảng số là gì nhé"
+  },
+  {
+    "intent": "Sự khác nhau giữ kiến trúc và khung kiến trúc",
+    "description": "Bạn muốn biết về sự khác nhau giữa kiến trúc và khung kiến trúc, hãy đẳt câu hỏi để làm rõ điều đó nhé"
+  },
+  {
+    "intent": "Khái niệm chính phủ điện tử",
+    "description": "Bạn muốn hiểu một chính phủ điện tử có nghĩa là gì. Hãy đặt câu hỏi để tìm hiểu về điều đó nhé"
+  },
+  {
+    "intent": "Sự khác nhau giữa chính phủ điện tử và chính phủ số",
+    "description": "Bạn hãy đặt câu hỏi để làm rõ sự khác nhau giữa chính phủ điện tử và chính phủ số nhé"
+  },
+  {
+    "intent": "Trọng tâm chiến lược của Chính phủ số",
+    "description": "Bạn muốn biết trọng tâm chiến lược của một chính phủ số là gì. Hãy đặt câu hỏi để làm rõ điều đó nhé"
+  },
+  {
+    "intent": "Mối quan hệ giữa đô thị thông minh và chính quyền số",
+    "description": "Bạn thắc mắc không biết giữa đô thị thông minh và chính phủ số có những mối liên hệ gì. Hãy đặt câu hỏi để làm rõ điều này nha"
+  },
+  {
+    "intent": "Lý do phải phát triển chính phủ số",
+    "description": "Bạn muốn biết lý do tại sao cần phải phát triển chính phủ số. Hãy đặt câu hỏi để tìm hiểu về điều này"
+  },
+  {
+    "intent": "Khái niệm chính quyền số",
+    "description": "Bạn hãy đặt câu hỏi để tìm hiểu một chính quyền số có nghĩa là gì"
+  },
+  {
+    "intent": "Xếp hạng Chính phủ điện tử",
+    "description": "Bạn muốn biết xếp hạng Chính phủ điện tử của Việt Nam theo đánh giá của Liên Hợp Quốc. Hãy đặt câu hỏi để làm rõ về điều này"
+  },
+  {
+    "intent": "Đơn vị xếp hạng chính phủ điện tử",
+    "description": "Bạn hãy đặt câu hỏi để tìm hiểu xem đơn vị nào của Bộ Thông tin và Truyền Thông được giao đầu mối xếp hạng Chính phủ điện tử do Liên Hợp Quốc đánh giá, xếp hạng"
+  },
+  {
+    "intent": "Khái niệm đám mây Chính phủ",
+    "description": "Bạn hãy đặt câu hỏi để tìm hiểu khái niệm đám mây Chính phủ"
+  },
+  {
+    "intent": "Chủ tịch Ủy ban Quốc gia về Chính phủ điện tử",
+    "description": "Bạn muốn biết ai lad Chủ tịch Ủy ban Quốc Gia về Chính Phủ điện tử, hãy đặt câu hỏi để tìm hiểu về điều đó"
+  },
+  {
+    "intent": "Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương",
+    "description": "Bạn hãy đặt câu hỏi để biết ai là Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương"
+  },
+  {
+    "intent": "Cơ quan thường trực của Tổ công tác giúp việc Ủy ban Quốc gia về Chính phủ điện tử",
+    "description": "Bạn muốn biết cơ quan nào làm nhiệm vụ thường trực của Tổ công tác giúp việc Ủy ban Quốc gia về Chính phủ điện tử. Hãy đặt câu hỏi để làm rõ điều đó"
+  },
+  {
+    "intent": "Kiện toàn lại Ủy ban Quốc gia về Chính phủ điện tử",
+    "description": "Bạn thắc mắc có nên kiện toàn lại Ủy ban Quốc gia về Chính phủ điện tử cho phù hợp với tình hình phát triển. Hãy đặt câu hỏi để làm rõ về điều này"
+  },
+  {
+    "intent": "Mục tiêu hoàn thành chuyển đổi số",
+    "description": "Bạn hãy đặt câu ỏi để biết mục tiêu trọng tâm để kết thúc giai đoạn phát triển chính phủ và hướng tới giai đoạn phát triển chính phủ số trong năm 2021"
+  },
+  {
+    "intent": "Khái niệm Chính phủ 04 không",
+    "description": "Bạn muốn biết Chính phủ 04 không là gì, hãy đặt câu hỏi nhé"
+  },
+  {
+    "intent": "Kiến trúc chính phủ điện tử 2.0",
+    "description": "Bạn thắc mắc nên Xây dựng Kiến trúc Chính phủ điện tử 2.0 theo hướng tập trung hay phân tán, hãy đặt câu hỏi để tìm hiểu nhé"
+  },
+  {
+    "intent": "Chi phí tiếp cận công nghệ số",
+    "description": "Bạn thắc mắc về chi phí tiếp cận công nghệ số, liệu có phù hợp cho tất cả mọi người không. Hãy đặt câu hỏi để tìm hiểu về điều đó"
+  },
+  {
+    "intent": "Khái niệm số định danh cá nhân",
+    "description": "Bạn muốn biết số định danh cá nhân là gì, hãy đặt câu hỏi để xác định điều đó"
+  },
+  {
+    "intent": "Khái niệm trung tâm điều hành thông minh",
+    "description": "Bạn hãy đặt câu hỏi để biết trung tâm điều hành thông minh là gì"
+  },
+  {
+    "intent": "Khái niệm trung tâm giám sát Chính phủ điện tử",
+    "description": "Bạn muốn biết trung tâm giám sát Chính phủ điện tử là gì, hãy đặt câu hỏi để làm rõ về điều đó"
+  },
+  {
+    "intent": "Thời gian ban hành khung tham chiếu ICT phát triển đô thị thông minh phiên bản 1.0",
+    "description": "Bạn muốn biết khung tham chiếu ICT phát triển đô thị thông minh phiên bản 1.0 được ban hành ngày tháng năm nào, hãy đặt câu hỏi để làm rõ về điều đó nhé"
+  },
+  {
+    "intent": "Khái niệm dịch vụ công trực tuyến",
+    "description": "Bạn hãy đặt câu hỏi để tìm hiểu về khái niệm dịch vụ công trực tuyến"
+  },
+  {
+    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 1",
+    "description": "Bạn muốn biết dịch vụ công trực tuyến mức độ 1 là gì, hãy đặt câu hỏi để tìm hiểu nhé"
+  },
+  {
+    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 2",
+    "description": "Bạn muốn biết dịch vụ công trực tuyến mức độ 2 là gì, hãy đặt câu hỏi để tìm hiểu nhé"
+  },
+  {
+    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 3",
+    "description": "Bạn muốn biết dịch vụ công trực tuyến mức độ 3 là gì, hãy đặt câu hỏi để tìm hiểu nhé"
+  },
+  {
+    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 4",
+    "description": "Bạn muốn biết dịch vụ công trực tuyến mức độ 4 là gì, hãy đặt câu hỏi để tìm hiểu nhé"
+  },
+  {
+    "intent": "Yêu cầu xác thực người dùng",
+    "description": "Bạn muốn biết cách yêu cầu xác thực người dùng đối với các dịch vụ công trực tuyến, hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Tỷ lệ dịch vụ công trực tuyến có phát sinh hồ sơ",
+    "description": "Bạn hãy đặt câu hỏi để biết tỷ lệ dịch vụ công trực tuyến có phát sinh hồ sơ là gì nhé"
+  },
+  {
+    "intent": "Tỷ lệ dịch vụ công trực tuyến mức độ 4",
+    "description": "Bạn muốn biết trong năm 2020, tỷ lệ dịch vụ công trực tuyến thực hiện ở mức độ 4 trung bình cả nước đạt bao nhiêu phần trăm. Bạn hãy đặt câu hỏi để tìm hiểu vấn đề này nhé"
+  },
+  {
+    "intent": "Khái niệm dịch vụ hành chính công",
+    "description": "Bạn hãy đặt câu hỏi để biết dịch vụ hành chính công là gì nhé"
+  },
+  {
+    "intent": "Cổng dịch vụ công cấp bộ, cấp tỉnh",
+    "description": "Bạn muốn biết cổng dịch vụ công cấp bộ, cấp tỉnh là gì. Hãy đặt câu hỏi để làm rõ vấn đề đó nhé"
+  },
+  {
+    "intent": "Hệ thống thông tin một cửa điện tử cấp bộ hoặc cấp tỉnh",
+    "description": "Bạn hãy đặt câu hỏi để biết hệ thống thông tin một cửa điện tử cấp bộ hoặc cấp tỉnh là gì nhé"
+  },
+  {
+    "intent": "Linh hoạt chỉnh sửa quy trình lưu chuyển, xử lý thủ tục hành chính trên hệ thống thông tin một cửa",
+    "description": "Bạn hãy đặt câu hỏi để biết các chu trình lưu chuyển, xử lý thủ tục hành chính trên hệ thống thông tin một cửa điện tử cấp bộ, cấp tỉnh có thể chỉnh sửa linh hoạt để phù hợp với quy định của thủ tục hành chính không nhé"
+  },
+  {
+    "intent": "Cơ quan chủ quản cổng thông tin điện tử",
+    "description": "Bạn muốn biết cơ quan chủ quản cổng thông tin điện tử là tổ chức nào. Hãy đặt câu hỏi để tìm hiểu về vấn đề này nhé"
+  },
+  {
+    "intent": "Cơ quan cung cấp dịch vụ công trực tuyến",
+    "description": "Bạn muốn tìm hiểu về cơ quan cung cấp dịch vụ công trực tuyến, hãy đặt câu hỏi để biết điều đó nhé"
+  },
+  {
+    "intent": "Cổng dịch vụ công quốc gia",
+    "description": "Bạn muốn biết cổng dịch vụ công quốc gia là gì, hãy đặt câu hỏi để tìm hiểu về điều này nhé"
+  },
+  {
+    "intent": "Chức năng cổng dịch vụ công quốc gia",
+    "description": "Bạn hãy đặt câu hỏi để tìm hiểu xem cổng dịch vụ công có chức năng tiếp nhận hồ sơ nộp trực tiếp tại bộ phận một cửa các cấp không nhé"
+  },
+  {
+    "intent": "Cơ sở dữ liệu quốc gia được ưu tiên",
+    "description": "Bạn muốn tìm hiểu xem hiện nay, những cơ sở dữ liệu quốc gia nào được ưu tiên phát triển. Hãy đặt câu hỏi để làm sáng tỏ vấn đề này nha"
+  },
+  {
+    "intent": "Mã định danh điện tử cơ quan, tổ chức",
+    "description": "Bạn hãy đặt câu hỏi để biết mã định danh điện tử cơ quan, tổ chức là gì nhé"
+  },
+  {
+    "intent": "Nhu cầu mã định danh điện tử",
+    "description": "Bạn hãy đặt câu hỏi để biết các cơ quan, tổ chức nào có cần có mã định danh điện tử nhé"
+  },
+  {
+    "intent": "Cấu trúc mã định danh điện tử",
+    "description": "Bạn thắc mắc mã định danh điện tử của các bộ, ngành, địa phương có cấu trúc như thế nào. Bạn hãy đặt câu hỏi để tìm hiểu về vấn đề này nhé"
+  },
+  {
+    "intent": "Đánh mã định danh điện tử",
+    "description": "Bạn không biết cơ quan, tổ chức cấp 1 có thể đánh mã định danh điện tử cho các cơ quan, đơn vị của mình đến cấp mấy. Hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Đánh mã định danh điện tử cơ quan Đảng",
+    "description": "Bạn không biết ủy ban nhân dân cấp tỉnh có thể đánh mã định danh cho cơ quan Đảng tại địa phương mình được không. Hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Các nền tảng đã kết nối cơ sở dữ liệu quốc gia",
+    "description": "Bạn thắc mắc nền tảng tích hợp, chia sẻ dữ liệu quốc gia đã kết nối với những cơ sở dữ liệu quốc gia nào. Hãy đặt câu hỏi để làm sáng tỏ vấn đề trên nhé"
+  },
+  {
+    "intent": "Cách kết nối nền tảng tích hợp, chia sẻ dữ liệu quốc gia",
+    "description": "Bạn muốn biết cách để kết nối với Nền tảng tích hợp, chia sẻ dữ liệu quốc gia, hãy đặt câu hỏi để tìm hiểu về vấn đề đó nhé"
+  },
+  {
+    "intent": "Khái niệm nền kinh tế số",
+    "description": "Bạn hãy đặt câu hỏi để tìm hiểu nền kinh tế số là gì nhé"
+  },
+  {
+    "intent": "Vai trò của nền kinh tế số",
+    "description": "Bạn thắc mắc không biết vai trò của nền kinh tế số là gì, hãy đặt câu hỏi để tìm hiểu về điều này nhé"
+  },
+  {
+    "intent": "Thời điểm xuất hiện kinh tế số",
+    "description": "Bạn hãy đặt câu hỏi để biết kinh tế số đã xuất hiện ở Việt Nam vào khi nào nhé"
+  },
+  {
+    "intent": "Cách thúc đẩy nền kinh tế số",
+    "description": "Bạn hãy đặt câu hỏi để biết làm thế nào để thúc đẩy nền kinh tế số nhé"
+  },
+  {
+    "intent": "Cách đo lường kinh tế số",
+    "description": "Bạn thắc mắc không biết cách đo lường kinh tế số như thế nào. Hãy đặt câu hỏi để làm rõ về vấn đề đó nhé"
+  },
+  {
+    "intent": "Giá trị kinh tế số ",
+    "description": "Bạn muốn biết giá trị kinh tế số của Việt Nam năm 2020 là bao nhiêu. Hãy đặt câu hỏi để làm rõ về vấn đề đó nhé"
+  },
+  {
+    "intent": "Kinh tế số của Việt Nam so với quốc tế",
+    "description": "Bạn hãy đặt câu hỏi để biết kinh tế số của Việt Nam so với quốc tế thì thế nào nhé"
+  },
+  {
+    "intent": "Mục tiêu chương trình chuyển đổi số quốc gia",
+    "description": "Bạn muốn biết chương trình Chuyển đổi số quốc gia đặt mục tiêu kinh tế số Việt Nam vào năm 2025 là bao nhiêu. Hãy đặt câu hỏi để tìm hiểu về vấn đề này nhé"
+  },
+  {
+    "intent": "Lý do doanh nghiệp cần chuyển đổi số",
+    "description": "Bạn không biết tại sao doanh nghiệp cần chuyển đổi số. Hãy đặt câu hỏi để tìm hiểu lý do cho vấn đề này nhé"
+  },
+  {
+    "intent": "Chi phí để doanh nghiệp thực hiện chuyển đổi số",
+    "description": "Bạn muốn biết chi phí 1 doanh nghiệp nhỏ và vừa cần để thực hiện chuyển đổi số là bao nhiêu. Hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Cách đo lường mức độ chuyển đổi số của các doanh nghiệp",
+    "description": "Bạn hãy đặt câu hỏi để biết cách đo lường mức độ chuyển đổi số của các doanh nghiệp nhé"
+  },
+  {
+    "intent": "Hỗ trợ doanh nghiệp chuyển đổi số",
+    "description": "Bạn muốn biết Bộ Thông tin và Truyền thông hỗ trợ các doanh nghiệp nhỏ và vừa chuyển đổi số thế nào, hãy đặt câu hỏi để tìm hiểu nhé"
+  },
+  {
+    "intent": "Khái niệm doanh nghiệp công nghệ số",
+    "description": "Bạn muốn biết doanh nghiệp công nghệ số là gì, hãy đặt câu hỏi để làm rõ khái niệm này nhé"
+  },
+  {
+    "intent": "Loại hình doanh nghiệp công nghệ số",
+    "description": "Bạn hãy đặt câu hỏi để biết có các loại hình doanh nghiệp công nghệ số nào nhé"
+  },
+  {
+    "intent": "Thông tin về các doanh nghiệp công nghệ số",
+    "description": "Bạn hãy đặt câu hỏi để biết được thông tin về các doanh nghiệp công nghệ số và các sản phẩm, dịch vụ cung cấp bởi các doanh nghiệp công nghệ số nhé"
+  },
+  {
+    "intent": "Số lượng doanh nghiệp công nghệ số",
+    "description": "Bạn muốn biết để thực hiện chuyển đổi số quốc gia, Việt Nam cần bao nhiêu doanh nghiệp công nghệ số. Hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Khái niệm doanh nghiệp kỳ lân",
+    "description": "Bạn muốn biết doanh nghiệp Kỳ lân (Unicorn) là gì, hãy đặt câu hỏi để tìm hiểu về khái niệm này nhé"
+  },
+  {
+    "intent": "Số lượng doanh nghiệp kỳ lân",
+    "description": "Bạn thắc mắc không biết Việt Nam hiện nay đã có bao nhiêu doanh nghiệp Kỳ lân. Hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Khái niệm Make in Việt Nam",
+    "description": "Bạn hãy đặt câu hỏi để biết Make in Việt Nam là gì nhé"
+  },
+  {
+    "intent": "Khái niệm mô hình sandbox",
+    "description": "Bạn hãy đặt câu hỏi để biết mô hình sandbox là gì nhé"
+  },
+  {
+    "intent": "Khái niệm mobile money",
+    "description": "Bạn hãy đặt câu hỏi để biết mobile money là gì nhé"
+  },
+  {
+    "intent": "Khái niệm mô hình công dân số",
+    "description": "Bạn không biết thế nào là mô hình công dân số, hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Khái niệm xã hội số ",
+    "description": "Bạn muốn tìm hiểu xã hội số là gì, hãy đặt câu hỏi để làm rõ khái niệm này nhé"
+  },
+  {
+    "intent": "Khái niệm văn hóa số",
+    "description": "Bạn hãy đặt câu hỏi để biết văn hóa số là gì nhé"
+  },
+  {
+    "intent": "Tác động của chuyển đổi số",
+    "description": "Bạn thắc mắc chuyển đổi số có tạo ra thất nghiệp không, hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Đào tạo lại kỹ năng số",
+    "description": "Bạn hãy đặt câu hỏi để hiểu như thế nào là đào tạo lại kỹ năng số nhé"
+  },
+  {
+    "intent": "Đào tạo nâng cấp kỹ năng số",
+    "description": "Bạn muốn biết đào tạo nâng cấp kỹ năng số (up-skill) là gì. Hãy đặt câu hỏi để tìm hiểu về vấn đề này nhé"
+  },
+  {
+    "intent": "Ngành nghề ảnh hưởng nhiều bởi chuyển đổi số",
+    "description": "Bạn không biết những ngành, nghề nào sẽ bị ảnh hưởng nhiều nhất bởi chuyển đổi số. Hãy đặt câu hỏi để làm rõ về điều này nhé"
+  },
+  {
+    "intent": "Nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số",
+    "description": "Bạn hãy đặt câu hỏi để biết những ngành, nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số nhé"
+  },
+  {
+    "intent": "Giải pháp gì để đào tạo kỹ năng số",
+    "description": "Bạn hãy đặtc câu hỏi để biết Bộ Thông tin và Truyền thông có giải pháp gì để đào tạo kỹ năng số cho người dân nhé"
+  },
+  {
+    "intent": "Khái niệm đại học số",
+    "description": "Bạn muốn biết đại học số là gì, hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Vấn đề thâm hụt nhân lực kỹ thuật ",
+    "description": "Bạn hãy đặt câu hỏi về cách giải quyết vấn đề thiếu hụt nhân lực kỹ thuật thực hiện chuyển đổi số thế nào nhé"
+  },
+  {
+    "intent": "Khái niệm khoa học dữ liệu",
+    "description": "Bạn muốn biết khoa học dữ liệu là gì, hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Phổ cập điện thoại thông minh",
+    "description": "Bạn thắc mắc không biết làm sao để phổ cập điện thoại thông minh, hãy đặt câu hỏi để tìm hiểu điều này nhé"
+  },
+  {
+    "intent": "Hành động của người dân trong xu thế chuyển đổi số",
+    "description": "Bạn hãy đặt câu hỏi để biết người dân phải làm gì trong xu thế chuyển đổi số nhé"
+  },
+  {
+    "intent": "Khái niệm khoảng cách số",
+    "description": "Bạn không biết khoảng cách số là gì, hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Tách động của chuyển đổi số đến khoảng cách giàu nghèo",
+    "description": "Bạn thắc mắc chuyển đổi số có làm giảm khoảng cách giàu nghèo trong xã hội không, hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Môi trường số nhân văn, rộng khắp",
+    "description": "Một trong những mục tiêu của Chương trình Chuyển đổi số quốc gia là tạo ra môi trường số nhân văn, rộng khắp. Bạn chưa hiểu về mục tiêu này. Hãy đặt câu hỏi để làm rõ điều đó nhé"
+  },
+  {
+    "intent": "Khái niệm khoảng cách số",
+    "description": "Bạn muốn biết khoảng cách số là gì, hãy đặt câu hỏi để làm rõ về vấn đề này nhé"
+  },
+  {
+    "intent": "Khái niệm hạ tầng số",
+    "description": "Bạn muốn biết hạ tầng số là gì, hãy đặt câu hỏi để làm rõ về vấn đề này nhé"
+  },
+  {
+    "intent": "Doanh nghiệp được cấp phép thử nghiệm cung cấp dịch vụ 5G",
+    "description": "Bạn muốn biết doanh nghiệp nào đã được cấp phép thử nghiệm cung cấp dịch vụ 5G, hãy đặt câu hỏi để tìm hiểu nhé"
+  },
+  {
+    "intent": "Doanh nghiệp đáp ứng về điện toán đám mây",
+    "description": "Bạn hãy đặt câu hỏi để biết hiện nay, đã có những doanh nghiệp Việt Nam nào đáp ứng được tiêu chí, chỉ tiêu kỹ thuật đánh giá, lựa chọn giải pháp nền tảng điện toán đám mây"
+  },
+  {
+    "intent": "Đóng góp cho sự kiện Thế giới số",
+    "description": "Bạn muốn biết Việt Nam đã đóng góp thế nào cho sự kiện Thế giới số (ITU Virtual World) năm 2020. Hãy đặt câu hỏi cho vấn đề này nhé"
+  },
+  {
+    "intent": "Định hướng phát triển lĩnh vực Bưu chính",
+    "description": "Bạn hãy đặt câu hỏi để biết Bộ Thông tin và Truyền thông định hướng phát triển lĩnh vực Bưu chính thế nào để phát triển kinh tế số nhé"
+  },
+  {
+    "intent": "Tỷ lệ cơ quan nhà nước kết nối Mạng truyền số liệu chuyên dùng",
+    "description": "Bạn hãy đặt câu hỏi để biết tỷ lệ cơ quan nhà nước từ trung ương tới cấp huyện kết nối vào Mạng truyền số liệu chuyên dùng của các cơ quan Đảng, Nhà nước hiện nay nhé"
+  },
+  {
+    "intent": "Khái niệm Không gian mạng quốc gia",
+    "description": "Bạn muốn biết không gian mạng quốc gia là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Khái niệm An ninh mạng",
+    "description": "Bạn muốn biết An ninh mạng là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Khái niệm Bảo vệ an ninh mạng",
+    "description": "Bạn muốn biết bảo vệ an ninh mạng là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Khái niệm tài khoản số",
+    "description": "Bạn muốn biết tài khoản số là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Cổng kết nối mạng quốc tế",
+    "description": "Bạn muốn biết cổng kết nối mạng quốc tế là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Khái niệm tội phạm mạng",
+    "description": "Bạn muốn biết tội phạm mạng là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Khái niệm tấn công mạng",
+    "description": "Bạn muốn biết tấn công mạng là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Khái niệm khủng bố mạng",
+    "description": "Bạn muốn biết khủng bổ mạng là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Khái niệm gián điệp mạng",
+    "description": "Bạn muốn biết gián điệp mạng là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Khái niệm nguy cơ an ninh mạng",
+    "description": "Bạn muốn biết nguy cơ an ninh mạng là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Khái niệm sự cố an ninh mạng",
+    "description": "Bạn muốn biết sự cố an ninh mạng là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Tình huống nguy hiểm về anh ninh mạng",
+    "description": "Bạn muốn biết tình huống nguy hiểm về an ninh mạng là gì, hãy đặt câu hỏi để tìm hiểu về nó nhé"
+  },
+  {
+    "intent": "Nội dung cơ bản của Luật an ninh mạng",
+    "description": "Bạn hãy đặt câu hỏi để biết nội dung cơ bản của Luật an ninh mạng là gì nhé"
+  },
+  {
+    "intent": "Luật An ninh mạng và Quyền tư do ngôn luận",
+    "description": "Bạn thắc mắc không biết Luật An ninh mạng có ngăn cản, xâm phạm quyền tự do ngôn luận hay không, hãy đặt câu hỏi để làm rõ về điều này nhé"
+  },
+  {
+    "intent": "Lực lượng bảo vệ an ninh mạng ",
+    "description": "Bạn muốn biết lực lượng an ninh mạng gồm những gì, hãy đặt câu hỏi để tìm hiểu về vấn đề này nhé"
+  },
+  {
+    "intent": "Mức độ kiểm soát thông tin của Luật An ninh mạng",
+    "description": "Bạn thắc mắc không biết Luật An ninh mạng có kiểm soát toàn bộ thông tin cá nhân của công dân hay không. Hãy đặt câu hỏi để làm rõ về vấn đề này nhé"
+  },
+  {
+    "intent": "Cải thiện độ tin cậy trên không gian mạng",
+    "description": "Bạn muốn biết cách để cải thiện niềm tin và mức độ tin cậy trong các giao dịch trên không gian mạng. Hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Khái niệm hệ sinh thái tín nhiệm mạng",
+    "description": "Bạn muốn biết hệ sinh thái tín nhiệm mạng là gì, hãy đặt câu hỏi để tìm hiểu về khái niệm này nhé"
+  },
+  {
+    "intent": "Người giải đáp về vấn đề an toàn thông tin",
+    "description": "Bạn muốn biết nếu gặp vấn đề an toàn thông tin thì hỏi ai, hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Nguồn kỹ năng bảo vệ bản thân trên không gian mạng",
+    "description": "Bạn muốn học các kỹ năng cần thiết để tự bảo vệ mình trên không gian mạng nhưng không biết tìm nguồn học ở đâu. Hãy đặt câu hỏi để giải quyết vấn đề này nhé"
+  },
+  {
+    "intent": "Bảo vệ an toàn thông tin theo mô hình 4 lớp",
+    "description": "bạn hãy đặt câu hỏi để biết bảo vệ an toàn thông tin theo mô hình 4 lớp là thế nào nhé"
+  },
+  {
+    "intent": "Cuộc thi Viet Solutions",
+    "description": "Bạn muốn biết cuộc thi Viet Solutions là gì, hãy đặt câu hỏi để tìm hiểu nhé"
+  },
+  {
+    "intent": "Giải thưởng Chuyển đổi số Việt nam là gì?",
+    "description": "Giải thưởng Chuyển đổi số Việt nam là gì?"
+  },
+  {
+    "intent": "Thông tin về sự kiện Thách thức công nghệ số",
+    "description": "Bạn muốn tìm thông tin về sự kiện Thách thức công nghệ số, hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Ngày Chuyển đổi số Việt Nam",
+    "description": "Bạn muốn biết Ngày Chuyển đổi số Việt Nam là gì, hãy đặt câu hỏi để tìm hiểu về điều đó nhé"
+  },
+  {
+    "intent": "Mô hình Cục ảo",
+    "description": "Bạn muốn biết Mô hình Cục ảo là gì, hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Khái niệm Công nghệ mở",
+    "description": "Bạn muốn biết Công nghệ mở là gì, hãy đặt câu hỏi để làm rõ vấn đề đó nhé"
+  },
+  {
+    "intent": "Khái niệm điện toán đám mây",
+    "description": "Bạn muốn biết điện toán đám mây là gì, hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Khái niệm dữ liệu lớn",
+    "description": "Bạn muốn biết dữ liệu lớn là gì, hãy đặt câu hỏi đề làm rõ nhé"
+  },
+  {
+    "intent": "Thời gian thuê dịch vụ công nghệ thông tin",
+    "description": "Bạn hãy đặt câu hỏi để biết thời gian thuê dịch vụ công nghệ thông tin được tính thế nào nhé"
+  },
+  {
+    "intent": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin",
+    "description": "Bạn muốn biết đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin là gì, hãy đăt câu hỏi để làm rõ vấn đề đó"
+  },
+  {
+    "intent": "Thời điểm thành lập Bộ Thông tin và Truyền thông",
+    "description": "Bạn hãy đặt câu hỏi để biết Bộ Thông tin và Truyền thông được thành lập khi nào nhé"
+  },
+  {
+    "intent": "Thời điểm thành lập Ngành Thông tin và Truyền thông",
+    "description": "Bạn hãy đặt câu hỏi để biết Ngành Thông tin và Truyền thông được thành lập khi nào nhé"
+  },
+  {
+    "intent": "Lĩnh vực quản lý",
+    "description": "Bạn thắc mắc không biết Bộ Thông tin và Truyền thông thực hiện quản lý nhà nước những lĩnh vực nào. Hãy đặt câu hỏi để làm rõ vấn đề này nhé"
+  },
+  {
+    "intent": "Lịch sử phát triển lĩnh vực Bưu chính",
+    "description": "Bạn muốn biết lịch sử phát triển lĩnh vực bưu chính, viễn thông, công nghệ thông tin Việt Nam. Hãy đặt câu hỏi để tìm hiểu về vấn đề này nhé"
+  },
+  {
+    "intent": "Lịch sử phát triển lĩnh vực báo chí truyền thông Việt Nam",
+    "description": "Bạn muốn biết lịch sử phát triển lịch sử phát triển lĩnh vực báo chí truyền thông Việt Nam. Hãy đặt câu hỏi để tìm hiểu về vấn đề này nhé"
+  },
+  {
+    "intent": "Ý nghĩa tên Bộ Thông tin và Truyền Thông",
+    "description": "Bạn hãy đặt câu hỏi để biết tên Bộ Thông tin và Truyền thông có nghĩa là gì?"
+  },
+  {
+    "intent": "Đổi tên Bộ Thông tin và Truyền thông",
+    "description": "Bạn thắc mắc có cần đổi tên Bộ Thông tin và Truyền thông không. Hãy đặt câu hỏi để làm rõ vấn đề này nhé"
   }
 ]
