@@ -274,6 +274,7 @@ router.post("/reject", (req, res) => {
         else {
           if (!audioFound.rejectBy.includes(userID)) {
             audioFound.rejectBy.push(userID);
+            audioFound.revertable = false;
             if (audioFound.transcript !== transcript) {
               audioFound.transcript = transcript;
               audioFound.fixBy = userID;
@@ -289,13 +290,17 @@ router.post("/reject", (req, res) => {
   })
 })
 
-router.get("/findByEmail", (req, res) => {
-  const { usermail } = req.body;
+router.get("/findByEmail/:usermail", (req, res) => {
+  const { usermail } = req.params;
+  console.log("Targetting: ", usermail)
   User.find({email: usermail})
   .then(userFound => {
-    if (userFound.length === 0) res.status(404).send("Can't find user!!!")
+    if (userFound.length === 0) {
+      res.status(404).send("Can't find user!!!")
+      throw "Can't find user!!!"
+    }
     else {
-      Audio.find({user: userFound[0]._id})
+      Audio.find({user: userFound[0]._id}).populate("intent")
       .then(audioFound => {
         return res.status(200).send({ audioFound })
       })
