@@ -289,6 +289,20 @@ router.post("/reject", (req, res) => {
   })
 })
 
+router.get("/findByEmail", (req, res) => {
+  const { usermail } = req.body;
+  User.find({email: usermail})
+  .then(userFound => {
+    if (userFound.length === 0) res.status(404).send("Can't find user!!!")
+    else {
+      Audio.find({user: userFound[0]._id})
+      .then(audioFound => {
+        return res.status(200).send({ audioFound })
+      })
+    }
+  })
+})
+
 // Get audio for testing - Solo feature
 router.get("/sample/:userID", async (req, res) => {
   const { userID } = req.params;
