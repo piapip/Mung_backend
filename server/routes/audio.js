@@ -37,28 +37,28 @@ router.post("/", (req, res) => {
   });
 })
 
-router.put("/reset", (req, res) => {
-  Audio.find({})
-  .then(batchAudioFound => {
-    let result = [];
-    for (audio of batchAudioFound) {
-      // if (audio.rejectBy === undefined) {
-      //   console.log(audio)
-      // }
-      // if (audio.revertable || audio.rejectBy.length !== 0) {
-      //   result.push(audio)
-      // }
-      if (audio.revertable || audio.rejectBy.length !== 0) {
-        audio.revertable = false;
-        audio.rejectBy = []
-        audio.save()
-        result.push(audio._id)
-      }
-    }
+// router.put("/reset", (req, res) => {
+//   Audio.find({})
+//   .then(batchAudioFound => {
+//     let result = [];
+//     for (audio of batchAudioFound) {
+//       // if (audio.rejectBy === undefined) {
+//       //   console.log(audio)
+//       // }
+//       // if (audio.revertable || audio.rejectBy.length !== 0) {
+//       //   result.push(audio)
+//       // }
+//       if (audio.revertable || audio.rejectBy.length !== 0) {
+//         audio.revertable = false;
+//         audio.rejectBy = []
+//         audio.save()
+//         result.push(audio._id)
+//       }
+//     }
 
-    res.status(200).send(result)
-  })
-})
+//     res.status(200).send(result)
+//   })
+// })
 
 router.put("/transcript", (req, res) => {
   const { audioLink, audioID } = req.body;
