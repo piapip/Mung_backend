@@ -158,6 +158,7 @@ router.put("/updatePersonalByAccessToken", (req, res) => {
   // console.log("Called")
   const { sex, accent, age } = req.body;
   const accessToken = req.headers.accesstoken;
+  const year = new Date().getFullYear()
 
   redis_client.get(accessToken, (err, data) => {
     if (err) {
@@ -190,8 +191,10 @@ router.put("/updatePersonalByAccessToken", (req, res) => {
       } else {
         userFound[0].sex = sex;
         userFound[0].accent = accent;
-        if (age <= 0) userFound[0].age = 20;
-        else userFound[0].age = age;
+        // if (age <= 0) userFound[0].age = 20;
+        // else userFound[0].age = age;
+        userFound[0].age = age;
+        userFound[0].birthYear = year - age;
         userFound[0].passwordChanged = true;
         userFound[0].save((err) => {
           if (err) {
@@ -205,10 +208,30 @@ router.put("/updatePersonalByAccessToken", (req, res) => {
   });  
 })
 
+router.put('/updateBirthYear', (req, res) => {
+  const year = new Date().getFullYear()
+
+  User.find({})
+  .then(batchUserFound => {
+    let result = []
+    for (user of batchUserFound) {
+      if (user.birthYear === 0 && user.age !== 0) {
+        // user.birthYear = year
+        user.birthYear = year - user.age;
+        result.push(user.name);
+        user.save()
+      }
+    }
+    
+    return res.status(200).send({ result })
+  })
+})
+
 router.put("/updatePersonal/:userID", (req, res) => {
   // console.log("Called")
   const { sex, accent, age } = req.body;
   const userID = req.params.userID;
+  const year = new Date().getFullYear();
 
   User.findById(userID)
   .then(userFound => {
@@ -216,8 +239,8 @@ router.put("/updatePersonal/:userID", (req, res) => {
     else {
       userFound.sex = sex;
       userFound.accent = accent;
-      if (age <= 0) userFound.age = 20;
-      else userFound.age = age;
+      userFound.age = age;
+      userFound.birthYear = year - age;
       userFound.save((err) => {
         if (err) {
           res.status(500).send({ status: 0, err })
