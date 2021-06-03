@@ -145,7 +145,8 @@ router.get("/export-audio", async (req, res) => {
     fs.mkdirSync(path.join(__dirname, "../..", destination));
   }
 
-  await Audio.find().populate("user").populate("intent")
+  // await Audio.find().populate("user").populate("intent")
+  await Audio.find().populate("intent")
     .then(async (audioFound) => {
       await exportObject(
         `${path.join(__dirname, "../..", destination, name + ".json")}`,
@@ -187,175 +188,54 @@ router.get("/export-audio", async (req, res) => {
     });
 })
 
-// router.get("/export-user", async (req, res) => {
-//   const { destination, name } = req.body;
+router.get("/export-user", async (req, res) => {
+  const { destination, name } = req.body;
 
-//   await User.find()
-//     .then(async (userFound) => {
-//       await exportObject(
-//         `${path.join(process.cwd(), '..', destination, name + ".json")}`,
-//         userFound,
-//         () => {
-//           let formData = new FormData();
-//           formData.append("destination", destination);
-//           formData.append("name", name);
-//           formData.append(
-//             "file",
-//             fs.createReadStream(
-//               path.join(process.cwd(), '..', destination, name + ".json")
-//             )
-//           );
+  if (!fs.existsSync(path.join(__dirname, "../..", destination))) {
+    fs.mkdirSync(path.join(__dirname, "../..", destination));
+  }
 
-//           axios({
-//             method: "POST",
-//             url: `https://asr.vbeecore.com/api/v1/uploads/file`,
-//             data: formData,
-//             headers: {
-//               "Content-Type": `multipart/form-data; boundary=${formData.getBoundary()}`,
-//               Authorization: `Bearer zyvZQGPrr6qdbHLTuzqpCmuBgW3TjTxGKEEIFCiy1lCAOzTBtrqPYdPdZ1AtMxU2`,
-//             },
-//             maxContentLength: "Infinity",
-//             maxBodyLength: "Infinity",
-//           })
-//             .then((response) => {
-//               res.status(200).send(response.data);
-//             })
-//             .catch((error) => res.status(500).send(error));
-//         }
-//       );
-//     })
-//     .catch((err) => {
-//       res
-//         .status(500)
-//         .send("Internal problem... Can't get User's information. Err:");
-//       throw err;
-//     });
-// });
+  await User.find()
+    .then(async (userFound) => {
+      await exportObject(
+        `${path.join(__dirname, "../..", destination, name + ".json")}`,
+        userFound,
+        () => {
+          let formData = new FormData();
+          formData.append("destination", destination);
+          formData.append("name", name);
+          formData.append(
+            "file",
+            fs.createReadStream(
+              path.join(__dirname, "../..", destination, name + ".json")
+            )
+          );
 
-// count main intent for rooms
-// router.get("/export-conversation", async (req, res) => {
-//   const { destination, name } = req.body;
-
-//   const rooms = await Chatroom.find()
-//     .populate({
-//       path: "audioList",
-//       populate: {
-//         path: "intent",
-//       },
-//     })
-//     .exec();
-//   let result = [];
-//   rooms.forEach((room) => {
-//     let conversation = {};
-//     conversation.id = room.name;
-//     conversation.turns = [];
-//     const { audioList } = room;
-
-//     if (audioList.length > 0) {
-//       audioList.forEach((audio, audioIndex) => {
-//         const frames = {};
-//         const { prevIntent, user, intent, transcript, link } = audio;
-
-//         frames.path = link;
-//         frames.prevIntent = prevIntent;
-//         frames.speaker = user;
-//         frames.turn_id = audioIndex;
-//         frames.transcript = transcript;
-//         frames.active_intent =
-//           intent["intent"] !== null
-//             ? intentSamplePool["INTENT"][intent["intent"]].name
-//             : intent["generic_intent"] !== null
-//             ? intentSamplePool["GENERIC_INTENT"][intent["generic_intent"]]
-//             : "";
-//         frames.slot_values = {};
-
-//         const properties = [
-//           "loan_purpose",
-//           "loan_type",
-//           "card_type",
-//           "card_usage",
-//           "digital_bank",
-//           "card_activation_type",
-//           "district",
-//           "city",
-//           "name",
-//           "cmnd",
-//           "four_last_digits",
-//         ];
-//         for (let key in properties) {
-//           if (intent[properties[key]] !== null) {
-//             const slot = properties[key];
-
-//             switch (slot) {
-//               case "city":
-//               case "district":
-//                 frames.slot_values[slot] = intent[slot];
-//                 break;
-//               default:
-//                 if (
-//                   intentSamplePool[slot.toUpperCase()] === undefined ||
-//                   intent[slot] === -1
-//                 ) {
-//                   frames.slot_values[slot] = intent[slot];
-//                 } else {
-//                   if (
-//                     intentSamplePool[slot.toUpperCase()][intent[slot]] !==
-//                     undefined
-//                   ) {
-//                     // normally
-//                     frames.slot_values[slot] =
-//                       intentSamplePool[slot.toUpperCase()][intent[slot]].name;
-//                   } else {
-//                     // probably forgot that the intent file has been changed, need to recover the old version for this to be recorded correctly.
-//                     res
-//                       .status(500)
-//                       .send(
-//                         "You probably forgot that the intent file in the config folder has been changed, need to recover the old version for this to be recorded correctly."
-//                       );
-//                   }
-//                 }
-//             }
-//           }
-//         }
-
-//         conversation.turns.push(frames);
-//       });
-//     }
-//     result.push(conversation);
-//   });
-
-//   exportObject(
-//     `${path.join(process.cwd(), '..', destination, name + ".json")}`,
-//     result,
-//     () => {
-//       let formData = new FormData();
-//       formData.append("destination", destination);
-//       formData.append("name", name);
-//       formData.append(
-//         "file",
-//         fs.createReadStream(
-//           path.join(process.cwd(), '..', destination, name + ".json")
-//         )
-//       );
-
-//       axios({
-//         method: "POST",
-//         url: `https://asr.vbeecore.com/api/v1/uploads/file`,
-//         data: formData,
-//         headers: {
-//           "Content-Type": `multipart/form-data; boundary=${formData.getBoundary()}`,
-//           Authorization: `Bearer zyvZQGPrr6qdbHLTuzqpCmuBgW3TjTxGKEEIFCiy1lCAOzTBtrqPYdPdZ1AtMxU2`,
-//         },
-//         maxContentLength: "Infinity",
-//         maxBodyLength: "Infinity",
-//       })
-//         .then((response) => {
-//           res.status(200).send(response.data);
-//         })
-//         .catch((error) => res.status(500).send(error));
-//     }
-//   );
-// });
+          axios({
+            method: "POST",
+            url: `${config.UPLOAD_API}/api/v1/uploads/file`,
+            data: formData,
+            headers: {
+              "Content-Type": `multipart/form-data; boundary=${formData.getBoundary()}`,
+              Authorization: `Bearer ${config.UPLOAD_API_KEY}`,
+            },
+            maxContentLength: "Infinity",
+            maxBodyLength: "Infinity",
+          })
+            .then((response) => {
+              res.status(200).send(response.data);
+            })
+            .catch((error) => res.status(500).send(error));
+        }
+      );
+    })
+    .catch((err) => {
+      res
+        .status(500)
+        .send("Internal problem... Can't get User's information. Err:");
+      throw err;
+    });
+});
 
 router.get("/test", (req, res) => {
   res.status(200).send("ok");
