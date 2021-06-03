@@ -1,10 +1,13 @@
 const express = require("express");
 const router = express.Router();
 const { User } = require("../models/User");
+const config = require("./../config/key");
 // const { Chatroom } = require("../models/Chatroom");
-// const { Audio } = require("../models/Audio");
-// const axios = require("axios");
-// const fs = require("fs");
+const { Audio } = require("../models/Audio");
+const axios = require("axios");
+const fs = require("fs");
+const FormData = require("form-data");
+const path = require("path");
 // const intentSamplePool = require("./../config/intent");
 
 // count user
@@ -135,6 +138,55 @@ router.get("/user", (req, res) => {
 //     });
 // });
 
+router.get("/export-audio", async (req, res) => {
+  const { destination, name } = req.body;
+
+  if (!fs.existsSync(path.join(__dirname, "../..", destination))) {
+    fs.mkdirSync(path.join(__dirname, "../..", destination));
+  }
+
+  await Audio.find().populate("user").populate("intent")
+    .then(async (audioFound) => {
+      await exportObject(
+        `${path.join(__dirname, "../..", destination, name + ".json")}`,
+        audioFound,
+        () => {
+          let formData = new FormData();
+          formData.append("destination", destination);
+          formData.append("name", name);
+          formData.append(
+            "file",
+            fs.createReadStream(
+              path.join(__dirname, "../..", destination, name + ".json")
+            )
+          );
+
+          axios({
+            method: "POST",
+            url: `${config.UPLOAD_API}/api/v1/uploads/file`,
+            data: formData,
+            headers: {
+              "Content-Type": `multipart/form-data; boundary=${formData.getBoundary()}`,
+              Authorization: `Bearer ${config.UPLOAD_API_KEY}`,
+            },
+            maxContentLength: "Infinity",
+            maxBodyLength: "Infinity",
+          })
+            .then((response) => {
+              res.status(200).send(response.data);
+            })
+            .catch((error) => res.status(500).send(error));
+        }
+      );
+    })
+    .catch((err) => {
+      res
+        .status(500)
+        .send("Internal problem... Can't get User's information. Err:");
+      throw err;
+    });
+})
+
 // router.get("/export-user", async (req, res) => {
 //   const { destination, name } = req.body;
 
@@ -179,9 +231,6 @@ router.get("/user", (req, res) => {
 //       throw err;
 //     });
 // });
-
-// const FormData = require("form-data");
-// const path = require("path");
 
 // count main intent for rooms
 // router.get("/export-conversation", async (req, res) => {
@@ -312,18 +361,18 @@ router.get("/test", (req, res) => {
   res.status(200).send("ok");
 });
 
-// const exportObject = (destination, object, callback) => {
-//   console.log("Destination: ", destination);
-//   fs.writeFile(destination, JSON.stringify(object), (err) => {
-//     // return doesn't work...
-//     if (err) {
-//       console.log(err);
-//     }
-//     if (callback) {
-//       callback();
-//     }
-//   });
-// };
+const exportObject = (destination, object, callback) => {
+  console.log("Destination: ", destination);
+  fs.writeFile(destination, JSON.stringify(object), (err) => {
+    // return doesn't work...
+    if (err) {
+      console.log(err);
+    }
+    if (callback) {
+      callback();
+    }
+  });
+};
 
 // const flattenIntent = (currentIntent) => {
 //   const {
