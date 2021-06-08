@@ -6,11 +6,15 @@ const path = require('path');
 // create a random intent.
 router.get("/random", (req, res) => {
 
-  fs.readFile(path.join(process.cwd(), "server", "config", "intent.json"), (err, data) => {
+  fs.readFile(path.join(process.cwd(), "server", "config", "intent_v2.json"), (err, data) => {
     if (err) throw err;
     let intentList = JSON.parse(data);
     const intentIndex = getRandomFromArray(intentList);
-    res.status(200).send(intentList[intentIndex]);
+    const { intent, question } = intentList[intentIndex]
+    res.status(200).send({
+      intent,
+      description: question,
+    });
   });
 })
 
