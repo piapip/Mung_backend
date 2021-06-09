@@ -457,7 +457,7 @@
   },
   {
     "intent": "Khái niệm mô hình công dân số",
-    "question": "Công dân số là gì"
+    "question": "Công dân số là gì?"
   },
   {
     "intent": "Khái niệm xã hội số ",
@@ -481,15 +481,15 @@
   },
   {
     "intent": "Ngành nghề ảnh hưởng nhiều bởi chuyển đổi số",
-    "question": "Những ngành, nghề nào sẽ bị ảnh hưởng nhiều nhất bởi chuyển đổi số"
+    "question": "Những ngành, nghề nào sẽ bị ảnh hưởng nhiều nhất bởi chuyển đổi số?"
   },
   {
     "intent": "Nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số",
-    "question": "Những ngành, nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số"
+    "question": "Những ngành, nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số?"
   },
   {
     "intent": "Giải pháp gì để đào tạo kỹ năng số",
-    "question": "Bộ Thông tin và Truyền thông có giải pháp gì để đào tạo kỹ năng số cho người dân."
+    "question": "Bộ Thông tin và Truyền thông có giải pháp gì để đào tạo kỹ năng số cho người dân?"
   },
   {
     "intent": "Khái niệm đại học số",
@@ -521,7 +521,7 @@
   },
   {
     "intent": "Môi trường số nhân văn, rộng khắp",
-    "question": "Một trong những mục tiêu của Chương trình Chuyển đổi số quốc gia là tạo ra môi trường số nhân văn, rộng khắp. Mục tiêu này cần được hiểu như thế nào. "
+    "question": "Một trong những mục tiêu của Chương trình Chuyển đổi số quốc gia là tạo ra môi trường số nhân văn, rộng khắp. Mục tiêu này cần được hiểu như thế nào?"
   },
   {
     "intent": "Khái niệm hạ tầng số",
@@ -625,7 +625,7 @@
   },
   {
     "intent": "Nguồn kỹ năng bảo vệ bản thân trên không gian mạng",
-    "question": "Học các kỹ năng cần thiết để tự bảo vệ mình trên không gian mạng ở đâu:"
+    "question": "Học các kỹ năng cần thiết để tự bảo vệ mình trên không gian mạng ở đâu?"
   },
   {
     "intent": "Bảo vệ an toàn thông tin theo mô hình 4 lớp",
@@ -661,7 +661,7 @@
   },
   {
     "intent": "Khái niệm dữ liệu lớn",
-    "question": "Dữ liệu lớn là gì. "
+    "question": "Dữ liệu lớn là gì?"
   },
   {
     "intent": "Thời gian thuê dịch vụ công nghệ thông tin",
