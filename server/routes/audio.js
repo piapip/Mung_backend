@@ -5,6 +5,7 @@ const { User } = require("../models/User");
 const { Intent } = require("../models/Intent");
 const axios = require('axios');
 const config = require('./../config/key');
+const path = require('path');
 // const intentSamplePool = require("./../config/intent");
 
 const tmp = require("tmp");
@@ -37,34 +38,9 @@ router.post("/", (req, res) => {
   });
 })
 
-// router.put("/reset", (req, res) => {
-//   Audio.find({})
-//   .then(batchAudioFound => {
-//     let result = [];
-//     for (audio of batchAudioFound) {
-//       // if (audio.rejectBy === undefined) {
-//       //   console.log(audio)
-//       // }
-//       // if (audio.revertable || audio.rejectBy.length !== 0) {
-//       //   result.push(audio)
-//       // }
-//       if (audio.revertable || audio.rejectBy.length !== 0) {
-//         audio.revertable = false;
-//         audio.rejectBy = []
-//         audio.save()
-//         result.push(audio._id)
-//       }
-//     }
-
-//     res.status(200).send(result)
-//   })
-// })
-
 router.put("/transcript", (req, res) => {
   const { audioLink, audioID } = req.body;
   
-  // getTranscript(audioLink, audioID);
-  // getTranscriptWithGGAPI(audioLink, audioID);
   axios.get(`${config.TRANSCRIPT_API}/api/v1/stt?url=${audioLink}`, {
     headers: {
       Authorization: `Bearer ${config.TRANSCRIPT_API_KEY}`,
@@ -206,6 +182,26 @@ router.put("/:audioID/:userID", (req, res) => {
   })
 })
 
+const updateJSONCount = (target, targetFile, callback) => {
+  fs.readFile(targetFile, (err, data) => {
+    if (err) throw err;
+    let intentList = JSON.parse(data);
+    intentList.forEach(intent => {
+      if (!("count" in intent)) intent.count = 0;
+      if (intent.intent === target) intent.count++;
+    })
+    intentList.sort((x, y) => {
+      if (x.count < y.count) return -1;
+      else if (x.count > y.count) return 1;
+      else return 0;
+    });
+    let newJSON = JSON.stringify(intentList);
+    fs.writeFile(targetFile, newJSON, 'utf8', () => {
+      callback()
+    });
+  });
+}
+
 // Upload an audio for solo feature
 router.post("/solo", async (req, res) => {
   const { userID, link, duration } = req.body;
@@ -221,17 +217,19 @@ router.post("/solo", async (req, res) => {
     if (!audioCreated) {
       res.status(500).send({ success: false, error: "Can't save audio information to the db!"});
     } else {
-      User.findById(userID)
-      .then(userFound => {
-        if (!userFound) res.status(404).send("Can't find user!!!")
-        else {
-          userFound.soloCount++;
-          return userFound.save();
-        }
-      })
+      updateJSONCount(intent, path.join(process.cwd(), "server", "config", "intent_v2.json"), () => {
+        User.findById(userID)
+        .then(userFound => {
+          if (!userFound) res.status(404).send("Can't find user!!!")
+          else {
+            userFound.soloCount++;
+            return userFound.save();
+          }
+        })
         return res.status(200).send({
           audioID: audioCreated._id
-        });
+        });  
+      })
       }
     }
   );

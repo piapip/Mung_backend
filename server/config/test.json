@@ -1,5 +1,10 @@
 [
   {
+    "intent": "Khái niệm tin học hóa",
+    "question": "Tin học hóa là gì?",
+    "count": 0
+  },
+  {
     "intent": "Ứng dụng công nghệ thông tin",
     "question": "Ứng dụng công nghệ thông tin là gì?",
     "count": 0
@@ -12,6 +17,11 @@
   {
     "intent": "Chi tiết chuyển đổi số",
     "question": "Có thể nói rõ hơn về chuyển đổi số được không?",
+    "count": 0
+  },
+  {
+    "intent": "Lý do cần phải thực hiện chuyển đổi số",
+    "question": "Vì sao lại cần chuyển đổi số?",
     "count": 0
   },
   {
@@ -862,16 +872,6 @@
   {
     "intent": "Đổi tên Bộ Thông tin và Truyền thông",
     "question": "Có cần đổi tên Bộ Thông tin và Truyền thông không?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm tin học hóa",
-    "question": "Tin học hóa là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Lý do cần phải thực hiện chuyển đổi số",
-    "question": "Vì sao lại cần chuyển đổi số?",
     "count": 0
   }
 ]
