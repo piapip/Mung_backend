@@ -1,10 +1,5 @@
 [
   {
-    "intent": "Ứng dụng công nghệ thông tin",
-    "question": "Ứng dụng công nghệ thông tin là gì?",
-    "count": 0
-  },
-  {
     "intent": "Khái niệm chuyển đổi số",
     "question": "Chuyển đổi số là gì?",
     "count": 0
@@ -15,13 +10,13 @@
     "count": 0
   },
   {
-    "intent": "Người phụ trách thực hiện chuyển đổi số",
-    "question": "Chuyển đổi số là việc của ai?",
+    "intent": "Lý do cần phải thực hiện chuyển đổi số",
+    "question": "Vì sao lại cần chuyển đổi số?",
     "count": 0
   },
   {
-    "intent": "Cơ quan giải đáp thắc mắc chuyển đổi số",
-    "question": "Nếu có câu hỏi về chuyển đổi số thì hỏi ai?",
+    "intent": "Người phụ trách thực hiện chuyển đổi số",
+    "question": "Chuyển đổi số là việc của ai?",
     "count": 0
   },
   {
@@ -100,6 +95,11 @@
     "count": 0
   },
   {
+    "intent": "Công nghệ thúc đẩy chuyển đổi số",
+    "question": "Công nghệ tiêu biểu nào cho chuyển đổi số?",
+    "count": 0
+  },
+  {
     "intent": "Các lĩnh vực ưu tiên trong chuyển đổi số",
     "question": "Các lĩnh vực nào được ưu tiên chuyển đổi số?",
     "count": 0
@@ -140,8 +140,23 @@
     "count": 0
   },
   {
+    "intent": "Cách mạng công nghiệp lần thứ 4",
+    "question": "Cách mạng công nghiệp lần thứ tư là gì?",
+    "count": 0
+  },
+  {
     "intent": "Khái niệm số hóa",
     "question": "Số hóa là gì?",
+    "count": 0
+  },
+  {
+    "intent": "Khái niệm tin học hóa",
+    "question": "Tin học hóa là gì?",
+    "count": 0
+  },
+  {
+    "intent": "Ứng dụng công nghệ thông tin",
+    "question": "Ứng dụng công nghệ thông tin là gì?",
     "count": 0
   },
   {
@@ -221,12 +236,17 @@
   },
   {
     "intent": "Sự khác nhau giữ kiến trúc và khung kiến trúc",
-    "question": "Kiến trúc là gì, khung kiến trúc là gì?",
+    "question": "Kiến trúc và khung kiến trúc chính phủ điện tử khác nhau thế nào?",
     "count": 0
   },
   {
     "intent": "Khái niệm chính phủ điện tử",
     "question": "Chính phủ điện tử là gì?",
+    "count": 0
+  },
+  {
+    "intent": "Khái niệm Chính phủ số",
+    "question": "Chính phủ số là gì?",
     "count": 0
   },
   {
@@ -246,7 +266,12 @@
   },
   {
     "intent": "Lý do phải phát triển chính phủ số",
-    "question": "Tại sao phải phát triển chính phủ số? ",
+    "question": "Tại sao phải phát triển chính phủ số?",
+    "count": 0
+  },
+  {
+    "intent": "Quốc gia phát triển Chính phủ số thành công",
+    "question": "Quốc gia nào thành công trong phát triển chính phủ số?",
     "count": 0
   },
   {
@@ -276,7 +301,7 @@
   },
   {
     "intent": "Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương",
-    "question": "Ai là Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương? ",
+    "question": "Ai là Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương?",
     "count": 0
   },
   {
@@ -415,6 +440,21 @@
     "count": 0
   },
   {
+    "intent": "Phân loại cơ sở dữ liệu trong cơ quan nhà nước",
+    "question": "Cơ sở dữ liệu trong cơ quan nhà nước bao gồm những loại nào?",
+    "count": 0
+  },
+  {
+    "intent": "Khái niệm dữ liệu mở",
+    "question": "Dữ liệu mở của cơ quan nhà nước là gì?",
+    "count": 0
+  },
+  {
+    "intent": "Nơi truy cập dữ liệu mở",
+    "question": "Truy cập dữ liệu mở quốc gia ở đâu?",
+    "count": 0
+  },
+  {
     "intent": "Mã định danh điện tử cơ quan, tổ chức",
     "question": "Mã định danh điện tử cơ quan, tổ chức là gì?",
     "count": 0
@@ -437,6 +477,26 @@
   {
     "intent": "Đánh mã định danh điện tử cơ quan Đảng",
     "question": "Ủy ban nhân dân cấp tỉnh có thể đánh mã định danh cho cơ quan Đảng tại địa phương mình được không?",
+    "count": 0
+  },
+  {
+    "intent": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia",
+    "question": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia là gì?",
+    "count": 0
+  },
+  {
+    "intent": "NGSP",
+    "question": "NGSP là gì?",
+    "count": 0
+  },
+  {
+    "intent": "Nền tảng tích hợp, chia sẻ dữ liệu cấp Bộ, ngành, địa phương",
+    "question": "Nền tảng tích hợp, chia sẻ dữ liệu cấp Bộ, ngành, địa phương là gì?",
+    "count": 0
+  },
+  {
+    "intent": "LGSP",
+    "question": "LGSP là gì?",
     "count": 0
   },
   {
@@ -480,7 +540,7 @@
     "count": 0
   },
   {
-    "intent": "Giá trị kinh tế số ",
+    "intent": "Giá trị kinh tế số",
     "question": "Giá trị kinh tế số của Việt Nam năm 2020 là bao nhiêu?",
     "count": 0
   },
@@ -565,7 +625,7 @@
     "count": 0
   },
   {
-    "intent": "Khái niệm xã hội số ",
+    "intent": "Khái niệm xã hội số",
     "question": "Xã hội số là gì?",
     "count": 0
   },
@@ -610,7 +670,7 @@
     "count": 0
   },
   {
-    "intent": "Vấn đề thâm hụt nhân lực kỹ thuật ",
+    "intent": "Vấn đề thâm hụt nhân lực kỹ thuật",
     "question": "Giải quyết vấn đề thiếu hụt nhân lực kỹ thuật thực hiện chuyển đổi số thế nào?",
     "count": 0
   },
@@ -645,6 +705,11 @@
     "count": 0
   },
   {
+    "intent": "Khái niệm khoảng cách số",
+    "question": "Khoảng cách số là gì?",
+    "count": 0
+  },
+  {
     "intent": "Khái niệm hạ tầng số",
     "question": "Hạ tầng số là gì?",
     "count": 0
@@ -672,6 +737,26 @@
   {
     "intent": "Tỷ lệ cơ quan nhà nước kết nối Mạng truyền số liệu chuyên dùng",
     "question": "Tỷ lệ cơ quan nhà nước từ trung ương tới cấp huyện kết nối vào Mạng truyền số liệu chuyên dùng của các cơ quan Đảng, Nhà nước hiện nay?",
+    "count": 0
+  },
+  {
+    "intent": "Vấn đề cạt kiệt không gian địa chỉ",
+    "question": "Vấn đề cạn kiệt không gian địa chỉ là gì?",
+    "count": 0
+  },
+  {
+    "intent": "Hiện trạng chuyển đổi IPv6",
+    "question": "Hiện trạng chuyển đổi sang IPv6 của Việt Nam thế nào?",
+    "count": 0
+  },
+  {
+    "intent": "Chương trình IPv6 for Gov",
+    "question": "Chương trình IPv6 for Gov là gì?",
+    "count": 0
+  },
+  {
+    "intent": "Mạng IPv6 thuần",
+    "question": "Mạng IPv6 thuần là gì?",
     "count": 0
   },
   {
@@ -741,11 +826,11 @@
   },
   {
     "intent": "Luật An ninh mạng và Quyền tư do ngôn luận",
-    "question": " Luật An ninh mạng có ngăn cản, xâm phạm quyền tự do ngôn luận hay không?",
+    "question": "Luật An ninh mạng có ngăn cản, xâm phạm quyền tự do ngôn luận hay không?",
     "count": 0
   },
   {
-    "intent": "Lực lượng bảo vệ an ninh mạng ",
+    "intent": "Lực lượng bảo vệ an ninh mạng",
     "question": "Lực lượng bảo vệ an ninh mạng bao gồm những lực lượng nào?",
     "count": 0
   },
@@ -757,6 +842,26 @@
   {
     "intent": "Cải thiện độ tin cậy trên không gian mạng",
     "question": "Làm sao để cải thiện niềm tin và mức độ tin cậy trong các giao dịch trên không gian mạng?",
+    "count": 0
+  },
+  {
+    "intent": "Danh tính số",
+    "question": "Danh tính số là gì?",
+    "count": 0
+  },
+  {
+    "intent": "Đăng ký sử dụng danh tính số",
+    "question": "Làm thế nào để đăng ký sử dụng danh tính số?",
+    "count": 0
+  },
+  {
+    "intent": "Ký số từ xa",
+    "question": "Ký số từ xa là gì?",
+    "count": 0
+  },
+  {
+    "intent": "Quốc gia có tỷ lệ phổ cập danh tính số lớn nhất",
+    "question": "Hiện nay trên thế giới, những quốc gia nào đang có tỉ lệ phổ cập danh tính số cao nhất?",
     "count": 0
   },
   {
@@ -830,6 +935,11 @@
     "count": 0
   },
   {
+    "intent": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin",
+    "question": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin là gì?",
+    "count": 0
+  },
+  {
     "intent": "Thời điểm thành lập Bộ Thông tin và Truyền thông",
     "question": "Bộ Thông tin và Truyền thông được thành lập khi nào?",
     "count": 0
@@ -865,13 +975,8 @@
     "count": 0
   },
   {
-    "intent": "Khái niệm tin học hóa",
-    "question": "Tin học hóa là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Lý do cần phải thực hiện chuyển đổi số",
-    "question": "Vì sao lại cần chuyển đổi số?",
-    "count": 0
+    "intent": "Cơ quan giải đáp thắc mắc chuyển đổi số",
+    "question": "Nếu có câu hỏi về chuyển đổi số thì hỏi ai?",
+    "count": 1
   }
 ]
