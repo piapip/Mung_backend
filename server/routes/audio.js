@@ -3,6 +3,7 @@ const router = express.Router();
 const { Audio } = require("../models/Audio");
 const { User } = require("../models/User");
 const { Intent } = require("../models/Intent");
+const { IntentRecord } = require("../models/IntentRecord");
 const axios = require('axios');
 const config = require('./../config/key');
 const path = require('path');
@@ -182,24 +183,23 @@ router.put("/:audioID/:userID", (req, res) => {
   })
 })
 
-const updateJSONCount = (target, targetFile, callback) => {
-  fs.readFile(targetFile, (err, data) => {
-    if (err) throw err;
-    let intentList = JSON.parse(data);
-    intentList.forEach(intent => {
-      if (!("count" in intent)) intent.count = 0;
-      if (intent.intent === target) intent.count++;
-    })
-    intentList.sort((x, y) => {
-      if (x.count < y.count) return -1;
-      else if (x.count > y.count) return 1;
-      else return 0;
-    });
-    let newJSON = JSON.stringify(intentList);
-    fs.writeFile(targetFile, newJSON, 'utf8', () => {
-      callback()
-    });
-  });
+const updateJSONCount = (target, callback400, callback500, callback200) => {
+  IntentRecord.find({intent: target})
+  .then(intentFound => {
+    if (!intentFound) {
+      callback400();
+    }
+    else {
+      intentFound[0].count++;
+      intentFound[0].save();
+      callback200();
+    }
+  })
+  .catch(error => {
+    if (error) {
+      callback500();
+    }
+  })
 }
 
 // Upload an audio for solo feature
@@ -217,7 +217,11 @@ router.post("/solo", async (req, res) => {
     if (!audioCreated) {
       res.status(500).send({ success: false, error: "Can't save audio information to the db!"});
     } else {
-      updateJSONCount(intent, path.join(process.cwd(), "server", "config", "intent_v2.json"), () => {
+      updateJSONCount(intent, () => {
+        res.status(404).send("Can't find intent");
+      }, () => {
+        res.status(500).send("Internal problem :<");
+      }, () => {
         User.findById(userID)
         .then(userFound => {
           if (!userFound) res.status(404).send("Can't find user!!!")
@@ -228,11 +232,10 @@ router.post("/solo", async (req, res) => {
         })
         return res.status(200).send({
           audioID: audioCreated._id
-        });  
-      })
-      }
+        });
+      });
     }
-  );
+  });
 })
 
 router.post("/trash", async (req, res) => {
@@ -254,6 +257,7 @@ router.post("/accept", (req, res) => {
   const { audioID, transcript, userID } = req.body;
   // console.log("Accepting... ", audioID)
   Audio.findById(audioID)
+  .populate("intent")
   .then((audioFound) => {
     if (!audioFound) {
       res.status(404).send({ status: 0 })
@@ -264,6 +268,13 @@ router.post("/accept", (req, res) => {
       .then(userFound => {
         if (!userFound) res.status(404).send({ status: 0 })
         else {
+          if (audioFound.rejectBy.length !== 0 && !audioFound.revertable) {
+            IntentRecord.find({intent: audioFound.intent.intent})
+            .then(intentFound => {
+              intentFound[0].count++;
+              intentFound[0].save();
+            })
+          }
           audioFound.revertable = true;
           if (audioFound.transcript !== transcript) {
             audioFound.transcript = transcript;
@@ -283,6 +294,7 @@ router.post("/reject", (req, res) => {
   const { audioID, transcript, userID } = req.body;
   // console.log("Rejecting... ", audioID)
   Audio.findById(audioID)
+  .populate("intent")
   .then((audioFound) => {
     if (!audioFound) {
       res.status(404).send({ status: 0 })
@@ -293,17 +305,24 @@ router.post("/reject", (req, res) => {
       .then(userFound => {
         if (!userFound) res.status(404).send({ status: 0 })
         else {
+          if (audioFound.rejectBy.length === 0 || (audioFound.rejectBy.length !== 0 && audioFound.revertable)) {
+            IntentRecord.find({intent: audioFound.intent.intent})
+            .then(intentFound => {
+              intentFound[0].count--;
+              intentFound[0].save();
+            })
+          }
           if (!audioFound.rejectBy.includes(userID)) {
             audioFound.rejectBy.push(userID);
-            audioFound.revertable = false;
-            if (audioFound.transcript !== transcript) {
-              audioFound.transcript = transcript;
-              audioFound.fixBy = userID;
-            }
-            audioFound.save();
             userFound.verifyCount++;
             userFound.save();
           }
+          if (audioFound.transcript !== transcript) {
+            audioFound.transcript = transcript;
+            audioFound.fixBy = userID;
+          }
+          audioFound.revertable = false;
+          audioFound.save();
           return res.status(200).send({ status: 1 });
         }
       })

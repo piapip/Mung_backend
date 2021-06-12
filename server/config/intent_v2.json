@@ -1,982 +1,778 @@
 [
   {
     "intent": "Khái niệm chuyển đổi số",
-    "question": "Chuyển đổi số là gì?",
-    "count": 0
+    "question": "Chuyển đổi số là gì?"
   },
   {
     "intent": "Chi tiết chuyển đổi số",
-    "question": "Có thể nói rõ hơn về chuyển đổi số được không?",
-    "count": 0
+    "question": "Có thể nói rõ hơn về chuyển đổi số được không?"
   },
   {
     "intent": "Lý do cần phải thực hiện chuyển đổi số",
-    "question": "Vì sao lại cần chuyển đổi số?",
-    "count": 0
+    "question": "Vì sao lại cần chuyển đổi số?"
   },
   {
     "intent": "Người phụ trách thực hiện chuyển đổi số",
-    "question": "Chuyển đổi số là việc của ai?",
-    "count": 0
-  },
-  {
-    "intent": "Thời điểm xuất hiện chuyển đổi số",
-    "question": "Khái niệm chuyển đổi số bắt đầu từ khi nào?",
-    "count": 0
-  },
-  {
-    "intent": "Cách chuyển đổi số",
-    "question": "Chuyển đổi số như thế nào cho đúng?",
-    "count": 0
-  },
-  {
-    "intent": "Thời gian thực hiện chuyển đổi số",
-    "question": "Chuyển đổi số kéo dài bao lâu?",
-    "count": 0
-  },
-  {
-    "intent": "Thách thức của chuyển đổi số",
-    "question": "Khó khăn, thách thức lớn nhất của chuyển đổi số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Chương trình quốc gia về chuyển đổi số",
-    "question": "Việt Nam có Chương trình quốc gia về chuyển đổi số chưa?",
-    "count": 0
-  },
-  {
-    "intent": "Cơ quan chủ trì chương trình chuyển đổi số",
-    "question": "Ai được giao chủ trì điều phối triển khai Chương trình Chuyển đổi số quốc gia?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm chuyển đổi số cấp địa phương",
-    "question": "Ở cấp độ địa phương, chuyển đổi số được hiểu như thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Tầm quan trọng của việc ban hành nghị quyết chuyên đề về Chuyển đổi số trước khi triển khai ở địa phương",
-    "question": "Tại sao trước khi chuyển đổi số ở địa phương, việc Tỉnh ủy ban hành Nghị quyết chuyên đề về chuyển đổi số là quan trọng?",
-    "count": 0
-  },
-  {
-    "intent": "Vai trò quyết định trong chuyển đổi số",
-    "question": "Vai trò quyết định trong chuyển đổi số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Đối tượng trung tâm của chuyển đổi số",
-    "question": "Trung tâm của chuyển đổi số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm chuyển đổi số lấy người dân làm trung tâm",
-    "question": "Thế nào là chuyển đổi số lấy người dân là trung tâm?",
-    "count": 0
-  },
-  {
-    "intent": "Giải pháp thúc đẩy chuyển đổi số",
-    "question": "Giải pháp đột phá để thúc đẩy chuyển đổi số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Động lực của chuyển đổi số",
-    "question": "Động lực của  chuyển đổi số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Vấn đề then chốt trong chuyển đổi số",
-    "question": "Vấn đề then chốt trong  chuyển đổi số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Yếu tố đảm bảo thành công của chuyển đổi số",
-    "question": "Yếu tố đảm bảo thành công của chuyển đổi số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Công nghệ thúc đẩy chuyển đổi số",
-    "question": "Công nghệ tiêu biểu nào cho chuyển đổi số?",
-    "count": 0
-  },
-  {
-    "intent": "Các lĩnh vực ưu tiên trong chuyển đổi số",
-    "question": "Các lĩnh vực nào được ưu tiên chuyển đổi số?",
-    "count": 0
-  },
-  {
-    "intent": "Lợi thế khi thực hiện chuyển đổi số",
-    "question": "Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Ngày Chuyển đổi số Quốc gia",
-    "question": "Việt Nam đã có ngày chuyển đổi số quốc gia chưa?",
-    "count": 0
-  },
-  {
-    "intent": "Cập nhật lại cẩm nang chuyển đổi số",
-    "question": "Sau gần 1 năm triển khai Chương trình Chuyển đổi số quốc gia, Bộ Thông tin đã có kế hoạch cập nhật lại Cẩm nang chuyển đổi số không?",
-    "count": 0
-  },
-  {
-    "intent": "Hướng chuyển đổi số của doanh nghiệp nhỏ và vừa",
-    "question": "Doanh nghiệp nhỏ và vừa chuyển đổi số theo hướng nào?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm chuyển đổi số cơ quan nhà nước",
-    "question": "Chuyển đổi số cơ quan nhà nước là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Quy định về chia sẻ dữ liệu trong cơ quan nhà nước",
-    "question": "Có quy định nào về chia sẻ dữ liệu trong cơ quan nhà nước?",
-    "count": 0
-  },
-  {
-    "intent": "Xây dựng chiến lược chuyển đổi số",
-    "question": "Xây dựng chiến lược chuyển đổi số như thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Cách mạng công nghiệp lần thứ 4",
-    "question": "Cách mạng công nghiệp lần thứ tư là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm số hóa",
-    "question": "Số hóa là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm tin học hóa",
-    "question": "Tin học hóa là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Ứng dụng công nghệ thông tin",
-    "question": "Ứng dụng công nghệ thông tin là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Thời điểm bắt đầu ứng dụng công nghệ thông tin",
-    "question": "Ứng dụng công nghệ thông tin bắt đầu từ khi nào?",
-    "count": 0
-  },
-  {
-    "intent": "Sự khác nhau giữa chuyển đổi số và ứng dụng công nghệ thông tin",
-    "question": "Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Sự khác nhau giữa tin học hóa và ứng dụng công nghệ thông tin",
-    "question": "Tin học hóa và ứng dụng công nghệ thông tin khác nhau như thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Chi phí cho chuyển đổi số",
-    "question": "Nhà nước chi cho chuyển đổi số bao nhiêu thì phù hợp?",
-    "count": 0
-  },
-  {
-    "intent": "Đánh giá hiệu quả của các khoản chi cho chuyển đổi số",
-    "question": "Có cách nào để biết chi cho chuyển đổi số có hiệu quả hay không?",
-    "count": 0
-  },
-  {
-    "intent": "Động lực của chuyển đổi số",
-    "question": "Tại sao nói thể chế và công nghệ là động lực của chuyển đổi số?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm chuyên gia",
-    "question": "Chuyên gia là ai?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm chuyên gia công nghệ số",
-    "question": "Chuyên gia công nghệ số là ai?",
-    "count": 0
-  },
-  {
-    "intent": "Thời điểm thuê chuyên gia tư vấn",
-    "question": "Khi nào thì thuê chuyên gia tư vấn?",
-    "count": 0
-  },
-  {
-    "intent": "Thành viên tham gia chuyển đổi số",
-    "question": "Trong một tổ chức, ai sẽ tham gia chuyển đổi số?",
-    "count": 0
-  },
-  {
-    "intent": "Nền tảng chuyển đổi số quốc gia",
-    "question": "Nền tảng chuyển đổi số quốc gia là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm học máy",
-    "question": "Học máy là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm trợ lý ảo",
-    "question": "Trợ lý ảo là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Cách theo dõi và đánh giá quá trình chuyển đổi số quốc gia",
-    "question": "Theo dõi và đánh giá quá trình chuyển đổi số thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm nền tảng số",
-    "question": "Nền tảng số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Sự khác nhau giữ kiến trúc và khung kiến trúc",
-    "question": "Kiến trúc và khung kiến trúc chính phủ điện tử khác nhau thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm chính phủ điện tử",
-    "question": "Chính phủ điện tử là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm Chính phủ số",
-    "question": "Chính phủ số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Sự khác nhau giữa chính phủ điện tử và chính phủ số",
-    "question": "Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Trọng tâm chiến lược của Chính phủ số",
-    "question": "Trọng tâm của Chiến lược Chính phủ số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Mối quan hệ giữa đô thị thông minh và chính quyền số",
-    "question": "Mối quan hệ giữa đô thị thông minh và chính quyền số?",
-    "count": 0
-  },
-  {
-    "intent": "Lý do phải phát triển chính phủ số",
-    "question": "Tại sao phải phát triển chính phủ số?",
-    "count": 0
-  },
-  {
-    "intent": "Quốc gia phát triển Chính phủ số thành công",
-    "question": "Quốc gia nào thành công trong phát triển chính phủ số?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm chính quyền số",
-    "question": "Chính quyền số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Xếp hạng Chính phủ điện tử",
-    "question": "Xếp hạng Chính phủ điện tử của Việt Nam theo đánh giá của Liên Hợp Quốc thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Đơn vị xếp hạng chính phủ điện tử",
-    "question": "Đơn vị vào của Bộ Thông tin và Truyền thông được giao đầu mối xếp hạng Chính phủ điện tử do Liên Hợp Quốc đánh giá, xếp hạng?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm đám mây Chính phủ",
-    "question": "Đám mây Chính phủ là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Chủ tịch Ủy ban Quốc gia về Chính phủ điện tử",
-    "question": "Ai là Chủ tịch Ủy ban Quốc gia về Chính phủ điện tử?",
-    "count": 0
-  },
-  {
-    "intent": "Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương",
-    "question": "Ai là Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương?",
-    "count": 0
-  },
-  {
-    "intent": "Cơ quan thường trực của Tổ công tác giúp việc Ủy ban Quốc gia về Chính phủ điện tử",
-    "question": "Cơ quan nào làm nhiệm vụ thường trực của Tổ công tác giúp việc Ủy ban Quốc gia về Chính phủ điện tử?",
-    "count": 0
-  },
-  {
-    "intent": "Kiện toàn lại Ủy ban Quốc gia về Chính phủ điện tử",
-    "question": "Có nên kiện toàn lại Ủy ban Quốc gia về Chính phủ điện tử cho phù hợp với tình hình phát triển?",
-    "count": 0
-  },
-  {
-    "intent": "Mục tiêu hoàn thành chuyển đổi số",
-    "question": "Trong năm 2021, mục tiêu trọng tâm để kết thúc giai đoạn phát triển chính phủ và hướng tới giai đoạn phát triển chính phủ số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm Chính phủ 04 không",
-    "question": "Nói Chính phủ 04 không là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Kiến trúc chính phủ điện tử 2.0",
-    "question": "Xây dựng Kiến trúc Chính phủ điện tử 2.0 theo hướng tập trung hay phân tán?",
-    "count": 0
-  },
-  {
-    "intent": "Chi phí tiếp cận công nghệ số",
-    "question": "Công nghệ số có thể rẻ như điện nước để cho doanh nghiệp nào, người dân nào cũng có thể tiếp cận được không?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm số định danh cá nhân",
-    "question": "Số định danh cá nhân là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm trung tâm điều hành thông minh",
-    "question": "Trung tâm điều hành thông minh là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm trung tâm giám sát Chính phủ điện tử",
-    "question": "Trung tâm giám sát Chính phủ điện tử là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Thời gian ban hành khung tham chiếu ICT phát triển đô thị thông minh phiên bản 1.0",
-    "question": "Khung tham chiếu ICT phát triển đô thị thông minh phiên bản 1.0 được ban hành ngày tháng năm nào?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm dịch vụ công trực tuyến",
-    "question": "Dịch vụ công trực tuyến là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 1",
-    "question": "Dịch vụ công trực tuyến mức độ 1 là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 2",
-    "question": "Dịch vụ công trực tuyến mức độ 2 là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 3",
-    "question": "Dịch vụ công trực tuyến mức độ 3 là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 4",
-    "question": "Dịch vụ công trực tuyến mức độ 4 là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Yêu cầu xác thực người dùng",
-    "question": "Yêu cầu xác thực người dùng đối với các dịch vụ công trực tuyến như thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Tỷ lệ dịch vụ công trực tuyến có phát sinh hồ sơ",
-    "question": "Tỷ lệ dịch vụ công trực tuyến có phát sinh hồ sơ là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Tỷ lệ dịch vụ công trực tuyến mức độ 4",
-    "question": "Năm 2020, tỷ lệ dịch vụ công trực tuyến thực hiện ở mức độ 4 trung bình cả nước đạt bao nhiêu phần trăm?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm dịch vụ hành chính công",
-    "question": "Dịch vụ hành chính công là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Cổng dịch vụ công cấp bộ, cấp tỉnh",
-    "question": "Cổng dịch vụ công cấp bộ, cấp tỉnh là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Hệ thống thông tin một cửa điện tử cấp bộ hoặc cấp tỉnh",
-    "question": "Hệ thống thông tin một cửa điện tử cấp bộ hoặc cấp tỉnh là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Linh hoạt chỉnh sửa quy trình lưu chuyển, xử lý thủ tục hành chính trên hệ thống thông tin một cửa",
-    "question": "Các chu trình lưu chuyển, xử lý thủ tục hành chính trên hệ thống thông tin một cửa điện tử cấp bộ, cấp tỉnh có thể chỉnh sửa linh hoạt để phù hợp với quy định của thủ tục hành chính không?",
-    "count": 0
-  },
-  {
-    "intent": "Cơ quan chủ quản cổng thông tin điện tử",
-    "question": "Cơ quan chủ quản cổng thông tin điện tử là tổ chức nào?",
-    "count": 0
-  },
-  {
-    "intent": "Cơ quan cung cấp dịch vụ công trực tuyến",
-    "question": "Cơ quan cung cấp dịch vụ công trực tuyến được hiểu như thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Cổng dịch vụ công quốc gia",
-    "question": "Cổng dịch vụ công quốc gia là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Chức năng cổng dịch vụ công quốc gia",
-    "question": "Cổng dịch vụ công có chức năng tiếp nhận hồ sơ nộp trực tiếp tại bộ phận một cửa các cấp không?",
-    "count": 0
-  },
-  {
-    "intent": "Cơ sở dữ liệu quốc gia được ưu tiên",
-    "question": "Hiện nay, những cơ sở dữ liệu quốc gia nào được ưu tiên phát triển?",
-    "count": 0
-  },
-  {
-    "intent": "Phân loại cơ sở dữ liệu trong cơ quan nhà nước",
-    "question": "Cơ sở dữ liệu trong cơ quan nhà nước bao gồm những loại nào?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm dữ liệu mở",
-    "question": "Dữ liệu mở của cơ quan nhà nước là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Nơi truy cập dữ liệu mở",
-    "question": "Truy cập dữ liệu mở quốc gia ở đâu?",
-    "count": 0
-  },
-  {
-    "intent": "Mã định danh điện tử cơ quan, tổ chức",
-    "question": "Mã định danh điện tử cơ quan, tổ chức là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Nhu cầu mã định danh điện tử",
-    "question": "Các cơ quan, tổ chức nào có cần có mã định danh điện tử?",
-    "count": 0
-  },
-  {
-    "intent": "Cấu trúc mã định danh điện tử",
-    "question": "Mã định danh điện tử của các bộ, ngành, địa phương có cấu trúc như thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Đánh mã định danh điện tử",
-    "question": "Cơ quan, tổ chức cấp 1 có thể đánh mã định danh điện tử cho các cơ quan, đơn vị của mình đến cấp mấy?",
-    "count": 0
-  },
-  {
-    "intent": "Đánh mã định danh điện tử cơ quan Đảng",
-    "question": "Ủy ban nhân dân cấp tỉnh có thể đánh mã định danh cho cơ quan Đảng tại địa phương mình được không?",
-    "count": 0
-  },
-  {
-    "intent": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia",
-    "question": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia là gì?",
-    "count": 0
-  },
-  {
-    "intent": "NGSP",
-    "question": "NGSP là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Nền tảng tích hợp, chia sẻ dữ liệu cấp Bộ, ngành, địa phương",
-    "question": "Nền tảng tích hợp, chia sẻ dữ liệu cấp Bộ, ngành, địa phương là gì?",
-    "count": 0
-  },
-  {
-    "intent": "LGSP",
-    "question": "LGSP là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Các nền tảng đã kết nối cơ sở dữ liệu quốc gia",
-    "question": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia đã kết nối với những cơ sở dữ liệu quốc gia nào?",
-    "count": 0
-  },
-  {
-    "intent": "Cách kết nối nền tảng tích hợp, chia sẻ dữ liệu quốc gia",
-    "question": "Để kết nối với Nền tảng tích hợp, chia sẻ dữ liệu quốc gia thì làm như thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm nền kinh tế số",
-    "question": "Nền kinh tế số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niện nền kinh tế nền tảng",
-    "question": "Nền kinh tế nền tảng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Vai trò của nền kinh tế số",
-    "question": "Vai trò của kinh tế số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Thời điểm xuất hiện kinh tế số",
-    "question": "Ở Việt Nam kinh tế số xuất hiện khi nào?",
-    "count": 0
-  },
-  {
-    "intent": "Cách thúc đẩy nền kinh tế số",
-    "question": "Làm thế nào để thúc đẩy nền kinh tế số?",
-    "count": 0
-  },
-  {
-    "intent": "Cách đo lường kinh tế số",
-    "question": "Đo lường kinh tế số thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Giá trị kinh tế số",
-    "question": "Giá trị kinh tế số của Việt Nam năm 2020 là bao nhiêu?",
-    "count": 0
-  },
-  {
-    "intent": "Kinh tế số của Việt Nam so với quốc tế",
-    "question": "Kinh tế số của Việt Nam so với quốc tế thì thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Mục tiêu chương trình chuyển đổi số quốc gia",
-    "question": "Chương trình Chuyển đổi số quốc gia đặt mục tiêu kinh tế số Việt Nam vào năm 2025 là bao nhiêu?",
-    "count": 0
-  },
-  {
-    "intent": "Lý do doanh nghiệp cần chuyển đổi số",
-    "question": "Doanh nghiệp vì sao cần chuyển đổi số?",
-    "count": 0
-  },
-  {
-    "intent": "Chi phí để doanh nghiệp thực hiện chuyển đổi số",
-    "question": "Chi phí 1 doanh nghiệp nhỏ và vừa cần để thực hiện chuyển đổi số?",
-    "count": 0
-  },
-  {
-    "intent": "Cách đo lường mức độ chuyển đổi số của các doanh nghiệp",
-    "question": "Đo lường mức độ chuyển đổi số của các doanh nghiệp thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Hỗ trợ doanh nghiệp chuyển đổi số",
-    "question": "Bộ Thông tin và Truyền thông hỗ trợ các doanh nghiệp nhỏ và vừa chuyển đổi số thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm doanh nghiệp công nghệ số",
-    "question": "Doanh nghiệp công nghệ số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Loại hình doanh nghiệp công nghệ số",
-    "question": "Có các loại hình doanh nghiệp công nghệ số nào?",
-    "count": 0
-  },
-  {
-    "intent": "Thông tin về các doanh nghiệp công nghệ số",
-    "question": "Làm thế nào để biết được thông tin về các doanh nghiệp công nghệ số và các sản phẩm, dịch vụ cung cấp bởi các doanh nghiệp công nghệ số.",
-    "count": 0
-  },
-  {
-    "intent": "Số lượng doanh nghiệp công nghệ số",
-    "question": "Để thực hiện chuyển đổi số quốc gia, Việt Nam cần bao nhiêu doanh nghiệp công nghệ số?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm doanh nghiệp kỳ lân",
-    "question": "Doanh nghiệp Kỳ lân (Unicorn) là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Số lượng doanh nghiệp kỳ lân",
-    "question": "Việt Nam hiện nay đã có bao nhiêu doanh nghiệp Kỳ lân?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm Make in Việt Nam",
-    "question": "Make in Việt Nam là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm mô hình sandbox",
-    "question": "Mô hình sandbox là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm mobile money",
-    "question": "Mobile money là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm mô hình công dân số",
-    "question": "Công dân số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm xã hội số",
-    "question": "Xã hội số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm văn hóa số",
-    "question": "Văn hóa số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Tác động của chuyển đổi số",
-    "question": "Chuyển đổi số có tạo ra thất nghiệp không?",
-    "count": 0
-  },
-  {
-    "intent": "Đào tạo lại kỹ năng số",
-    "question": "Đào tạo lại kỹ năng số (re-skill) là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Đào tạo nâng cấp kỹ năng số",
-    "question": "Đào tạo nâng cấp kỹ năng số (up-skill) là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Ngành nghề ảnh hưởng nhiều bởi chuyển đổi số",
-    "question": "Những ngành, nghề nào sẽ bị ảnh hưởng nhiều nhất bởi chuyển đổi số?",
-    "count": 0
-  },
-  {
-    "intent": "Nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số",
-    "question": "Những ngành, nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số?",
-    "count": 0
-  },
-  {
-    "intent": "Giải pháp gì để đào tạo kỹ năng số",
-    "question": "Bộ Thông tin và Truyền thông có giải pháp gì để đào tạo kỹ năng số cho người dân?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm đại học số",
-    "question": "Đại học số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Vấn đề thâm hụt nhân lực kỹ thuật",
-    "question": "Giải quyết vấn đề thiếu hụt nhân lực kỹ thuật thực hiện chuyển đổi số thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm khoa học dữ liệu",
-    "question": "Khoa học dữ liệu là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Phổ cập điện thoại thông minh",
-    "question": "Làm sao để phổ cập điện thoại thông minh?",
-    "count": 0
-  },
-  {
-    "intent": "Hành động của người dân trong xu thế chuyển đổi số",
-    "question": "Người dân phải làm gì trong xu thế chuyển đổi số?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm khoảng cách số",
-    "question": "Khoảng cách số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Tách động của chuyển đổi số đến khoảng cách giàu nghèo",
-    "question": "Chuyển đổi số có làm giảm khoảng cách giàu nghèo trong xã hội không?",
-    "count": 0
-  },
-  {
-    "intent": "Môi trường số nhân văn, rộng khắp",
-    "question": "Một trong những mục tiêu của Chương trình Chuyển đổi số quốc gia là tạo ra môi trường số nhân văn, rộng khắp. Mục tiêu này cần được hiểu như thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm khoảng cách số",
-    "question": "Khoảng cách số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm hạ tầng số",
-    "question": "Hạ tầng số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Doanh nghiệp được cấp phép thử nghiệm cung cấp dịch vụ 5G",
-    "question": "Doanh nghiệp nào đã được cấp phép thử nghiệm cung cấp dịch vụ 5G?",
-    "count": 0
-  },
-  {
-    "intent": "Doanh nghiệp đáp ứng về điện toán đám mây",
-    "question": "Hiện nay, đã có những doanh nghiệp Việt Nam nào đáp ứng được tiêu chí, chỉ tiêu kỹ thuật đánh giá, lựa chọn giải pháp nền tảng điện toán đám mây?",
-    "count": 0
-  },
-  {
-    "intent": "Đóng góp cho sự kiện Thế giới số",
-    "question": "Việt Nam đã đóng góp thế nào cho sự kiện Thế giới số (ITU Virtual World) năm 2020?",
-    "count": 0
-  },
-  {
-    "intent": "Định hướng phát triển lĩnh vực Bưu chính",
-    "question": "Bộ Thông tin và Truyền thông định hướng phát triển lĩnh vực Bưu chính thế nào để phát triển kinh tế số?",
-    "count": 0
-  },
-  {
-    "intent": "Tỷ lệ cơ quan nhà nước kết nối Mạng truyền số liệu chuyên dùng",
-    "question": "Tỷ lệ cơ quan nhà nước từ trung ương tới cấp huyện kết nối vào Mạng truyền số liệu chuyên dùng của các cơ quan Đảng, Nhà nước hiện nay?",
-    "count": 0
-  },
-  {
-    "intent": "Vấn đề cạt kiệt không gian địa chỉ",
-    "question": "Vấn đề cạn kiệt không gian địa chỉ là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Hiện trạng chuyển đổi IPv6",
-    "question": "Hiện trạng chuyển đổi sang IPv6 của Việt Nam thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Chương trình IPv6 for Gov",
-    "question": "Chương trình IPv6 for Gov là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Mạng IPv6 thuần",
-    "question": "Mạng IPv6 thuần là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm Không gian mạng quốc gia",
-    "question": "Không gian mạng quốc gia là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm An ninh mạng",
-    "question": "An ninh mạng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm Bảo vệ an ninh mạng",
-    "question": "Bảo vệ an ninh mạng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm tài khoản số",
-    "question": "Tài khoản số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Cổng kết nối mạng quốc tế",
-    "question": "Cổng kết nối mạng quốc tế là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm tội phạm mạng",
-    "question": "Tội phạm mạng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm tấn công mạng",
-    "question": "Tấn công mạng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm khủng bố mạng",
-    "question": "Khủng bố mạng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm gián điệp mạng",
-    "question": "Gián điệp mạng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm nguy cơ an ninh mạng",
-    "question": "Nguy cơ an ninh mạng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm sự cố an ninh mạng",
-    "question": "Sự cố an ninh mạng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Tình huống nguy hiểm về anh ninh mạng",
-    "question": "Tình huống nguy hiểm về anh ninh mạng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Nội dung cơ bản của Luật an ninh mạng",
-    "question": "Nội dung cơ bản của Luật an ninh mạng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Luật An ninh mạng và Quyền tư do ngôn luận",
-    "question": "Luật An ninh mạng có ngăn cản, xâm phạm quyền tự do ngôn luận hay không?",
-    "count": 0
-  },
-  {
-    "intent": "Lực lượng bảo vệ an ninh mạng",
-    "question": "Lực lượng bảo vệ an ninh mạng bao gồm những lực lượng nào?",
-    "count": 0
-  },
-  {
-    "intent": "Mức độ kiểm soát thông tin của Luật An ninh mạng",
-    "question": "Luật An ninh mạng có kiểm soát toàn bộ thông tin cá nhân của công dân hay không?",
-    "count": 0
-  },
-  {
-    "intent": "Cải thiện độ tin cậy trên không gian mạng",
-    "question": "Làm sao để cải thiện niềm tin và mức độ tin cậy trong các giao dịch trên không gian mạng?",
-    "count": 0
-  },
-  {
-    "intent": "Danh tính số",
-    "question": "Danh tính số là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Đăng ký sử dụng danh tính số",
-    "question": "Làm thế nào để đăng ký sử dụng danh tính số?",
-    "count": 0
-  },
-  {
-    "intent": "Ký số từ xa",
-    "question": "Ký số từ xa là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Quốc gia có tỷ lệ phổ cập danh tính số lớn nhất",
-    "question": "Hiện nay trên thế giới, những quốc gia nào đang có tỉ lệ phổ cập danh tính số cao nhất?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm hệ sinh thái tín nhiệm mạng",
-    "question": "Hệ sinh thái tín nhiệm mạng là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Người giải đáp về vấn đề an toàn thông tin",
-    "question": "Nếu gặp vấn đề an toàn thông tin thì hỏi ai?",
-    "count": 0
-  },
-  {
-    "intent": "Nguồn kỹ năng bảo vệ bản thân trên không gian mạng",
-    "question": "Học các kỹ năng cần thiết để tự bảo vệ mình trên không gian mạng ở đâu?",
-    "count": 0
-  },
-  {
-    "intent": "Bảo vệ an toàn thông tin theo mô hình 4 lớp",
-    "question": "Bảo vệ an toàn thông tin theo mô hình 4 lớp là thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Cuộc thi Viet Solutions",
-    "question": "Cuộc thi Viet Solutions là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Giải thưởng Chuyển đổi số Việt nam là gì?",
-    "question": "Giải thưởng Chuyển đổi số Việt nam là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Thông tin về sự kiện Thách thức công nghệ số",
-    "question": "Thông tin về sự kiện Thách thức công nghệ số?",
-    "count": 0
-  },
-  {
-    "intent": "Ngày Chuyển đổi số Việt Nam",
-    "question": "Ngày Chuyển đổi số Việt Nam là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Mô hình Cục ảo",
-    "question": "Mô hình Cục ảo là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm Công nghệ mở",
-    "question": "Công nghệ mở là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm điện toán đám mây",
-    "question": "Điện toán đám mây là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Khái niệm dữ liệu lớn",
-    "question": "Dữ liệu lớn là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Thời gian thuê dịch vụ công nghệ thông tin",
-    "question": "Thời gian thuê dịch vụ công nghệ thông tin được tính thế nào?",
-    "count": 0
-  },
-  {
-    "intent": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin",
-    "question": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin",
-    "question": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Thời điểm thành lập Bộ Thông tin và Truyền thông",
-    "question": "Bộ Thông tin và Truyền thông được thành lập khi nào?",
-    "count": 0
-  },
-  {
-    "intent": "Thời điểm thành lập Ngành Thông tin và Truyền thông",
-    "question": "Ngành Thông tin và Truyền thông được thành lập khi nào?",
-    "count": 0
-  },
-  {
-    "intent": "Lĩnh vực quản lý",
-    "question": "Bộ Thông tin và Truyền thông thực hiện quản lý nhà nước những lĩnh vực nào?",
-    "count": 0
-  },
-  {
-    "intent": "Lịch sử phát triển lĩnh vực Bưu chính",
-    "question": "Lịch sử phát triển lĩnh vực bưu chính, viễn thông, công nghệ thông tin Việt Nam?",
-    "count": 0
-  },
-  {
-    "intent": "Lịch sử phát triển lĩnh vực báo chí truyền thông Việt Nam",
-    "question": "Lịch sử phát triển lĩnh vực báo chí truyền thông Việt Nam?",
-    "count": 0
-  },
-  {
-    "intent": "Ý nghĩa tên Bộ Thông tin và Truyền Thông",
-    "question": "Tên Bộ Thông tin và Truyền thông có nghĩa là gì?",
-    "count": 0
-  },
-  {
-    "intent": "Đổi tên Bộ Thông tin và Truyền thông",
-    "question": "Có cần đổi tên Bộ Thông tin và Truyền thông không?",
-    "count": 0
+    "question": "Chuyển đổi số là việc của ai?"
   },
   {
     "intent": "Cơ quan giải đáp thắc mắc chuyển đổi số",
-    "question": "Nếu có câu hỏi về chuyển đổi số thì hỏi ai?",
-    "count": 1
+    "question": "Nếu có câu hỏi về chuyển đổi số thì hỏi ai?"
+  },
+  {
+    "intent": "Thời điểm xuất hiện chuyển đổi số",
+    "question": "Khái niệm chuyển đổi số bắt đầu từ khi nào?"
+  },
+  {
+    "intent": "Cách chuyển đổi số",
+    "question": "Chuyển đổi số như thế nào cho đúng?"
+  },
+  {
+    "intent": "Thời gian thực hiện chuyển đổi số",
+    "question": "Chuyển đổi số kéo dài bao lâu?"
+  },
+  {
+    "intent": "Thách thức của chuyển đổi số",
+    "question": "Khó khăn, thách thức lớn nhất của chuyển đổi số là gì?"
+  },
+  {
+    "intent": "Chương trình quốc gia về chuyển đổi số",
+    "question": "Việt Nam có Chương trình quốc gia về chuyển đổi số chưa?"
+  },
+  {
+    "intent": "Cơ quan chủ trì chương trình chuyển đổi số",
+    "question": "Ai được giao chủ trì điều phối triển khai Chương trình Chuyển đổi số quốc gia?"
+  },
+  {
+    "intent": "Khái niệm chuyển đổi số cấp địa phương",
+    "question": "Ở cấp độ địa phương, chuyển đổi số được hiểu như thế nào?"
+  },
+  {
+    "intent": "Tầm quan trọng của việc ban hành nghị quyết chuyên đề về Chuyển đổi số trước khi triển khai ở địa phương",
+    "question": "Tại sao trước khi chuyển đổi số ở địa phương, việc Tỉnh ủy ban hành Nghị quyết chuyên đề về chuyển đổi số là quan trọng?"
+  },
+  {
+    "intent": "Vai trò quyết định trong chuyển đổi số",
+    "question": "Vai trò quyết định trong chuyển đổi số là gì?"
+  },
+  {
+    "intent": "Đối tượng trung tâm của chuyển đổi số",
+    "question": "Trung tâm của chuyển đổi số là gì?"
+  },
+  {
+    "intent": "Khái niệm chuyển đổi số lấy người dân làm trung tâm",
+    "question": "Thế nào là chuyển đổi số lấy người dân là trung tâm?"
+  },
+  {
+    "intent": "Giải pháp thúc đẩy chuyển đổi số",
+    "question": "Giải pháp đột phá để thúc đẩy chuyển đổi số là gì?"
+  },
+  {
+    "intent": "Động lực của chuyển đổi số",
+    "question": "Động lực của  chuyển đổi số là gì?"
+  },
+  {
+    "intent": "Vấn đề then chốt trong chuyển đổi số",
+    "question": "Vấn đề then chốt trong  chuyển đổi số là gì?"
+  },
+  {
+    "intent": "Yếu tố đảm bảo thành công của chuyển đổi số",
+    "question": "Yếu tố đảm bảo thành công của chuyển đổi số là gì?"
+  },
+  {
+    "intent": "Công nghệ thúc đẩy chuyển đổi số",
+    "question": "Công nghệ tiêu biểu nào cho chuyển đổi số?"
+  },
+  {
+    "intent": "Các lĩnh vực ưu tiên trong chuyển đổi số",
+    "question": "Các lĩnh vực nào được ưu tiên chuyển đổi số?"
+  },
+  {
+    "intent": "Lợi thế khi thực hiện chuyển đổi số",
+    "question": "Lợi thế của Việt Nam khi thực hiện chuyển đổi số là gì?"
+  },
+  {
+    "intent": "Ngày Chuyển đổi số Quốc gia",
+    "question": "Việt Nam đã có ngày chuyển đổi số quốc gia chưa?"
+  },
+  {
+    "intent": "Cập nhật lại cẩm nang chuyển đổi số",
+    "question": "Sau gần 1 năm triển khai Chương trình Chuyển đổi số quốc gia, Bộ Thông tin đã có kế hoạch cập nhật lại Cẩm nang chuyển đổi số không?"
+  },
+  {
+    "intent": "Hướng chuyển đổi số của doanh nghiệp nhỏ và vừa",
+    "question": "Doanh nghiệp nhỏ và vừa chuyển đổi số theo hướng nào?"
+  },
+  {
+    "intent": "Khái niệm chuyển đổi số cơ quan nhà nước",
+    "question": "Chuyển đổi số cơ quan nhà nước là gì?"
+  },
+  {
+    "intent": "Quy định về chia sẻ dữ liệu trong cơ quan nhà nước",
+    "question": "Có quy định nào về chia sẻ dữ liệu trong cơ quan nhà nước?"
+  },
+  {
+    "intent": "Xây dựng chiến lược chuyển đổi số",
+    "question": "Xây dựng chiến lược chuyển đổi số như thế nào?"
+  },
+  {
+    "intent": "Cách mạng công nghiệp lần thứ 4",
+    "question": "Cách mạng công nghiệp lần thứ tư là gì?"
+  },
+  {
+    "intent": "Khái niệm số hóa",
+    "question": "Số hóa là gì?"
+  },
+  {
+    "intent": "Khái niệm tin học hóa",
+    "question": "Tin học hóa là gì?"
+  },
+  {
+    "intent": "Ứng dụng công nghệ thông tin",
+    "question": "Ứng dụng công nghệ thông tin là gì?"
+  },
+  {
+    "intent": "Thời điểm bắt đầu ứng dụng công nghệ thông tin",
+    "question": "Ứng dụng công nghệ thông tin bắt đầu từ khi nào?"
+  },
+  {
+    "intent": "Sự khác nhau giữa chuyển đổi số và ứng dụng công nghệ thông tin",
+    "question": "Chuyển đổi số và ứng dụng công nghệ thông tin khác nhau như thế nào?"
+  },
+  {
+    "intent": "Sự khác nhau giữa tin học hóa và ứng dụng công nghệ thông tin",
+    "question": "Tin học hóa và ứng dụng công nghệ thông tin khác nhau như thế nào?"
+  },
+  {
+    "intent": "Chi phí cho chuyển đổi số",
+    "question": "Nhà nước chi cho chuyển đổi số bao nhiêu thì phù hợp?"
+  },
+  {
+    "intent": "Đánh giá hiệu quả của các khoản chi cho chuyển đổi số",
+    "question": "Có cách nào để biết chi cho chuyển đổi số có hiệu quả hay không?"
+  },
+  {
+    "intent": "Thể chế và Công nghệ",
+    "question": "Tại sao nói thể chế và công nghệ là động lực của chuyển đổi số?"
+  },
+  {
+    "intent": "Khái niệm chuyên gia",
+    "question": "Chuyên gia là ai?"
+  },
+  {
+    "intent": "Khái niệm chuyên gia công nghệ số",
+    "question": "Chuyên gia công nghệ số là ai?"
+  },
+  {
+    "intent": "Thời điểm thuê chuyên gia tư vấn",
+    "question": "Khi nào thì thuê chuyên gia tư vấn?"
+  },
+  {
+    "intent": "Thành viên tham gia chuyển đổi số",
+    "question": "Trong một tổ chức, ai sẽ tham gia chuyển đổi số?"
+  },
+  {
+    "intent": "Nền tảng chuyển đổi số quốc gia",
+    "question": "Nền tảng chuyển đổi số quốc gia là gì?"
+  },
+  {
+    "intent": "Khái niệm học máy",
+    "question": "Học máy là gì?"
+  },
+  {
+    "intent": "Khái niệm trợ lý ảo",
+    "question": "Trợ lý ảo là gì?"
+  },
+  {
+    "intent": "Cách theo dõi và đánh giá quá trình chuyển đổi số quốc gia",
+    "question": "Theo dõi và đánh giá quá trình chuyển đổi số thế nào?"
+  },
+  {
+    "intent": "Khái niệm nền tảng số",
+    "question": "Nền tảng số là gì?"
+  },
+  {
+    "intent": "Sự khác nhau giữ kiến trúc và khung kiến trúc",
+    "question": "Kiến trúc và khung kiến trúc chính phủ điện tử khác nhau thế nào?"
+  },
+  {
+    "intent": "Khái niệm chính phủ điện tử",
+    "question": "Chính phủ điện tử là gì?"
+  },
+  {
+    "intent": "Khái niệm Chính phủ số",
+    "question": "Chính phủ số là gì?"
+  },
+  {
+    "intent": "Sự khác nhau giữa chính phủ điện tử và chính phủ số",
+    "question": "Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì?"
+  },
+  {
+    "intent": "Trọng tâm chiến lược của Chính phủ số",
+    "question": "Trọng tâm của Chiến lược Chính phủ số là gì?"
+  },
+  {
+    "intent": "Mối quan hệ giữa đô thị thông minh và chính quyền số",
+    "question": "Mối quan hệ giữa đô thị thông minh và chính quyền số?"
+  },
+  {
+    "intent": "Lý do phải phát triển chính phủ số",
+    "question": "Tại sao phải phát triển chính phủ số?"
+  },
+  {
+    "intent": "Quốc gia phát triển Chính phủ số thành công",
+    "question": "Quốc gia nào thành công trong phát triển chính phủ số?"
+  },
+  {
+    "intent": "Khái niệm chính quyền số",
+    "question": "Chính quyền số là gì?"
+  },
+  {
+    "intent": "Xếp hạng Chính phủ điện tử",
+    "question": "Xếp hạng Chính phủ điện tử của Việt Nam theo đánh giá của Liên Hợp Quốc thế nào?"
+  },
+  {
+    "intent": "Đơn vị xếp hạng chính phủ điện tử",
+    "question": "Đơn vị vào của Bộ Thông tin và Truyền thông được giao đầu mối xếp hạng Chính phủ điện tử do Liên Hợp Quốc đánh giá, xếp hạng?"
+  },
+  {
+    "intent": "Khái niệm đám mây Chính phủ",
+    "question": "Đám mây Chính phủ là gì?"
+  },
+  {
+    "intent": "Chủ tịch Ủy ban Quốc gia về Chính phủ điện tử",
+    "question": "Ai là Chủ tịch Ủy ban Quốc gia về Chính phủ điện tử?"
+  },
+  {
+    "intent": "Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương",
+    "question": "Ai là Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương?"
+  },
+  {
+    "intent": "Cơ quan thường trực của Tổ công tác giúp việc Ủy ban Quốc gia về Chính phủ điện tử",
+    "question": "Cơ quan nào làm nhiệm vụ thường trực của Tổ công tác giúp việc Ủy ban Quốc gia về Chính phủ điện tử?"
+  },
+  {
+    "intent": "Kiện toàn lại Ủy ban Quốc gia về Chính phủ điện tử",
+    "question": "Có nên kiện toàn lại Ủy ban Quốc gia về Chính phủ điện tử cho phù hợp với tình hình phát triển?"
+  },
+  {
+    "intent": "Mục tiêu hoàn thành chuyển đổi số",
+    "question": "Trong năm 2021, mục tiêu trọng tâm để kết thúc giai đoạn phát triển chính phủ và hướng tới giai đoạn phát triển chính phủ số là gì?"
+  },
+  {
+    "intent": "Khái niệm Chính phủ 04 không",
+    "question": "Nói Chính phủ 04 không là gì?"
+  },
+  {
+    "intent": "Kiến trúc chính phủ điện tử 2.0",
+    "question": "Xây dựng Kiến trúc Chính phủ điện tử 2.0 theo hướng tập trung hay phân tán?"
+  },
+  {
+    "intent": "Chi phí tiếp cận công nghệ số",
+    "question": "Công nghệ số có thể rẻ như điện nước để cho doanh nghiệp nào, người dân nào cũng có thể tiếp cận được không?"
+  },
+  {
+    "intent": "Khái niệm số định danh cá nhân",
+    "question": "Số định danh cá nhân là gì?"
+  },
+  {
+    "intent": "Khái niệm trung tâm điều hành thông minh",
+    "question": "Trung tâm điều hành thông minh là gì?"
+  },
+  {
+    "intent": "Khái niệm trung tâm giám sát Chính phủ điện tử",
+    "question": "Trung tâm giám sát Chính phủ điện tử là gì?"
+  },
+  {
+    "intent": "Thời gian ban hành khung tham chiếu ICT phát triển đô thị thông minh phiên bản 1.0",
+    "question": "Khung tham chiếu ICT phát triển đô thị thông minh phiên bản 1.0 được ban hành ngày tháng năm nào?"
+  },
+  {
+    "intent": "Khái niệm dịch vụ công trực tuyến",
+    "question": "Dịch vụ công trực tuyến là gì?"
+  },
+  {
+    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 1",
+    "question": "Dịch vụ công trực tuyến mức độ 1 là gì?"
+  },
+  {
+    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 2",
+    "question": "Dịch vụ công trực tuyến mức độ 2 là gì?"
+  },
+  {
+    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 3",
+    "question": "Dịch vụ công trực tuyến mức độ 3 là gì?"
+  },
+  {
+    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 4",
+    "question": "Dịch vụ công trực tuyến mức độ 4 là gì?"
+  },
+  {
+    "intent": "Yêu cầu xác thực người dùng",
+    "question": "Yêu cầu xác thực người dùng đối với các dịch vụ công trực tuyến như thế nào?"
+  },
+  {
+    "intent": "Tỷ lệ dịch vụ công trực tuyến có phát sinh hồ sơ",
+    "question": "Tỷ lệ dịch vụ công trực tuyến có phát sinh hồ sơ là gì?"
+  },
+  {
+    "intent": "Tỷ lệ dịch vụ công trực tuyến mức độ 4",
+    "question": "Năm 2020, tỷ lệ dịch vụ công trực tuyến thực hiện ở mức độ 4 trung bình cả nước đạt bao nhiêu phần trăm?"
+  },
+  {
+    "intent": "Khái niệm dịch vụ hành chính công",
+    "question": "Dịch vụ hành chính công là gì?"
+  },
+  {
+    "intent": "Cổng dịch vụ công cấp bộ, cấp tỉnh",
+    "question": "Cổng dịch vụ công cấp bộ, cấp tỉnh là gì?"
+  },
+  {
+    "intent": "Hệ thống thông tin một cửa điện tử cấp bộ hoặc cấp tỉnh",
+    "question": "Hệ thống thông tin một cửa điện tử cấp bộ hoặc cấp tỉnh là gì?"
+  },
+  {
+    "intent": "Linh hoạt chỉnh sửa quy trình lưu chuyển, xử lý thủ tục hành chính trên hệ thống thông tin một cửa",
+    "question": "Các chu trình lưu chuyển, xử lý thủ tục hành chính trên hệ thống thông tin một cửa điện tử cấp bộ, cấp tỉnh có thể chỉnh sửa linh hoạt để phù hợp với quy định của thủ tục hành chính không?"
+  },
+  {
+    "intent": "Cơ quan chủ quản cổng thông tin điện tử",
+    "question": "Cơ quan chủ quản cổng thông tin điện tử là tổ chức nào?"
+  },
+  {
+    "intent": "Cơ quan cung cấp dịch vụ công trực tuyến",
+    "question": "Cơ quan cung cấp dịch vụ công trực tuyến được hiểu như thế nào?"
+  },
+  {
+    "intent": "Cổng dịch vụ công quốc gia",
+    "question": "Cổng dịch vụ công quốc gia là gì?"
+  },
+  {
+    "intent": "Chức năng cổng dịch vụ công quốc gia",
+    "question": "Cổng dịch vụ công có chức năng tiếp nhận hồ sơ nộp trực tiếp tại bộ phận một cửa các cấp không?"
+  },
+  {
+    "intent": "Cơ sở dữ liệu quốc gia được ưu tiên",
+    "question": "Hiện nay, những cơ sở dữ liệu quốc gia nào được ưu tiên phát triển?"
+  },
+  {
+    "intent": "Phân loại cơ sở dữ liệu trong cơ quan nhà nước",
+    "question": "Cơ sở dữ liệu trong cơ quan nhà nước bao gồm những loại nào?"
+  },
+  {
+    "intent": "Khái niệm dữ liệu mở",
+    "question": "Dữ liệu mở của cơ quan nhà nước là gì?"
+  },
+  {
+    "intent": "Nơi truy cập dữ liệu mở",
+    "question": "Truy cập dữ liệu mở quốc gia ở đâu?"
+  },
+  {
+    "intent": "Mã định danh điện tử cơ quan, tổ chức",
+    "question": "Mã định danh điện tử cơ quan, tổ chức là gì?"
+  },
+  {
+    "intent": "Nhu cầu mã định danh điện tử",
+    "question": "Các cơ quan, tổ chức nào có cần có mã định danh điện tử?"
+  },
+  {
+    "intent": "Cấu trúc mã định danh điện tử",
+    "question": "Mã định danh điện tử của các bộ, ngành, địa phương có cấu trúc như thế nào?"
+  },
+  {
+    "intent": "Đánh mã định danh điện tử",
+    "question": "Cơ quan, tổ chức cấp 1 có thể đánh mã định danh điện tử cho các cơ quan, đơn vị của mình đến cấp mấy?"
+  },
+  {
+    "intent": "Đánh mã định danh điện tử cơ quan Đảng",
+    "question": "Ủy ban nhân dân cấp tỉnh có thể đánh mã định danh cho cơ quan Đảng tại địa phương mình được không?"
+  },
+  {
+    "intent": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia",
+    "question": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia là gì?"
+  },
+  {
+    "intent": "NGSP",
+    "question": "NGSP là gì?"
+  },
+  {
+    "intent": "Nền tảng tích hợp, chia sẻ dữ liệu cấp Bộ, ngành, địa phương",
+    "question": "Nền tảng tích hợp, chia sẻ dữ liệu cấp Bộ, ngành, địa phương là gì?"
+  },
+  {
+    "intent": "LGSP",
+    "question": "LGSP là gì?"
+  },
+  {
+    "intent": "Các nền tảng đã kết nối cơ sở dữ liệu quốc gia",
+    "question": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia đã kết nối với những cơ sở dữ liệu quốc gia nào?"
+  },
+  {
+    "intent": "Cách kết nối nền tảng tích hợp, chia sẻ dữ liệu quốc gia",
+    "question": "Để kết nối với Nền tảng tích hợp, chia sẻ dữ liệu quốc gia thì làm như thế nào?"
+  },
+  {
+    "intent": "Khái niệm nền kinh tế số",
+    "question": "Nền kinh tế số là gì?"
+  },
+  {
+    "intent": "Khái niện nền kinh tế nền tảng",
+    "question": "Nền kinh tế nền tảng là gì?"
+  },
+  {
+    "intent": "Vai trò của nền kinh tế số",
+    "question": "Vai trò của kinh tế số là gì?"
+  },
+  {
+    "intent": "Thời điểm xuất hiện kinh tế số",
+    "question": "Ở Việt Nam kinh tế số xuất hiện khi nào?"
+  },
+  {
+    "intent": "Cách thúc đẩy nền kinh tế số",
+    "question": "Làm thế nào để thúc đẩy nền kinh tế số?"
+  },
+  {
+    "intent": "Cách đo lường kinh tế số",
+    "question": "Đo lường kinh tế số thế nào?"
+  },
+  {
+    "intent": "Giá trị kinh tế số",
+    "question": "Giá trị kinh tế số của Việt Nam năm 2020 là bao nhiêu?"
+  },
+  {
+    "intent": "Kinh tế số của Việt Nam so với quốc tế",
+    "question": "Kinh tế số của Việt Nam so với quốc tế thì thế nào?"
+  },
+  {
+    "intent": "Mục tiêu chương trình chuyển đổi số quốc gia",
+    "question": "Chương trình Chuyển đổi số quốc gia đặt mục tiêu kinh tế số Việt Nam vào năm 2025 là bao nhiêu?"
+  },
+  {
+    "intent": "Lý do doanh nghiệp cần chuyển đổi số",
+    "question": "Doanh nghiệp vì sao cần chuyển đổi số?"
+  },
+  {
+    "intent": "Chi phí để doanh nghiệp thực hiện chuyển đổi số",
+    "question": "Chi phí 1 doanh nghiệp nhỏ và vừa cần để thực hiện chuyển đổi số?"
+  },
+  {
+    "intent": "Cách đo lường mức độ chuyển đổi số của các doanh nghiệp",
+    "question": "Đo lường mức độ chuyển đổi số của các doanh nghiệp thế nào?"
+  },
+  {
+    "intent": "Hỗ trợ doanh nghiệp chuyển đổi số",
+    "question": "Bộ Thông tin và Truyền thông hỗ trợ các doanh nghiệp nhỏ và vừa chuyển đổi số thế nào?"
+  },
+  {
+    "intent": "Khái niệm doanh nghiệp công nghệ số",
+    "question": "Doanh nghiệp công nghệ số là gì?"
+  },
+  {
+    "intent": "Loại hình doanh nghiệp công nghệ số",
+    "question": "Có các loại hình doanh nghiệp công nghệ số nào?"
+  },
+  {
+    "intent": "Thông tin về các doanh nghiệp công nghệ số",
+    "question": "Làm thế nào để biết được thông tin về các doanh nghiệp công nghệ số và các sản phẩm, dịch vụ cung cấp bởi các doanh nghiệp công nghệ số."
+  },
+  {
+    "intent": "Số lượng doanh nghiệp công nghệ số",
+    "question": "Để thực hiện chuyển đổi số quốc gia, Việt Nam cần bao nhiêu doanh nghiệp công nghệ số?"
+  },
+  {
+    "intent": "Khái niệm doanh nghiệp kỳ lân",
+    "question": "Doanh nghiệp Kỳ lân (Unicorn) là gì?"
+  },
+  {
+    "intent": "Số lượng doanh nghiệp kỳ lân",
+    "question": "Việt Nam hiện nay đã có bao nhiêu doanh nghiệp Kỳ lân?"
+  },
+  {
+    "intent": "Khái niệm Make in Việt Nam",
+    "question": "Make in Việt Nam là gì?"
+  },
+  {
+    "intent": "Khái niệm mô hình sandbox",
+    "question": "Mô hình sandbox là gì?"
+  },
+  {
+    "intent": "Khái niệm mobile money",
+    "question": "Mobile money là gì?"
+  },
+  {
+    "intent": "Khái niệm mô hình công dân số",
+    "question": "Công dân số là gì?"
+  },
+  {
+    "intent": "Khái niệm xã hội số",
+    "question": "Xã hội số là gì?"
+  },
+  {
+    "intent": "Khái niệm văn hóa số",
+    "question": "Văn hóa số là gì?"
+  },
+  {
+    "intent": "Tác động của chuyển đổi số",
+    "question": "Chuyển đổi số có tạo ra thất nghiệp không?"
+  },
+  {
+    "intent": "Đào tạo lại kỹ năng số",
+    "question": "Đào tạo lại kỹ năng số (re-skill) là gì?"
+  },
+  {
+    "intent": "Đào tạo nâng cấp kỹ năng số",
+    "question": "Đào tạo nâng cấp kỹ năng số (up-skill) là gì?"
+  },
+  {
+    "intent": "Ngành nghề ảnh hưởng nhiều bởi chuyển đổi số",
+    "question": "Những ngành, nghề nào sẽ bị ảnh hưởng nhiều nhất bởi chuyển đổi số?"
+  },
+  {
+    "intent": "Nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số",
+    "question": "Những ngành, nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số?"
+  },
+  {
+    "intent": "Giải pháp gì để đào tạo kỹ năng số",
+    "question": "Bộ Thông tin và Truyền thông có giải pháp gì để đào tạo kỹ năng số cho người dân?"
+  },
+  {
+    "intent": "Khái niệm đại học số",
+    "question": "Đại học số là gì?"
+  },
+  {
+    "intent": "Vấn đề thâm hụt nhân lực kỹ thuật",
+    "question": "Giải quyết vấn đề thiếu hụt nhân lực kỹ thuật thực hiện chuyển đổi số thế nào?"
+  },
+  {
+    "intent": "Khái niệm khoa học dữ liệu",
+    "question": "Khoa học dữ liệu là gì?"
+  },
+  {
+    "intent": "Phổ cập điện thoại thông minh",
+    "question": "Làm sao để phổ cập điện thoại thông minh?"
+  },
+  {
+    "intent": "Hành động của người dân trong xu thế chuyển đổi số",
+    "question": "Người dân phải làm gì trong xu thế chuyển đổi số?"
+  },
+  {
+    "intent": "Khái niệm khoảng cách số",
+    "question": "Khoảng cách số là gì?"
+  },
+  {
+    "intent": "Tách động của chuyển đổi số đến khoảng cách giàu nghèo",
+    "question": "Chuyển đổi số có làm giảm khoảng cách giàu nghèo trong xã hội không?"
+  },
+  {
+    "intent": "Môi trường số nhân văn, rộng khắp",
+    "question": "Một trong những mục tiêu của Chương trình Chuyển đổi số quốc gia là tạo ra môi trường số nhân văn, rộng khắp. Mục tiêu này cần được hiểu như thế nào?"
+  },
+  {
+    "intent": "Khái niệm hạ tầng số",
+    "question": "Hạ tầng số là gì?"
+  },
+  {
+    "intent": "Doanh nghiệp được cấp phép thử nghiệm cung cấp dịch vụ 5G",
+    "question": "Doanh nghiệp nào đã được cấp phép thử nghiệm cung cấp dịch vụ 5G?"
+  },
+  {
+    "intent": "Doanh nghiệp đáp ứng về điện toán đám mây",
+    "question": "Hiện nay, đã có những doanh nghiệp Việt Nam nào đáp ứng được tiêu chí, chỉ tiêu kỹ thuật đánh giá, lựa chọn giải pháp nền tảng điện toán đám mây?"
+  },
+  {
+    "intent": "Đóng góp cho sự kiện Thế giới số",
+    "question": "Việt Nam đã đóng góp thế nào cho sự kiện Thế giới số (ITU Virtual World) năm 2020?"
+  },
+  {
+    "intent": "Định hướng phát triển lĩnh vực Bưu chính",
+    "question": "Bộ Thông tin và Truyền thông định hướng phát triển lĩnh vực Bưu chính thế nào để phát triển kinh tế số?"
+  },
+  {
+    "intent": "Tỷ lệ cơ quan nhà nước kết nối Mạng truyền số liệu chuyên dùng",
+    "question": "Tỷ lệ cơ quan nhà nước từ trung ương tới cấp huyện kết nối vào Mạng truyền số liệu chuyên dùng của các cơ quan Đảng, Nhà nước hiện nay?"
+  },
+  {
+    "intent": "Vấn đề cạt kiệt không gian địa chỉ",
+    "question": "Vấn đề cạn kiệt không gian địa chỉ là gì?"
+  },
+  {
+    "intent": "Hiện trạng chuyển đổi IPv6",
+    "question": "Hiện trạng chuyển đổi sang IPv6 của Việt Nam thế nào?"
+  },
+  {
+    "intent": "Chương trình IPv6 for Gov",
+    "question": "Chương trình IPv6 for Gov là gì?"
+  },
+  {
+    "intent": "Mạng IPv6 thuần",
+    "question": "Mạng IPv6 thuần là gì?"
+  },
+  {
+    "intent": "Khái niệm Không gian mạng quốc gia",
+    "question": "Không gian mạng quốc gia là gì?"
+  },
+  {
+    "intent": "Khái niệm An ninh mạng",
+    "question": "An ninh mạng là gì?"
+  },
+  {
+    "intent": "Khái niệm Bảo vệ an ninh mạng",
+    "question": "Bảo vệ an ninh mạng là gì?"
+  },
+  {
+    "intent": "Khái niệm tài khoản số",
+    "question": "Tài khoản số là gì?"
+  },
+  {
+    "intent": "Cổng kết nối mạng quốc tế",
+    "question": "Cổng kết nối mạng quốc tế là gì?"
+  },
+  {
+    "intent": "Khái niệm tội phạm mạng",
+    "question": "Tội phạm mạng là gì?"
+  },
+  {
+    "intent": "Khái niệm tấn công mạng",
+    "question": "Tấn công mạng là gì?"
+  },
+  {
+    "intent": "Khái niệm khủng bố mạng",
+    "question": "Khủng bố mạng là gì?"
+  },
+  {
+    "intent": "Khái niệm gián điệp mạng",
+    "question": "Gián điệp mạng là gì?"
+  },
+  {
+    "intent": "Khái niệm nguy cơ an ninh mạng",
+    "question": "Nguy cơ an ninh mạng là gì?"
+  },
+  {
+    "intent": "Khái niệm sự cố an ninh mạng",
+    "question": "Sự cố an ninh mạng là gì?"
+  },
+  {
+    "intent": "Tình huống nguy hiểm về anh ninh mạng",
+    "question": "Tình huống nguy hiểm về anh ninh mạng là gì?"
+  },
+  {
+    "intent": "Nội dung cơ bản của Luật an ninh mạng",
+    "question": "Nội dung cơ bản của Luật an ninh mạng là gì?"
+  },
+  {
+    "intent": "Luật An ninh mạng và Quyền tư do ngôn luận",
+    "question": "Luật An ninh mạng có ngăn cản, xâm phạm quyền tự do ngôn luận hay không?"
+  },
+  {
+    "intent": "Lực lượng bảo vệ an ninh mạng",
+    "question": "Lực lượng bảo vệ an ninh mạng bao gồm những lực lượng nào?"
+  },
+  {
+    "intent": "Mức độ kiểm soát thông tin của Luật An ninh mạng",
+    "question": "Luật An ninh mạng có kiểm soát toàn bộ thông tin cá nhân của công dân hay không?"
+  },
+  {
+    "intent": "Cải thiện độ tin cậy trên không gian mạng",
+    "question": "Làm sao để cải thiện niềm tin và mức độ tin cậy trong các giao dịch trên không gian mạng?"
+  },
+  {
+    "intent": "Danh tính số",
+    "question": "Danh tính số là gì?"
+  },
+  {
+    "intent": "Đăng ký sử dụng danh tính số",
+    "question": "Làm thế nào để đăng ký sử dụng danh tính số?"
+  },
+  {
+    "intent": "Ký số từ xa",
+    "question": "Ký số từ xa là gì?"
+  },
+  {
+    "intent": "Quốc gia có tỷ lệ phổ cập danh tính số lớn nhất",
+    "question": "Hiện nay trên thế giới, những quốc gia nào đang có tỉ lệ phổ cập danh tính số cao nhất?"
+  },
+  {
+    "intent": "Khái niệm hệ sinh thái tín nhiệm mạng",
+    "question": "Hệ sinh thái tín nhiệm mạng là gì?"
+  },
+  {
+    "intent": "Người giải đáp về vấn đề an toàn thông tin",
+    "question": "Nếu gặp vấn đề an toàn thông tin thì hỏi ai?"
+  },
+  {
+    "intent": "Nguồn kỹ năng bảo vệ bản thân trên không gian mạng",
+    "question": "Học các kỹ năng cần thiết để tự bảo vệ mình trên không gian mạng ở đâu?"
+  },
+  {
+    "intent": "Bảo vệ an toàn thông tin theo mô hình 4 lớp",
+    "question": "Bảo vệ an toàn thông tin theo mô hình 4 lớp là thế nào?"
+  },
+  {
+    "intent": "Cuộc thi Viet Solutions",
+    "question": "Cuộc thi Viet Solutions là gì?"
+  },
+  {
+    "intent": "Giải thưởng Chuyển đổi số Việt nam là gì?",
+    "question": "Giải thưởng Chuyển đổi số Việt nam là gì?"
+  },
+  {
+    "intent": "Thông tin về sự kiện Thách thức công nghệ số",
+    "question": "Thông tin về sự kiện Thách thức công nghệ số?"
+  },
+  {
+    "intent": "Ngày Chuyển đổi số Việt Nam",
+    "question": "Ngày Chuyển đổi số Việt Nam là gì?"
+  },
+  {
+    "intent": "Mô hình Cục ảo",
+    "question": "Mô hình Cục ảo là gì?"
+  },
+  {
+    "intent": "Khái niệm Công nghệ mở",
+    "question": "Công nghệ mở là gì?"
+  },
+  {
+    "intent": "Khái niệm điện toán đám mây",
+    "question": "Điện toán đám mây là gì?"
+  },
+  {
+    "intent": "Khái niệm dữ liệu lớn",
+    "question": "Dữ liệu lớn là gì?"
+  },
+  {
+    "intent": "Thời gian thuê dịch vụ công nghệ thông tin",
+    "question": "Thời gian thuê dịch vụ công nghệ thông tin được tính thế nào?"
+  },
+  {
+    "intent": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin",
+    "question": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin là gì?"
+  },
+  {
+    "intent": "Thời điểm thành lập Bộ Thông tin và Truyền thông",
+    "question": "Bộ Thông tin và Truyền thông được thành lập khi nào?"
+  },
+  {
+    "intent": "Thời điểm thành lập Ngành Thông tin và Truyền thông",
+    "question": "Ngành Thông tin và Truyền thông được thành lập khi nào?"
+  },
+  {
+    "intent": "Lĩnh vực quản lý",
+    "question": "Bộ Thông tin và Truyền thông thực hiện quản lý nhà nước những lĩnh vực nào?"
+  },
+  {
+    "intent": "Lịch sử phát triển lĩnh vực Bưu chính",
+    "question": "Lịch sử phát triển lĩnh vực bưu chính, viễn thông, công nghệ thông tin Việt Nam?"
+  },
+  {
+    "intent": "Lịch sử phát triển lĩnh vực báo chí truyền thông Việt Nam",
+    "question": "Lịch sử phát triển lĩnh vực báo chí truyền thông Việt Nam?"
+  },
+  {
+    "intent": "Ý nghĩa tên Bộ Thông tin và Truyền Thông",
+    "question": "Tên Bộ Thông tin và Truyền thông có nghĩa là gì?"
+  },
+  {
+    "intent": "Đổi tên Bộ Thông tin và Truyền thông",
+    "question": "Có cần đổi tên Bộ Thông tin và Truyền thông không?"
   }
 ]

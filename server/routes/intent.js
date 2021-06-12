@@ -3,19 +3,42 @@ const router = express.Router();
 const fs = require('fs');
 const path = require('path');
 
-// create a random intent.
-router.get("/random", (req, res) => {
+const { IntentRecord } = require("../models/IntentRecord");
 
+// import intent to db
+router.post("/import", (req, res) => {
   fs.readFile(path.join(process.cwd(), "server", "config", "intent_v2.json"), (err, data) => {
     if (err) throw err;
     let intentList = JSON.parse(data);
-    const intentIndex = getRandomFromArray(intentList.slice(0, 40));
-    const { intent, question } = intentList[intentIndex]
+    let count = 0;
+    console.log("Importing...")
+    intentList.forEach(intent => {
+      count++;
+      IntentRecord.create({
+        intent: intent.intent,
+        description: intent.question,
+      }, (err, createdIntent) => {
+        if (err) {
+          console.log("Duplicated: ", intent.intent)
+        }
+      })
+    })
+    console.log("Import done.")
+    res.status(200).send(`${count} imported`)
+  })
+})
+
+// create a random intent.
+router.get("/random", async (req, res) => {
+  await IntentRecord.find().sort({ count: 1 }).limit(40)
+  .then(batchIntentFound => {
+    const intentIndex = getRandomFromArray(batchIntentFound);
+    const { intent, description } = batchIntentFound[intentIndex]
     res.status(200).send({
       intent,
-      description: question,
+      description,
     });
-  });
+  })
 })
 
 router.get("/test", (req, res) => {
