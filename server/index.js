@@ -50,6 +50,7 @@ app.use('/api/v1/uploads/file', require('./routes/upload'));
 // app.use(config.uploadAPI, require('./routes/upload'));
 app.use('/api/audio', require('./routes/audio'));
 app.use('/api/intent', require('./routes/intent'));
+app.use('/api/campaign', require('./routes/campaign'));
 app.use('/api/aws/upload', require('./routes/upload_aws'));
 app.use('/api/testing', require('./routes/audio_transcript/audio_transcript'));
 app.use('/api/server', require('./routes/server'));

@@ -12,6 +12,10 @@ const userSchema = mongoose.Schema({
     email: {
         type: String,
         trim:true,
+        unique: 1,
+    },
+    device: {
+        type: String,
         unique: 1 
     },
     password: {

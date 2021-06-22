@@ -14,6 +14,12 @@ const intentRecordSchema = new mongoose.Schema({
   count: {
     type: Number,
     default: 0,
+  },
+
+  campaign: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Campaign',
+    default: null,
   }
 
 });

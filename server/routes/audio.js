@@ -15,6 +15,10 @@ const request = require('request');
 const { getAudioDurationInSeconds } = require('get-audio-duration');
 // const { exec } = require('child_process');
 // const auth = require("../middleware/auth");
+const mongoose = require("mongoose");
+function uuidv4() {
+  return mongoose.Types.ObjectId();
+}
 
 // ADD AUDIO TO DB'S RECORD
 router.post("/", (req, res) => {
@@ -186,7 +190,7 @@ router.put("/:audioID/:userID", (req, res) => {
 const updateJSONCount = (target, callback400, callback500, callback200) => {
   IntentRecord.find({intent: target})
   .then(intentFound => {
-    if (!intentFound) {
+    if (intentFound.length === 0) {
       callback400();
     }
     else {
@@ -236,6 +240,63 @@ router.post("/solo", async (req, res) => {
       });
     }
   });
+})
+
+router.post("/saveTestIntent", async (req, res) => {
+  const { campaignID, deviceID, googleTranscript, inputText, intentOutcome, confidence } = req.body;
+  let { link } = req.body;
+
+  const newIntent = await Intent.create({ intentOutcome, campaignID });
+  const targetUser = await User.find({ device: deviceID })
+  .then(batchUserFound => {
+    if (batchUserFound.length === 0) {
+      return User.create({ email: deviceID, device: deviceID })
+    } else {
+      return batchUserFound[0]
+    }
+  })
+
+  if (!link) {
+    link = "No audio " + targetUser.soloCount + " " + uuidv4()
+  }
+
+  Audio.create({
+    user: targetUser._id,
+    link,
+    intent: newIntent._id,
+    confidence,
+    googleTranscript,
+    transcript: inputText,
+  }).then(audioCreated => {
+    if (!audioCreated) {
+      res.status(500).send({ success: false, error: "Can't save audio information to the db!"});
+    } else {
+      User.findById(targetUser._id)
+      .then(userFound => {
+        userFound.soloCount++;
+        return userFound.save();
+      })
+      IntentRecord.find({intent: intentOutcome, campaign: campaignID})
+      .then(intentFound => {
+        if (intentFound.length === 0) {
+          res.status(404).send("Can't find intent");
+        }
+        else {
+          intentFound[0].count++;
+          intentFound[0].save();
+          return res.status(200).send({
+            recordID: audioCreated._id
+          });
+        }
+      })
+      .catch(error => {
+        if (error) {
+          console.log(error)
+          res.status(500).send("Internal problem :<");
+        }
+      })
+    }
+  })
 })
 
 router.post("/trash", async (req, res) => {

@@ -9,6 +9,12 @@ const intentSchema = new mongoose.Schema({
   description: {
     type: String,
     default: '',
+  },
+
+  campaign: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Campaign',
+    default: null,
   }
 });
 

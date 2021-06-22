@@ -8,6 +8,7 @@ module.exports = {
     REDIS_PASSWORD: process.env.REDIS_PASSWORD,
     UPLOAD_API: process.env.UPLOAD_API,
     UPLOAD_API_KEY: process.env.UPLOAD_API_KEY,
+    SAMPLE_POOL: process.env.SAMPLE_POOL,
     // vvvvvvv doesn't need for now.
     uploadAPI:process.env.uploadAPI,
     awsAccessKeyId:process.env.awsAccessKeyId,

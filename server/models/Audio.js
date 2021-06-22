@@ -55,7 +55,14 @@ const audioSchema = new mongoose.Schema({
   duration: {
     type: Number,
     default: -0.05,
+  },
+
+  confidence: {
+    type: Number,
+    default: 0,
   }
+}, {
+  timestamps: true
 })
 
 const Audio = mongoose.model('Audio', audioSchema);
