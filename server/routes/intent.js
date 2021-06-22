@@ -73,7 +73,7 @@ router.get("/random", async (req, res) => {
 // create an amount of random intents.
 router.get("/multi-random/:choiceCount/:campaignID", async (req, res) => {
   const { choiceCount, campaignID } = req.params;
-  await IntentRecord.find({ campaign: campaignID }).sort({ count: 1 }).limit(config.SAMPLE_POOL)
+  await IntentRecord.find({ campaign: campaignID }).sort({ count: 1 }).limit(parseInt(config.SAMPLE_POOL))
   .then(batchIntentFound => {
     const batchIntent = getMultipleRandom(batchIntentFound, parseInt(choiceCount));
     // const { intent, description } = batchIntentFound[intentIndex]

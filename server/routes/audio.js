@@ -391,6 +391,15 @@ router.post("/reject", (req, res) => {
   })
 })
 
+router.get("/:audioID", (req, res) => {
+  const { audioID } = req.params;
+  Audio.findById(audioID)
+  .then(audioFound => {
+    if (!audioFound) res.status(400).send({success: false, message: "No audio found"})
+    else res.status(200).send({success: true, audioFound})
+  })
+})
+
 router.get("/findByEmail/:usermail", (req, res) => {
   const { usermail } = req.params;
   console.log("Targetting: ", usermail)
