@@ -243,10 +243,10 @@ router.post("/solo", async (req, res) => {
 })
 
 router.post("/saveTestIntent", async (req, res) => {
-  const { campaign_id, device_id, transcript, postProcessText, input_type, intentOutcome, confidence, asr_provider } = req.body;
+  const { campaign_id, device_id, transcript, post_process_text, input_type, predicted_intent , confidence, asr_provider } = req.body;
   let { asr_audio_link } = req.body;
 
-  const newIntent = await Intent.create({ intent: intentOutcome, campaign: campaign_id });
+  const newIntent = await Intent.create({ intent: predicted_intent , campaign: campaign_id });
   const targetUser = await User.find({ device: device_id })
   .then(batchUserFound => {
     if (batchUserFound.length === 0) {
@@ -266,7 +266,7 @@ router.post("/saveTestIntent", async (req, res) => {
     intent: newIntent._id,
     confidence,
     googleTranscript: transcript,
-    transcript: postProcessText,
+    transcript: post_process_text,
     input_type,
     asr_provider,
   }).then(audioCreated => {
@@ -278,11 +278,8 @@ router.post("/saveTestIntent", async (req, res) => {
         userFound.soloCount++;
         return userFound.save();
       })
-      IntentRecord.find({intent: intentOutcome, campaign: campaign_id})
+      IntentRecord.find({intent: predicted_intent , campaign: campaign_id})
       .then(intentFound => {
-        console.log("intentOutcome: ", intentOutcome)
-        console.log("campaign: ", campaign_id)
-        console.log("intentFound: ", intentFound)
         if (intentFound.length !== 0) {
           intentFound[0].count++;
           intentFound[0].save();
