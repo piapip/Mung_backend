@@ -13,38 +13,61 @@ router.post("/import", (req, res) => {
     if (err) throw err;
     let intentList = JSON.parse(data);
     let count = 0;
-    console.log("Importing...")
-    intentList.forEach(intent => {
-      count++;
-      IntentRecord.create({
-        intent: intent.intent,
-        description: intent.question,
-      }, (err, createdIntent) => {
-        if (err) {
-          console.log("Duplicated: ", intent.intent)
-        }
+    console.log("Cleansing...")
+    IntentRecord.deleteMany({}).then(() => {
+      console.log("Done cleansing...")
+      console.log("Importing...")
+      intentList.forEach(intent => {
+        count++;
+        IntentRecord.create({
+          intent: intent.intent,
+          description: intent.question,
+        }, (err, createdIntent) => {
+          if (err) {
+            console.log("Duplicated: ", intent.intent)
+          }
+        })
       })
+      console.log("Import done.")
+      res.status(200).send(`${count} imported`)
     })
-    console.log("Import done.")
-    res.status(200).send(`${count} imported`)
   })
 })
 
+router.post("/import-with-campaign", (req, res) => {
+  const { campaignID } = req.body
+  fs.readFile(path.join(process.cwd(), "server", "config", "intent_v3.json"), (err, data) => {
+    if (err) throw err;
+    let intentList = JSON.parse(data);
+    let count = 0;
+    console.log("Cleansing...")
+    IntentRecord.deleteMany({}).then(() => {
+      console.log("Done cleansing...")
+      console.log("Importing...")
+      intentList.forEach(intent => {
+        count++;
+        IntentRecord.create({
+          intent: intent.intent,
+          description: intent.description,
+          campaign: campaignID,
+        }, (err, createdIntent) => {
+          if (err) {
+            console.log(`${count}. Duplicated: ${intent.intent}`)
+          }
+        })
+      })
+      console.log("Import done.")
+      res.status(200).send(`${count} imported`)
+    })
+  })
+})
+
+// update intent with null campaignID with some ID
 router.put("/fix-intent", (req, res) => {
   const { campaignID } = req.body;
 
   let count = 0;
   console.log("Fixing...")
-  IntentRecord.find({campaign: null})
-  .then(batchIntentRecordFound => {
-    batchIntentRecordFound.forEach(intent => {
-      count++;
-      intent.campaign = campaignID;
-      intent.save() 
-    })
-    // res.status(200).send(batchIntentRecordFound.splice(0,5));
-  })
-
   Intent.find({campaign: null})
   .then(batchIntentFound => {
     batchIntentFound.forEach(intent => {

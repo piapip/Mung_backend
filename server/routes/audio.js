@@ -246,7 +246,7 @@ router.post("/saveTestIntent", async (req, res) => {
   const { campaignID, deviceID, googleTranscript, inputText, intentOutcome, confidence } = req.body;
   let { link } = req.body;
 
-  const newIntent = await Intent.create({ intentOutcome, campaign: campaignID });
+  const newIntent = await Intent.create({ intent: intentOutcome, campaign: campaignID });
   const targetUser = await User.find({ device: deviceID })
   .then(batchUserFound => {
     if (batchUserFound.length === 0) {
@@ -278,16 +278,14 @@ router.post("/saveTestIntent", async (req, res) => {
       })
       IntentRecord.find({intent: intentOutcome, campaign: campaignID})
       .then(intentFound => {
-        if (intentFound.length === 0) {
-          res.status(404).send("Can't find intent");
-        }
-        else {
+        if (intentFound.length !== 0) {
           intentFound[0].count++;
           intentFound[0].save();
-          return res.status(200).send({
-            recordID: audioCreated._id
-          });
         }
+        
+        return res.status(200).send({
+          recordID: audioCreated._id
+        });
       })
       .catch(error => {
         if (error) {
@@ -393,7 +391,7 @@ router.post("/reject", (req, res) => {
 
 router.get("/:audioID", (req, res) => {
   const { audioID } = req.params;
-  Audio.findById(audioID)
+  Audio.findById(audioID).populate("intent")
   .then(audioFound => {
     if (!audioFound) res.status(400).send({success: false, message: "No audio found"})
     else res.status(200).send({success: true, audioFound})
