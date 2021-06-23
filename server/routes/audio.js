@@ -246,7 +246,7 @@ router.post("/saveTestIntent", async (req, res) => {
   const { campaignID, deviceID, googleTranscript, inputText, intentOutcome, confidence } = req.body;
   let { link } = req.body;
 
-  const newIntent = await Intent.create({ intentOutcome, campaignID });
+  const newIntent = await Intent.create({ intentOutcome, campaign: campaignID });
   const targetUser = await User.find({ device: deviceID })
   .then(batchUserFound => {
     if (batchUserFound.length === 0) {
