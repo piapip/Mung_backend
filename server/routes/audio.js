@@ -243,30 +243,32 @@ router.post("/solo", async (req, res) => {
 })
 
 router.post("/saveTestIntent", async (req, res) => {
-  const { campaignID, deviceID, googleTranscript, inputText, intentOutcome, confidence } = req.body;
-  let { link } = req.body;
+  const { campaign_id, device_id, transcript, postProcessText, input_type, intentOutcome, confidence, asr_provider } = req.body;
+  let { asr_audio_link } = req.body;
 
-  const newIntent = await Intent.create({ intent: intentOutcome, campaign: campaignID });
-  const targetUser = await User.find({ device: deviceID })
+  const newIntent = await Intent.create({ intent: intentOutcome, campaign: campaign_id });
+  const targetUser = await User.find({ device: device_id })
   .then(batchUserFound => {
     if (batchUserFound.length === 0) {
-      return User.create({ email: deviceID, device: deviceID })
+      return User.create({ email: device_id, device: device_id })
     } else {
       return batchUserFound[0]
     }
   })
 
-  if (!link) {
-    link = "No audio " + targetUser.soloCount + " " + uuidv4()
+  if (!asr_audio_link) {
+    asr_audio_link = "No audio " + targetUser.soloCount + " " + uuidv4()
   }
 
   Audio.create({
     user: targetUser._id,
-    link,
+    link: asr_audio_link,
     intent: newIntent._id,
     confidence,
-    googleTranscript,
-    transcript: inputText,
+    googleTranscript: transcript,
+    transcript: postProcessText,
+    input_type,
+    asr_provider,
   }).then(audioCreated => {
     if (!audioCreated) {
       res.status(500).send({ success: false, error: "Can't save audio information to the db!"});
@@ -276,8 +278,11 @@ router.post("/saveTestIntent", async (req, res) => {
         userFound.soloCount++;
         return userFound.save();
       })
-      IntentRecord.find({intent: intentOutcome, campaign: campaignID})
+      IntentRecord.find({intent: intentOutcome, campaign: campaign_id})
       .then(intentFound => {
+        console.log("intentOutcome: ", intentOutcome)
+        console.log("campaign: ", campaign_id)
+        console.log("intentFound: ", intentFound)
         if (intentFound.length !== 0) {
           intentFound[0].count++;
           intentFound[0].save();

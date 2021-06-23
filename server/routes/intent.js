@@ -44,18 +44,30 @@ router.post("/import-with-campaign", (req, res) => {
     IntentRecord.deleteMany({}).then(() => {
       console.log("Done cleansing...")
       console.log("Importing...")
-      intentList.forEach(intent => {
+      for (let intentTag in intentList) {
         count++;
         IntentRecord.create({
-          intent: intent.intent,
-          description: intent.description,
+          intent: intentTag,
+          description: intentList[intentTag],
           campaign: campaignID,
         }, (err, createdIntent) => {
           if (err) {
-            console.log(`${count}. Duplicated: ${intent.intent}`)
+            console.log(`${count}. Duplicated: ${intentTag}`)
           }
         })
-      })
+      }
+      // intentList.forEach(intent => {
+      //   count++;
+      //   IntentRecord.create({
+      //     intent: intent.intent,
+      //     description: intent.description,
+      //     campaign: campaignID,
+      //   }, (err, createdIntent) => {
+      //     if (err) {
+      //       console.log(`${count}. Duplicated: ${intent.intent}`)
+      //     }
+      //   })
+      // })
       console.log("Import done.")
       res.status(200).send(`${count} imported`)
     })
@@ -94,8 +106,23 @@ router.get("/random", async (req, res) => {
 })
 
 // create an amount of random intents.
-router.get("/multi-random/:choiceCount/:campaignID", async (req, res) => {
-  const { choiceCount, campaignID } = req.params;
+// router.get("/multi-random/:choiceCount/:campaignID", async (req, res) => {
+//   const { choiceCount, campaignID } = req.params;
+//   await IntentRecord.find({ campaign: campaignID }).sort({ count: 1 }).limit(parseInt(config.SAMPLE_POOL))
+//   .then(batchIntentFound => {
+//     const batchIntent = getMultipleRandom(batchIntentFound, parseInt(choiceCount));
+//     // const { intent, description } = batchIntentFound[intentIndex]
+//     res.status(200).send({success: true, batchIntent}); 
+//   })
+//   .catch(error => {
+//     console.log(error)
+//     res.status(500).send({success: false, batchIntent: []})
+//   })
+// })
+
+router.get("/multi-random", async (req, res) => {
+  const { choiceCount, campaign_id } = req.query;
+  const campaignID = campaign_id;
   await IntentRecord.find({ campaign: campaignID }).sort({ count: 1 }).limit(parseInt(config.SAMPLE_POOL))
   .then(batchIntentFound => {
     const batchIntent = getMultipleRandom(batchIntentFound, parseInt(choiceCount));

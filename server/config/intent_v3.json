@@ -1,778 +1,196 @@
-[
-  {
-    "intent": "Khái niệm chuyển đổi số",
-    "description": "Khái niệm chuyển đổi số"
-  },
-  {
-    "intent": "Chi tiết chuyển đổi số",
-    "description": "Chi tiết chuyển đổi số"
-  },
-  {
-    "intent": "Lý do cần phải thực hiện chuyển đổi số",
-    "description": "Lý do cần phải thực hiện chuyển đổi số"
-  },
-  {
-    "intent": "Người phụ trách thực hiện chuyển đổi số",
-    "description": "Người phụ trách thực hiện chuyển đổi số"
-  },
-  {
-    "intent": "Cơ quan giải đáp thắc mắc chuyển đổi số",
-    "description": "Cơ quan giải đáp thắc mắc chuyển đổi số"
-  },
-  {
-    "intent": "Thời điểm xuất hiện chuyển đổi số",
-    "description": "Thời điểm xuất hiện chuyển đổi số"
-  },
-  {
-    "intent": "Cách chuyển đổi số",
-    "description": "Cách chuyển đổi số"
-  },
-  {
-    "intent": "Thời gian thực hiện chuyển đổi số",
-    "description": "Thời gian thực hiện chuyển đổi số"
-  },
-  {
-    "intent": "Thách thức của chuyển đổi số",
-    "description": "Thách thức của chuyển đổi số"
-  },
-  {
-    "intent": "Chương trình quốc gia về chuyển đổi số",
-    "description": "Chương trình quốc gia về chuyển đổi số"
-  },
-  {
-    "intent": "Cơ quan chủ trì chương trình chuyển đổi số",
-    "description": "Cơ quan chủ trì chương trình chuyển đổi số"
-  },
-  {
-    "intent": "Khái niệm chuyển đổi số cấp địa phương",
-    "description": "Khái niệm chuyển đổi số cấp địa phương"
-  },
-  {
-    "intent": "Tầm quan trọng của việc ban hành nghị quyết chuyên đề về Chuyển đổi số trước khi triển khai ở địa phương",
-    "description": "Tầm quan trọng của việc ban hành nghị quyết chuyên đề về Chuyển đổi số trước khi triển khai ở địa phương"
-  },
-  {
-    "intent": "Vai trò quyết định trong chuyển đổi số",
-    "description": "Vai trò quyết định trong chuyển đổi số"
-  },
-  {
-    "intent": "Đối tượng trung tâm của chuyển đổi số",
-    "description": "Đối tượng trung tâm của chuyển đổi số"
-  },
-  {
-    "intent": "Khái niệm chuyển đổi số lấy người dân làm trung tâm",
-    "description": "Khái niệm chuyển đổi số lấy người dân làm trung tâm"
-  },
-  {
-    "intent": "Giải pháp thúc đẩy chuyển đổi số",
-    "description": "Giải pháp thúc đẩy chuyển đổi số"
-  },
-  {
-    "intent": "Động lực của chuyển đổi số",
-    "description": "Động lực của chuyển đổi số"
-  },
-  {
-    "intent": "Vấn đề then chốt trong chuyển đổi số",
-    "description": "Vấn đề then chốt trong chuyển đổi số"
-  },
-  {
-    "intent": "Yếu tố đảm bảo thành công của chuyển đổi số",
-    "description": "Yếu tố đảm bảo thành công của chuyển đổi số"
-  },
-  {
-    "intent": "Công nghệ thúc đẩy chuyển đổi số",
-    "description": "Công nghệ thúc đẩy chuyển đổi số"
-  },
-  {
-    "intent": "Các lĩnh vực ưu tiên trong chuyển đổi số",
-    "description": "Các lĩnh vực ưu tiên trong chuyển đổi số"
-  },
-  {
-    "intent": "Lợi thế khi thực hiện chuyển đổi số",
-    "description": "Lợi thế khi thực hiện chuyển đổi số"
-  },
-  {
-    "intent": "Ngày Chuyển đổi số Quốc gia",
-    "description": "Ngày Chuyển đổi số Quốc gia đã có chưa"
-  },
-  {
-    "intent": "Cập nhật lại cẩm nang chuyển đổi số",
-    "description": "Cập nhật lại cẩm nang chuyển đổi số"
-  },
-  {
-    "intent": "Hướng chuyển đổi số của doanh nghiệp nhỏ và vừa",
-    "description": "Hướng chuyển đổi số của doanh nghiệp nhỏ và vừa"
-  },
-  {
-    "intent": "Khái niệm chuyển đổi số cơ quan nhà nước",
-    "description": "Khái niệm chuyển đổi số cơ quan nhà nước"
-  },
-  {
-    "intent": "Quy định về chia sẻ dữ liệu trong cơ quan nhà nước",
-    "description": "Quy định về chia sẻ dữ liệu trong cơ quan nhà nước"
-  },
-  {
-    "intent": "Xây dựng chiến lược chuyển đổi số",
-    "description": "Xây dựng chiến lược chuyển đổi số"
-  },
-  {
-    "intent": "Cách mạng công nghiệp lần thứ 4",
-    "description": "Cách mạng công nghiệp lần thứ 4"
-  },
-  {
-    "intent": "Khái niệm số hóa",
-    "description": "Khái niệm số hóa"
-  },
-  {
-    "intent": "Khái niệm tin học hóa",
-    "description": "Khái niệm tin học hóa"
-  },
-  {
-    "intent": "Ứng dụng công nghệ thông tin",
-    "description": "Ứng dụng công nghệ thông tin"
-  },
-  {
-    "intent": "Thời điểm bắt đầu ứng dụng công nghệ thông tin",
-    "description": "Thời điểm bắt đầu ứng dụng công nghệ thông tin"
-  },
-  {
-    "intent": "Sự khác nhau giữa chuyển đổi số và ứng dụng công nghệ thông tin",
-    "description": "Sự khác nhau giữa chuyển đổi số và ứng dụng công nghệ thông tin"
-  },
-  {
-    "intent": "Sự khác nhau giữa tin học hóa và ứng dụng công nghệ thông tin",
-    "description": "Sự khác nhau giữa tin học hóa và ứng dụng công nghệ thông tin"
-  },
-  {
-    "intent": "Chi phí cho chuyển đổi số",
-    "description": "Chi phí cho chuyển đổi số"
-  },
-  {
-    "intent": "Đánh giá hiệu quả của các khoản chi cho chuyển đổi số",
-    "description": "Đánh giá hiệu quả của các khoản chi cho chuyển đổi số"
-  },
-  {
-    "intent": "Thể chế và công nghệ",
-    "description": "Thể chế và công nghệ"
-  },
-  {
-    "intent": "Khái niệm chuyên gia",
-    "description": "Khái niệm chuyên gia"
-  },
-  {
-    "intent": "Khái niệm chuyên gia công nghệ số",
-    "description": "Khái niệm chuyên gia công nghệ số"
-  },
-  {
-    "intent": "Thời điểm thuê chuyên gia tư vấn",
-    "description": "Thời điểm thuê chuyên gia tư vấn"
-  },
-  {
-    "intent": "Thành viên tham gia chuyển đổi số",
-    "description": "Thành viên tham gia chuyển đổi số"
-  },
-  {
-    "intent": "Nền tảng chuyển đổi số quốc gia",
-    "description": "Nền tảng chuyển đổi số quốc gia"
-  },
-  {
-    "intent": "Khái niệm học máy",
-    "description": "Khái niệm học máy"
-  },
-  {
-    "intent": "Khái niệm trợ lý ảo",
-    "description": "Khái niệm trợ lý ảo"
-  },
-  {
-    "intent": "Cách theo dõi và đánh giá quá trình chuyển đổi số quốc gia",
-    "description": "Cách theo dõi và đánh giá quá trình chuyển đổi số quốc gia"
-  },
-  {
-    "intent": "Khái niệm nền tảng số",
-    "description": "Khái niệm nền tảng số"
-  },
-  {
-    "intent": "Sự khác nhau giữ kiến trúc và khung kiến trúc",
-    "description": "Sự khác nhau giữ kiến trúc và khung kiến trúc"
-  },
-  {
-    "intent": "Khái niệm chính phủ điện tử",
-    "description": "Khái niệm chính phủ điện tử"
-  },
-  {
-    "intent": "Khái niệm Chính phủ số",
-    "description": "Khái niệm Chính phủ số"
-  },
-  {
-    "intent": "Sự khác nhau giữa chính phủ điện tử và chính phủ số",
-    "description": "Sự khác nhau giữa chính phủ điện tử và chính phủ số"
-  },
-  {
-    "intent": "Trọng tâm chiến lược của Chính phủ số",
-    "description": "Trọng tâm chiến lược của Chính phủ số"
-  },
-  {
-    "intent": "Mối quan hệ giữa đô thị thông minh và chính quyền số",
-    "description": "Mối quan hệ giữa đô thị thông minh và chính quyền số"
-  },
-  {
-    "intent": "Lý do phải phát triển chính phủ số",
-    "description": "Lý do phải phát triển chính phủ số"
-  },
-  {
-    "intent": "Quốc gia phát triển Chính phủ số thành công",
-    "description": "Quốc gia phát triển Chính phủ số thành công"
-  },
-  {
-    "intent": "Khái niệm chính quyền số",
-    "description": "Khái niệm chính quyền số"
-  },
-  {
-    "intent": "Xếp hạng Chính phủ điện tử",
-    "description": "Xếp hạng Chính phủ điện tử"
-  },
-  {
-    "intent": "Đơn vị xếp hạng chính phủ điện tử",
-    "description": "Đơn vị xếp hạng chính phủ điện tử"
-  },
-  {
-    "intent": "Khái niệm đám mây Chính phủ",
-    "description": "Khái niệm đám mây Chính phủ"
-  },
-  {
-    "intent": "Chủ tịch Ủy ban Quốc gia về Chính phủ điện tử",
-    "description": "Chủ tịch Ủy ban Quốc gia về Chính phủ điện tử"
-  },
-  {
-    "intent": "Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương",
-    "description": "Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương"
-  },
-  {
-    "intent": "Cơ quan thường trực của Tổ công tác giúp việc Ủy ban Quốc gia về Chính phủ điện tử",
-    "description": "Cơ quan thường trực của Tổ công tác giúp việc Ủy ban Quốc gia về Chính phủ điện tử"
-  },
-  {
-    "intent": "Kiện toàn lại Ủy ban Quốc gia về Chính phủ điện tử",
-    "description": "Kiện toàn lại Ủy ban Quốc gia về Chính phủ điện tử"
-  },
-  {
-    "intent": "Mục tiêu hoàn thành chuyển đổi số",
-    "description": "Mục tiêu hoàn thành chuyển đổi số"
-  },
-  {
-    "intent": "Khái niệm Chính phủ 04 không",
-    "description": "Khái niệm Chính phủ 04 không"
-  },
-  {
-    "intent": "Kiến trúc chính phủ điện tử 2.0",
-    "description": "Kiến trúc chính phủ điện tử 2.0"
-  },
-  {
-    "intent": "Chi phí tiếp cận công nghệ số",
-    "description": "Chi phí tiếp cận công nghệ số"
-  },
-  {
-    "intent": "Khái niệm số định danh cá nhân",
-    "description": "Khái niệm số định danh cá nhân"
-  },
-  {
-    "intent": "Khái niệm trung tâm điều hành thông minh",
-    "description": "Khái niệm trung tâm điều hành thông minh"
-  },
-  {
-    "intent": "Khái niệm trung tâm giám sát Chính phủ điện tử",
-    "description": "Khái niệm trung tâm giám sát Chính phủ điện tử"
-  },
-  {
-    "intent": "Thời gian ban hành khung tham chiếu ICT phát triển đô thị thông minh phiên bản 1.0",
-    "description": "Thời gian ban hành khung tham chiếu ICT phát triển đô thị thông minh phiên bản 1.0"
-  },
-  {
-    "intent": "Khái niệm dịch vụ công trực tuyến",
-    "description": "Khái niệm dịch vụ công trực tuyến"
-  },
-  {
-    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 1",
-    "description": "Khái niệm dịch vụ công trực tuyến mức độ 1"
-  },
-  {
-    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 2",
-    "description": "Khái niệm dịch vụ công trực tuyến mức độ 2"
-  },
-  {
-    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 3",
-    "description": "Khái niệm dịch vụ công trực tuyến mức độ 3"
-  },
-  {
-    "intent": "Khái niệm dịch vụ công trực tuyến mức độ 4",
-    "description": "Khái niệm dịch vụ công trực tuyến mức độ 4"
-  },
-  {
-    "intent": "Yêu cầu xác thực người dùng",
-    "description": "Yêu cầu xác thực người dùng"
-  },
-  {
-    "intent": "Tỷ lệ dịch vụ công trực tuyến có phát sinh hồ sơ",
-    "description": "Tỷ lệ dịch vụ công trực tuyến có phát sinh hồ sơ"
-  },
-  {
-    "intent": "Tỷ lệ dịch vụ công trực tuyến mức độ 4",
-    "description": "Tỷ lệ dịch vụ công trực tuyến mức độ 4"
-  },
-  {
-    "intent": "Khái niệm dịch vụ hành chính công",
-    "description": "Khái niệm dịch vụ hành chính công"
-  },
-  {
-    "intent": "Cổng dịch vụ công cấp bộ, cấp tỉnh",
-    "description": "Cổng dịch vụ công cấp bộ, cấp tỉnh"
-  },
-  {
-    "intent": "Hệ thống thông tin một cửa điện tử cấp bộ hoặc cấp tỉnh",
-    "description": "Hệ thống thông tin một cửa điện tử cấp bộ hoặc cấp tỉnh"
-  },
-  {
-    "intent": "Linh hoạt chỉnh sửa quy trình lưu chuyển, xử lý thủ tục hành chính trên hệ thống thông tin một cửa",
-    "description": "Các chu trình lưu chuyển, xử lý thủ tục hành chính trên hệ thống thông tin một cửa điện tử cấp bộ, cấp tỉnh có thể chỉnh sửa linh hoạt để phù hợp với quy định của thủ tục hành chính không?"
-  },
-  {
-    "intent": "Cơ quan chủ quản cổng thông tin điện tử",
-    "description": "Cơ quan chủ quản cổng thông tin điện tử"
-  },
-  {
-    "intent": "Cơ quan cung cấp dịch vụ công trực tuyến",
-    "description": "Cơ quan cung cấp dịch vụ công trực tuyến"
-  },
-  {
-    "intent": "Cổng dịch vụ công quốc gia",
-    "description": "Cổng dịch vụ công quốc gia"
-  },
-  {
-    "intent": "Chức năng cổng dịch vụ công quốc gia",
-    "description": "Chức năng cổng dịch vụ công quốc gia"
-  },
-  {
-    "intent": "Cơ sở dữ liệu quốc gia được ưu tiên",
-    "description": "Cơ sở dữ liệu quốc gia được ưu tiên"
-  },
-  {
-    "intent": "Phân loại cơ sở dữ liệu trong cơ quan nhà nước",
-    "description": "Phân loại cơ sở dữ liệu trong cơ quan nhà nước"
-  },
-  {
-    "intent": "Khái niệm dữ liệu mở",
-    "description": "Khái niệm dữ liệu mở"
-  },
-  {
-    "intent": "Nơi truy cập dữ liệu mở",
-    "description": "Nơi truy cập dữ liệu mở"
-  },
-  {
-    "intent": "Mã định danh điện tử cơ quan, tổ chức",
-    "description": "Mã định danh điện tử cơ quan, tổ chức"
-  },
-  {
-    "intent": "Nhu cầu mã định danh điện tử",
-    "description": "Nhu cầu mã định danh điện tử"
-  },
-  {
-    "intent": "Cấu trúc mã định danh điện tử",
-    "description": "Cấu trúc mã định danh điện tử"
-  },
-  {
-    "intent": "Đánh mã định danh điện tử",
-    "description": "Đánh mã định danh điện tử"
-  },
-  {
-    "intent": "Đánh mã định danh điện tử cơ quan Đảng",
-    "description": "Ủy ban nhân dân cấp tỉnh có thể đánh mã định danh cho cơ quan Đảng tại địa phương mình được không?"
-  },
-  {
-    "intent": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia",
-    "description": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia"
-  },
-  {
-    "intent": "NGSP",
-    "description": "NGSP"
-  },
-  {
-    "intent": "Nền tảng tích hợp, chia sẻ dữ liệu cấp Bộ, ngành, địa phương",
-    "description": "Nền tảng tích hợp, chia sẻ dữ liệu cấp Bộ, ngành, địa phương"
-  },
-  {
-    "intent": "LGSP",
-    "description": "LGSP"
-  },
-  {
-    "intent": "Các nền tảng đã kết nối cơ sở dữ liệu quốc gia",
-    "description": "Các nền tảng đã kết nối cơ sở dữ liệu quốc gia"
-  },
-  {
-    "intent": "Cách kết nối nền tảng tích hợp, chia sẻ dữ liệu quốc gia",
-    "description": "Cách kết nối nền tảng tích hợp, chia sẻ dữ liệu quốc gia"
-  },
-  {
-    "intent": "Khái niệm nền kinh tế số",
-    "description": "Khái niệm nền kinh tế số"
-  },
-  {
-    "intent": "Khái niện nền kinh tế nền tảng",
-    "description": "Khái niện nền kinh tế nền tảng"
-  },
-  {
-    "intent": "Vai trò của nền kinh tế số",
-    "description": "Vai trò của nền kinh tế số"
-  },
-  {
-    "intent": "Thời điểm xuất hiện kinh tế số",
-    "description": "Thời điểm xuất hiện kinh tế số"
-  },
-  {
-    "intent": "Cách thúc đẩy nền kinh tế số",
-    "description": "Cách thúc đẩy nền kinh tế số"
-  },
-  {
-    "intent": "Cách đo lường kinh tế số",
-    "description": "Cách đo lường kinh tế số"
-  },
-  {
-    "intent": "Giá trị kinh tế số",
-    "description": "Giá trị kinh tế số"
-  },
-  {
-    "intent": "Kinh tế số của Việt Nam so với quốc tế",
-    "description": "Kinh tế số của Việt Nam so với quốc tế"
-  },
-  {
-    "intent": "Mục tiêu chương trình chuyển đổi số quốc gia",
-    "description": "Mục tiêu chương trình chuyển đổi số quốc gia"
-  },
-  {
-    "intent": "Lý do doanh nghiệp cần chuyển đổi số",
-    "description": "Lý do doanh nghiệp cần chuyển đổi số"
-  },
-  {
-    "intent": "Chi phí để doanh nghiệp thực hiện chuyển đổi số",
-    "description": "Chi phí để doanh nghiệp thực hiện chuyển đổi số"
-  },
-  {
-    "intent": "Cách đo lường mức độ chuyển đổi số của các doanh nghiệp",
-    "description": "Cách đo lường mức độ chuyển đổi số của các doanh nghiệp"
-  },
-  {
-    "intent": "Hỗ trợ doanh nghiệp chuyển đổi số",
-    "description": "Hỗ trợ doanh nghiệp chuyển đổi số"
-  },
-  {
-    "intent": "Khái niệm doanh nghiệp công nghệ số",
-    "description": "Khái niệm doanh nghiệp công nghệ số"
-  },
-  {
-    "intent": "Loại hình doanh nghiệp công nghệ số",
-    "description": "Loại hình doanh nghiệp công nghệ số"
-  },
-  {
-    "intent": "Thông tin về các doanh nghiệp công nghệ số",
-    "description": "Thông tin về các doanh nghiệp công nghệ số"
-  },
-  {
-    "intent": "Số lượng doanh nghiệp công nghệ số",
-    "description": "Số lượng doanh nghiệp công nghệ số"
-  },
-  {
-    "intent": "Khái niệm doanh nghiệp kỳ lân",
-    "description": "Khái niệm doanh nghiệp kỳ lân"
-  },
-  {
-    "intent": "Số lượng doanh nghiệp kỳ lân",
-    "description": "Số lượng doanh nghiệp kỳ lân"
-  },
-  {
-    "intent": "Khái niệm Make in Việt Nam",
-    "description": "Khái niệm Make in Việt Nam"
-  },
-  {
-    "intent": "Khái niệm mô hình sandbox",
-    "description": "Khái niệm mô hình sandbox"
-  },
-  {
-    "intent": "Khái niệm mobile money",
-    "description": "Khái niệm mobile money"
-  },
-  {
-    "intent": "Khái niệm mô hình công dân số",
-    "description": "Khái niệm mô hình công dân số"
-  },
-  {
-    "intent": "Khái niệm xã hội số",
-    "description": "Khái niệm xã hội số"
-  },
-  {
-    "intent": "Khái niệm văn hóa số",
-    "description": "Khái niệm văn hóa số"
-  },
-  {
-    "intent": "Tác động của chuyển đổi số",
-    "description": "Tác động của chuyển đổi số"
-  },
-  {
-    "intent": "Đào tạo lại kỹ năng số",
-    "description": "Đào tạo lại kỹ năng số"
-  },
-  {
-    "intent": "Đào tạo nâng cấp kỹ năng số",
-    "description": "Đào tạo nâng cấp kỹ năng số"
-  },
-  {
-    "intent": "Ngành nghề ảnh hưởng nhiều bởi chuyển đổi số",
-    "description": "Ngành nghề ảnh hưởng nhiều bởi chuyển đổi số"
-  },
-  {
-    "intent": "Nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số",
-    "description": "Nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số"
-  },
-  {
-    "intent": "Giải pháp gì để đào tạo kỹ năng số",
-    "description": "Giải pháp gì để đào tạo kỹ năng số"
-  },
-  {
-    "intent": "Khái niệm đại học số",
-    "description": "Khái niệm đại học số"
-  },
-  {
-    "intent": "Vấn đề thâm hụt nhân lực kỹ thuật",
-    "description": "Vấn đề thâm hụt nhân lực kỹ thuật"
-  },
-  {
-    "intent": "Khái niệm khoa học dữ liệu",
-    "description": "Khái niệm khoa học dữ liệu"
-  },
-  {
-    "intent": "Phổ cập điện thoại thông minh",
-    "description": "Phổ cập điện thoại thông minh"
-  },
-  {
-    "intent": "Hành động của người dân trong xu thế chuyển đổi số",
-    "description": "Hành động của người dân trong xu thế chuyển đổi số"
-  },
-  {
-    "intent": "Khái niệm khoảng cách số",
-    "description": "Khái niệm khoảng cách số"
-  },
-  {
-    "intent": "Tách động của chuyển đổi số đến khoảng cách giàu nghèo",
-    "description": "Tách động của chuyển đổi số đến khoảng cách giàu nghèo"
-  },
-  {
-    "intent": "Môi trường số nhân văn, rộng khắp",
-    "description": "Mục tiêu tạo ra môi trường số nhân văn, rộng khắp của Chương trình chuyển đổi số Quốc gia cần được hiểu như thế nào?"
-  },
-  {
-    "intent": "Khái niệm hạ tầng số",
-    "description": "Khái niệm hạ tầng số"
-  },
-  {
-    "intent": "Doanh nghiệp được cấp phép thử nghiệm cung cấp dịch vụ 5G",
-    "description": "Doanh nghiệp được cấp phép thử nghiệm cung cấp dịch vụ 5G"
-  },
-  {
-    "intent": "Doanh nghiệp đáp ứng về điện toán đám mây",
-    "description": "Doanh nghiệp đáp ứng về điện toán đám mây"
-  },
-  {
-    "intent": "Đóng góp cho sự kiện Thế giới số",
-    "description": "Đóng góp cho sự kiện Thế giới số"
-  },
-  {
-    "intent": "Định hướng phát triển lĩnh vực Bưu chính",
-    "description": "Định hướng phát triển lĩnh vực Bưu chính"
-  },
-  {
-    "intent": "Tỷ lệ cơ quan nhà nước kết nối Mạng truyền số liệu chuyên dùng",
-    "description": "Tỷ lệ cơ quan nhà nước kết nối Mạng truyền số liệu chuyên dùng"
-  },
-  {
-    "intent": "Vấn đề cạt kiệt không gian địa chỉ",
-    "description": "Vấn đề cạt kiệt không gian địa chỉ"
-  },
-  {
-    "intent": "Hiện trạng chuyển đổi IPv6",
-    "description": "Hiện trạng chuyển đổi IPv6"
-  },
-  {
-    "intent": "Chương trình IPv6 for Gov",
-    "description": "Chương trình IPv6 for Gov"
-  },
-  {
-    "intent": "Mạng IPv6 thuần",
-    "description": "Mạng IPv6 thuần"
-  },
-  {
-    "intent": "Khái niệm Không gian mạng quốc gia",
-    "description": "Khái niệm Không gian mạng quốc gia"
-  },
-  {
-    "intent": "Khái niệm An ninh mạng",
-    "description": "Khái niệm An ninh mạng"
-  },
-  {
-    "intent": "Khái niệm Bảo vệ an ninh mạng",
-    "description": "Khái niệm Bảo vệ an ninh mạng"
-  },
-  {
-    "intent": "Khái niệm tài khoản số",
-    "description": "Khái niệm tài khoản số"
-  },
-  {
-    "intent": "Cổng kết nối mạng quốc tế",
-    "description": "Cổng kết nối mạng quốc tế"
-  },
-  {
-    "intent": "Khái niệm tội phạm mạng",
-    "description": "Khái niệm tội phạm mạng"
-  },
-  {
-    "intent": "Khái niệm tấn công mạng",
-    "description": "Khái niệm tấn công mạng"
-  },
-  {
-    "intent": "Khái niệm khủng bố mạng",
-    "description": "Khái niệm khủng bố mạng"
-  },
-  {
-    "intent": "Khái niệm gián điệp mạng",
-    "description": "Khái niệm gián điệp mạng"
-  },
-  {
-    "intent": "Khái niệm nguy cơ an ninh mạng",
-    "description": "Khái niệm nguy cơ an ninh mạng"
-  },
-  {
-    "intent": "Khái niệm sự cố an ninh mạng",
-    "description": "Khái niệm sự cố an ninh mạng"
-  },
-  {
-    "intent": "Tình huống nguy hiểm về an ninh mạng",
-    "description": "Tình huống nguy hiểm về an ninh mạng"
-  },
-  {
-    "intent": "Nội dung cơ bản của Luật an ninh mạng",
-    "description": "Nội dung cơ bản của Luật an ninh mạng"
-  },
-  {
-    "intent": "Luật An ninh mạng và Quyền tư do ngôn luận",
-    "description": "Luật An ninh mạng và Quyền tư do ngôn luận"
-  },
-  {
-    "intent": "Lực lượng bảo vệ an ninh mạng",
-    "description": "Lực lượng bảo vệ an ninh mạng"
-  },
-  {
-    "intent": "Mức độ kiểm soát thông tin của Luật An ninh mạng",
-    "description": "Mức độ kiểm soát thông tin của Luật An ninh mạng"
-  },
-  {
-    "intent": "Cải thiện độ tin cậy trên không gian mạng",
-    "description": "Cải thiện độ tin cậy trên không gian mạng"
-  },
-  {
-    "intent": "Danh tính số",
-    "description": "Danh tính số"
-  },
-  {
-    "intent": "Đăng ký sử dụng danh tính số",
-    "description": "Đăng ký sử dụng danh tính số"
-  },
-  {
-    "intent": "Ký số từ xa",
-    "description": "Ký số từ xa"
-  },
-  {
-    "intent": "Quốc gia có tỷ lệ phổ cập danh tính số lớn nhất",
-    "description": "Quốc gia có tỷ lệ phổ cập danh tính số lớn nhất"
-  },
-  {
-    "intent": "Khái niệm hệ sinh thái tín nhiệm mạng",
-    "description": "Khái niệm hệ sinh thái tín nhiệm mạng"
-  },
-  {
-    "intent": "Người giải đáp về vấn đề an toàn thông tin",
-    "description": "Người giải đáp về vấn đề an toàn thông tin"
-  },
-  {
-    "intent": "Nguồn kỹ năng bảo vệ bản thân trên không gian mạng",
-    "description": "Nguồn kỹ năng bảo vệ bản thân trên không gian mạng"
-  },
-  {
-    "intent": "Bảo vệ an toàn thông tin theo mô hình 4 lớp",
-    "description": "Bảo vệ an toàn thông tin theo mô hình 4 lớp"
-  },
-  {
-    "intent": "Cuộc thi Viet Solutions",
-    "description": "Cuộc thi Viet Solutions"
-  },
-  {
-    "intent": "Giải thưởng Chuyển đổi số Việt nam là gì?",
-    "description": "Giải thưởng Chuyển đổi số Việt nam là gì?"
-  },
-  {
-    "intent": "Thông tin về sự kiện Thách thức công nghệ số",
-    "description": "Thông tin về sự kiện Thách thức công nghệ số"
-  },
-  {
-    "intent": "Ngày Chuyển đổi số Việt Nam",
-    "description": "Ngày Chuyển đổi số Việt Nam"
-  },
-  {
-    "intent": "Mô hình Cục ảo",
-    "description": "Mô hình Cục ảo"
-  },
-  {
-    "intent": "Khái niệm Công nghệ mở",
-    "description": "Khái niệm Công nghệ mở"
-  },
-  {
-    "intent": "Khái niệm điện toán đám mây",
-    "description": "Khái niệm điện toán đám mây"
-  },
-  {
-    "intent": "Khái niệm dữ liệu lớn",
-    "description": "Khái niệm dữ liệu lớn"
-  },
-  {
-    "intent": "Thời gian thuê dịch vụ công nghệ thông tin",
-    "description": "Thời gian thuê dịch vụ công nghệ thông tin"
-  },
-  {
-    "intent": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin",
-    "description": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin"
-  },
-  {
-    "intent": "Thời điểm thành lập Bộ Thông tin và Truyền thông",
-    "description": "Thời điểm thành lập Bộ Thông tin và Truyền thông"
-  },
-  {
-    "intent": "Thời điểm thành lập Ngành Thông tin và Truyền thông",
-    "description": "Thời điểm thành lập Ngành Thông tin và Truyền thông"
-  },
-  {
-    "intent": "Lĩnh vực quản lý",
-    "description": "Lĩnh vực quản lý"
-  },
-  {
-    "intent": "Lịch sử phát triển lĩnh vực Bưu chính",
-    "description": "Lịch sử phát triển lĩnh vực Bưu chính"
-  },
-  {
-    "intent": "Lịch sử phát triển lĩnh vực báo chí truyền thông Việt Nam",
-    "description": "Lịch sử phát triển lĩnh vực báo chí truyền thông Việt Nam"
-  },
-  {
-    "intent": "Ý nghĩa tên Bộ Thông tin và Truyền Thông",
-    "description": "Ý nghĩa tên Bộ Thông tin và Truyền Thông"
-  },
-  {
-    "intent": "Đổi tên Bộ Thông tin và Truyền thông",
-    "description": "Đổi tên Bộ Thông tin và Truyền thông"
-  }
-]
+{
+  "khai_niem_ha_tang_so": "Khái niệm hạ tầng số",
+  "doanh_nghiep_duoc_cap_phep_thu_nghiem_cung_cap_dich_vu_5g": "Doanh nghiệp được cấp phép thử nghiệm cung cấp dịch vụ 5G",
+  "doanh_nghiep_dap_ung_ve_dien_toan_dam_may": "Doanh nghiệp đáp ứng về điện toán đám mây",
+  "dinh_huong_phat_trien_linh_vuc_buu_chinh": "Định hướng phát triển lĩnh vực Bưu chính",
+  "ty_le_co_quan_nha_nuoc_ket_noi_mang_truyen_so_lieu_chuyen_dung": "Tỷ lệ cơ quan nhà nước kết nối Mạng truyền số liệu chuyên dùng",
+  "hien_trang_chuyen_doi_ipv6": "Hiện trạng chuyển đổi IPv6",
+  "dong_gop_cho_su_kien_the_gioi_so": "Đóng góp cho sự kiện Thế giới số",
+  "van_de_cat_kiet_khong_gian_dia_chi": "Vấn đề cạt kiệt không gian địa chỉ",
+  "mang_ipv6_thuan": "Mạng IPv6 thuần",
+  "chuong_trinh_ipv6_for_gov": "Chương trình IPv6 for Gov",
+  "thoi_diem_thanh_lap_bo_thong_tin_va_truyen_thong": "Thời điểm thành lập Bộ Thông tin và Truyền thông",
+  "lich_su_phat_trien_linh_vuc_buu_chinh": "Lịch sử phát triển lĩnh vực Bưu chính",
+  "thoi_diem_thanh_lap_nganh_thong_tin_va_truyen_thong": "Thời điểm thành lập Ngành Thông tin và Truyền thông",
+  "linh_vuc_quan_ly": "Lĩnh vực quản lý",
+  "y_nghia_ten_bo_thong_tin_va_truyen_thong": "Ý nghĩa tên Bộ Thông tin và Truyền Thông",
+  "lich_su_phat_trien_linh_vuc_bao_chi_truyen_thong_viet_nam": "Lịch sử phát triển lĩnh vực báo chí truyền thông Việt Nam",
+  "doi_ten_bo_thong_tin_va_truyen_thong": "Đổi tên Bộ Thông tin và Truyền thông",
+  "khai_niem_nen_kinh_te_so": "Khái niệm nền kinh tế số",
+  "khai_nien_nen_kinh_te_nen_tang": "Khái niện nền kinh tế nền tảng",
+  "thoi_diem_xuat_hien_kinh_te_so": "Thời điểm xuất hiện kinh tế số",
+  "vai_tro_cua_nen_kinh_te_so": "Vai trò của nền kinh tế số",
+  "cach_thuc_day_nen_kinh_te_so": "Cách thúc đẩy nền kinh tế số",
+  "muc_tieu_chuong_trinh_chuyen_doi_so_quoc_gia": "Mục tiêu chương trình chuyển đổi số quốc gia",
+  "cach_do_luong_kinh_te_so": "Cách đo lường kinh tế số",
+  "gia_tri_kinh_te_so": "Giá trị kinh tế số",
+  "ly_do_doanh_nghiep_can_chuyen_doi_so": "Lý do doanh nghiệp cần chuyển đổi số",
+  "khai_niem_doanh_nghiep_cong_nghe_so": "Khái niệm doanh nghiệp công nghệ số",
+  "kinh_te_so_cua_viet_nam_so_voi_quoc_te": "Kinh tế số của Việt Nam so với quốc tế",
+  "chi_phi_de_doanh_nghiep_thuc_hien_chuyen_doi_so": "Chi phí để doanh nghiệp thực hiện chuyển đổi số",
+  "loai_hinh_doanh_nghiep_cong_nghe_so": "Loại hình doanh nghiệp công nghệ số",
+  "so_luong_doanh_nghiep_ky_lan": "Số lượng doanh nghiệp kỳ lân",
+  "cach_do_luong_muc_do_chuyen_doi_so_cua_cac_doanh_nghiep": "Cách đo lường mức độ chuyển đổi số của các doanh nghiệp",
+  "ho_tro_doanh_nghiep_chuyen_doi_so": "Hỗ trợ doanh nghiệp chuyển đổi số",
+  "khai_niem_make_in_viet_nam": "Khái niệm Make in Việt Nam",
+  "thong_tin_ve_cac_doanh_nghiep_cong_nghe_so": "Thông tin về các doanh nghiệp công nghệ số",
+  "khai_niem_an_ninh_mang": "Khái niệm An ninh mạng",
+  "so_luong_doanh_nghiep_cong_nghe_so": "Số lượng doanh nghiệp công nghệ số",
+  "khai_niem_doanh_nghiep_ky_lan": "Khái niệm doanh nghiệp kỳ lân",
+  "khai_niem_mo_hinh_sandbox": "Khái niệm mô hình sandbox",
+  "khai_niem_bao_ve_an_ninh_mang": "Khái niệm Bảo vệ an ninh mạng",
+  "khai_niem_tan_cong_mang": "Khái niệm tấn công mạng",
+  "khai_niem_mobile_money": "Khái niệm mobile money",
+  "khai_niem_khong_gian_mang_quoc_gia": "Khái niệm Không gian mạng quốc gia",
+  "tinh_huong_nguy_hiem_ve_an_ninh_mang": "Tình huống nguy hiểm về an ninh mạng",
+  "khai_niem_khung_bo_mang": "Khái niệm khủng bố mạng",
+  "khai_niem_tai_khoan_so": "Khái niệm tài khoản số",
+  "cong_ket_noi_mang_quoc_te": "Cổng kết nối mạng quốc tế",
+  "khai_niem_toi_pham_mang": "Khái niệm tội phạm mạng",
+  "cai_thien_do_tin_cay_tren_khong_gian_mang": "Cải thiện độ tin cậy trên không gian mạng",
+  "noi_dung_co_ban_cua_luat_an_ninh_mang": "Nội dung cơ bản của Luật an ninh mạng",
+  "khai_niem_gian_diep_mang": "Khái niệm gián điệp mạng",
+  "khai_niem_nguy_co_an_ninh_mang": "Khái niệm nguy cơ an ninh mạng",
+  "khai_niem_su_co_an_ninh_mang": "Khái niệm sự cố an ninh mạng",
+  "khai_niem_he_sinh_thai_tin_nhiem_mang": "Khái niệm hệ sinh thái tín nhiệm mạng",
+  "luat_an_ninh_mang_va_quyen_tu_do_ngon_luan": "Luật An ninh mạng và Quyền tư do ngôn luận",
+  "danh_tinh_so": "Danh tính số",
+  "luc_luong_bao_ve_an_ninh_mang": "Lực lượng bảo vệ an ninh mạng",
+  "muc_do_kiem_soat_thong_tin_cua_luat_an_ninh_mang": "Mức độ kiểm soát thông tin của Luật An ninh mạng",
+  "dang_ky_su_dung_danh_tinh_so": "Đăng ký sử dụng danh tính số",
+  "nguoi_giai_dap_ve_van_de_an_toan_thong_tin": "Người giải đáp về vấn đề an toàn thông tin",
+  "ky_so_tu_xa": "Ký số từ xa",
+  "nguon_ky_nang_bao_ve_ban_than_tren_khong_gian_mang": "Nguồn kỹ năng bảo vệ bản thân trên không gian mạng",
+  "quoc_gia_co_ty_le_pho_cap_danh_tinh_so_lon_nhat": "Quốc gia có tỷ lệ phổ cập danh tính số lớn nhất",
+  "bao_ve_an_toan_thong_tin_theo_mo_hinh_4_lop": "Bảo vệ an toàn thông tin theo mô hình 4 lớp",
+  "khai_niem_mo_hinh_cong_dan_so": "Khái niệm mô hình công dân số",
+  "dao_tao_nang_cap_ky_nang_so": "Đào tạo nâng cấp kỹ năng số",
+  "khai_niem_xa_hoi_so": "Khái niệm xã hội số",
+  "van_de_tham_hut_nhan_luc_ky_thuat": "Vấn đề thâm hụt nhân lực kỹ thuật",
+  "tac_dong_cua_chuyen_doi_so": "Tác động của chuyển đổi số",
+  "khai_niem_van_hoa_so": "Khái niệm văn hóa số",
+  "tach_dong_cua_chuyen_doi_so_den_khoang_cach_giau_ngheo": "Tách động của chuyển đổi số đến khoảng cách giàu nghèo",
+  "dao_tao_lai_ky_nang_so": "Đào tạo lại kỹ năng số",
+  "nganh_nghe_anh_huong_nhieu_boi_chuyen_doi_so": "Ngành nghề ảnh hưởng nhiều bởi chuyển đổi số",
+  "giai_phap_gi_de_dao_tao_ky_nang_so": "Giải pháp gì để đào tạo kỹ năng số",
+  "nghe_nao_it_bi_anh_huong_nhat_boi_chuyen_doi_so": "Nghề nào ít bị ảnh hưởng nhất bởi chuyển đổi số",
+  "khai_niem_dai_hoc_so": "Khái niệm đại học số",
+  "hanh_dong_cua_nguoi_dan_trong_xu_the_chuyen_doi_so": "Hành động của người dân trong xu thế chuyển đổi số",
+  "khai_niem_khoa_hoc_du_lieu": "Khái niệm khoa học dữ liệu",
+  "pho_cap_dien_thoai_thong_minh": "Phổ cập điện thoại thông minh",
+  "khai_niem_khoang_cach_so": "Khái niệm khoảng cách số",
+  "moi_truong_so_nhan_van,_rong_khap": "Mục tiêu tạo ra môi trường số nhân văn, rộng khắp của Chương trình chuyển đổi số Quốc gia cần được hiểu như thế nào?",
+  "khai_niem_chuyen_doi_so": "Khái niệm chuyển đổi số",
+  "chi_tiet_chuyen_doi_so": "Chi tiết chuyển đổi số",
+  "ly_do_can_phai_thuc_hien_chuyen_doi_so": "Lý do cần phải thực hiện chuyển đổi số",
+  "nguoi_phu_trach_thuc_hien_chuyen_doi_so": "Người phụ trách thực hiện chuyển đổi số",
+  "co_quan_giai_dap_thac_mac_chuyen_doi_so": "Cơ quan giải đáp thắc mắc chuyển đổi số",
+  "thoi_diem_xuat_hien_chuyen_doi_so": "Thời điểm xuất hiện chuyển đổi số",
+  "thoi_gian_thuc_hien_chuyen_doi_so": "Thời gian thực hiện chuyển đổi số",
+  "thach_thuc_cua_chuyen_doi_so": "Thách thức của chuyển đổi số",
+  "cach_chuyen_doi_so": "Cách chuyển đổi số",
+  "chuong_trinh_quoc_gia_ve_chuyen_doi_so": "Chương trình quốc gia về chuyển đổi số",
+  "co_quan_chu_tri_chuong_trinh_chuyen_doi_so": "Cơ quan chủ trì chương trình chuyển đổi số",
+  "vai_tro_quyet_dinh_trong_chuyen_doi_so": "Vai trò quyết định trong chuyển đổi số",
+  "khai_niem_chuyen_doi_so_cap_dia_phuong": "Khái niệm chuyển đổi số cấp địa phương",
+  "tam_quan_trong_cua_viec_ban_hanh_nghi_quyet_chuyen_de_ve_chuyen_doi_so_truoc_khi_trien_khai_o_dia_phuong": "Tầm quan trọng của việc ban hành nghị quyết chuyên đề về Chuyển đổi số trước khi triển khai ở địa phương",
+  "khai_niem_chuyen_doi_so_lay_nguoi_dan_lam_trung_tam": "Khái niệm chuyển đổi số lấy người dân làm trung tâm",
+  "doi_tuong_trung_tam_cua_chuyen_doi_so": "Đối tượng trung tâm của chuyển đổi số",
+  "van_de_then_chot_trong_chuyen_doi_so": "Vấn đề then chốt trong chuyển đổi số",
+  "giai_phap_thuc_day_chuyen_doi_so": "Giải pháp thúc đẩy chuyển đổi số",
+  "cong_nghe_thuc_day_chuyen_doi_so": "Công nghệ thúc đẩy chuyển đổi số",
+  "dong_luc_cua_chuyen_doi_so": "Động lực của chuyển đổi số",
+  "yeu_to_dam_bao_thanh_cong_cua_chuyen_doi_so": "Yếu tố đảm bảo thành công của chuyển đổi số",
+  "ngay_chuyen_doi_so_quoc_gia": "Ngày Chuyển đổi số Quốc gia đã có chưa",
+  "huong_chuyen_doi_so_cua_doanh_nghiep_nho_va_vua": "Hướng chuyển đổi số của doanh nghiệp nhỏ và vừa",
+  "cac_linh_vuc_uu_tien_trong_chuyen_doi_so": "Các lĩnh vực ưu tiên trong chuyển đổi số",
+  "loi_the_khi_thuc_hien_chuyen_doi_so": "Lợi thế khi thực hiện chuyển đổi số",
+  "cap_nhat_lai_cam_nang_chuyen_doi_so": "Cập nhật lại cẩm nang chuyển đổi số",
+  "khai_niem_so_hoa": "Khái niệm số hóa",
+  "xay_dung_chien_luoc_chuyen_doi_so": "Xây dựng chiến lược chuyển đổi số",
+  "khai_niem_chuyen_doi_so_co_quan_nha_nuoc": "Khái niệm chuyển đổi số cơ quan nhà nước",
+  "su_khac_nhau_giua_tin_hoc_hoa_va_ung_dung_cong_nghe_thong_tin": "Sự khác nhau giữa tin học hóa và ứng dụng công nghệ thông tin",
+  "quy_dinh_ve_chia_se_du_lieu_trong_co_quan_nha_nuoc": "Quy định về chia sẻ dữ liệu trong cơ quan nhà nước",
+  "cach_mang_cong_nghiep_lan_thu_4": "Cách mạng công nghiệp lần thứ 4",
+  "thoi_diem_bat_dau_ung_dung_cong_nghe_thong_tin": "Thời điểm bắt đầu ứng dụng công nghệ thông tin",
+  "khai_niem_tin_hoc_hoa": "Khái niệm tin học hóa",
+  "khai_niem_chuyen_gia_cong_nghe_so": "Khái niệm chuyên gia công nghệ số",
+  "su_khac_nhau_giua_chuyen_doi_so_va_ung_dung_cong_nghe_thong_tin": "Sự khác nhau giữa chuyển đổi số và ứng dụng công nghệ thông tin",
+  "ung_dung_cong_nghe_thong_tin": "Ứng dụng công nghệ thông tin",
+  "the_che_va_cong_nghe": "Thể chế và công nghệ",
+  "khai_niem_tro_ly_ao": "Khái niệm trợ lý ảo",
+  "chi_phi_cho_chuyen_doi_so": "Chi phí cho chuyển đổi số",
+  "khai_niem_chuyen_gia": "Khái niệm chuyên gia",
+  "danh_gia_hieu_qua_cua_cac_khoan_chi_cho_chuyen_doi_so": "Đánh giá hiệu quả của các khoản chi cho chuyển đổi số",
+  "nen_tang_chuyen_doi_so_quoc_gia": "Nền tảng chuyển đổi số quốc gia",
+  "thoi_diem_thue_chuyen_gia_tu_van": "Thời điểm thuê chuyên gia tư vấn",
+  "khai_niem_hoc_may": "Khái niệm học máy",
+  "thanh_vien_tham_gia_chuyen_doi_so": "Thành viên tham gia chuyển đổi số",
+  "su_khac_nhau_giu_kien_truc_va_khung_kien_truc": "Sự khác nhau giữ kiến trúc và khung kiến trúc",
+  "cach_theo_doi_va_danh_gia_qua_trinh_chuyen_doi_so_quoc_gia": "Cách theo dõi và đánh giá quá trình chuyển đổi số quốc gia",
+  "khai_niem_nen_tang_so": "Khái niệm nền tảng số",
+  "khai_niem_chinh_phu_dien_tu": "Khái niệm chính phủ điện tử",
+  "khai_niem_chinh_phu_so": "Khái niệm Chính phủ số",
+  "moi_quan_he_giua_do_thi_thong_minh_va_chinh_quyen_so": "Mối quan hệ giữa đô thị thông minh và chính quyền số",
+  "trong_tam_chien_luoc_cua_chinh_phu_so": "Trọng tâm chiến lược của Chính phủ số",
+  "ly_do_phai_phat_trien_chinh_phu_so": "Lý do phải phát triển chính phủ số",
+  "su_khac_nhau_giua_chinh_phu_dien_tu_va_chinh_phu_so": "Sự khác nhau giữa chính phủ điện tử và chính phủ số",
+  "khai_niem_dam_may_chinh_phu": "Khái niệm đám mây Chính phủ",
+  "don_vi_xep_hang_chinh_phu_dien_tu": "Đơn vị xếp hạng chính phủ điện tử",
+  "xep_hang_chinh_phu_dien_tu": "Xếp hạng Chính phủ điện tử",
+  "quoc_gia_phat_trien_chinh_phu_so_thanh_cong": "Quốc gia phát triển Chính phủ số thành công",
+  "muc_tieu_hoan_thanh_chuyen_doi_so": "Mục tiêu hoàn thành chuyển đổi số",
+  "khai_niem_trung_tam_dieu_hanh_thong_minh": "Khái niệm trung tâm điều hành thông minh",
+  "co_quan_thuong_truc_cua_to_cong_tac_giup_viec_uy_ban_quoc_gia_ve_chinh_phu_dien_tu": "Cơ quan thường trực của Tổ công tác giúp việc Ủy ban Quốc gia về Chính phủ điện tử",
+  "kien_toan_lai_uy_ban_quoc_gia_ve_chinh_phu_dien_tu": "Kiện toàn lại Ủy ban Quốc gia về Chính phủ điện tử",
+  "chu_tich_uy_ban_quoc_gia_ve_chinh_phu_dien_tu": "Chủ tịch Ủy ban Quốc gia về Chính phủ điện tử",
+  "khai_niem_chinh_quyen_so": "Khái niệm chính quyền số",
+  "khai_niem_dich_vu_cong_truc_tuyen_muc_do_2": "Khái niệm dịch vụ công trực tuyến mức độ 2",
+  "chi_phi_tiep_can_cong_nghe_so": "Chi phí tiếp cận công nghệ số",
+  "khai_niem_so_dinh_danh_ca_nhan": "Khái niệm số định danh cá nhân",
+  "ty_le_dich_vu_cong_truc_tuyen_muc_do_4": "Tỷ lệ dịch vụ công trực tuyến mức độ 4",
+  "khai_niem_chinh_phu_04_khong": "Khái niệm Chính phủ 04 không",
+  "khai_niem_dich_vu_cong_truc_tuyen": "Khái niệm dịch vụ công trực tuyến",
+  "truong_ban_chi_dao_cong_tac_xay_dung,_phat_trien_chinh_phu_dien_tu,_chinh_quyen_dien_tu_tai_bo,_nganh,_dia_phuong": "Trưởng ban chỉ đạo công tác xây dựng, phát triển Chính phủ điện tử, Chính quyền điện tử tại bộ, ngành, địa phương",
+  "co_quan_chu_quan_cong_thong_tin_dien_tu": "Cơ quan chủ quản cổng thông tin điện tử",
+  "khai_niem_dich_vu_cong_truc_tuyen_muc_do_1": "Khái niệm dịch vụ công trực tuyến mức độ 1",
+  "khai_niem_trung_tam_giam_sat_chinh_phu_dien_tu": "Khái niệm trung tâm giám sát Chính phủ điện tử",
+  "phan_loai_co_so_du_lieu_trong_co_quan_nha_nuoc": "Phân loại cơ sở dữ liệu trong cơ quan nhà nước",
+  "yeu_cau_xac_thuc_nguoi_dung": "Yêu cầu xác thực người dùng",
+  "khai_niem_dich_vu_cong_truc_tuyen_muc_do_3": "Khái niệm dịch vụ công trực tuyến mức độ 3",
+  "cau_truc_ma_dinh_danh_dien_tu": "Cấu trúc mã định danh điện tử",
+  "ty_le_dich_vu_cong_truc_tuyen_co_phat_sinh_ho_so": "Tỷ lệ dịch vụ công trực tuyến có phát sinh hồ sơ",
+  "kien_truc_chinh_phu_dien_tu_2.0": "Kiến trúc chính phủ điện tử 2.0",
+  "he_thong_thong_tin_mot_cua_dien_tu_cap_bo_hoac_cap_tinh": "Hệ thống thông tin một cửa điện tử cấp bộ hoặc cấp tỉnh",
+  "khai_niem_dich_vu_hanh_chinh_cong": "Khái niệm dịch vụ hành chính công",
+  "nen_tang_tich_hop,_chia_se_du_lieu_cap_bo,_nganh,_dia_phuong": "Nền tảng tích hợp, chia sẻ dữ liệu cấp Bộ, ngành, địa phương",
+  "linh_hoat_chinh_sua_quy_trinh_luu_chuyen,_xu_ly_thu_tuc_hanh_chinh_tren_he_thong_thong_tin_mot_cua": "Các chu trình lưu chuyển, xử lý thủ tục hành chính trên hệ thống thông tin một cửa điện tử cấp bộ, cấp tỉnh có thể chỉnh sửa linh hoạt để phù hợp với quy định của thủ tục hành chính không?",
+  "chuc_nang_cong_dich_vu_cong_quoc_gia": "Chức năng cổng dịch vụ công quốc gia",
+  "giai_thuong_chuyen_doi_so_viet_nam_la_gi?": "Giải thưởng Chuyển đổi số Việt nam là gì?",
+  "thoi_gian_ban_hanh_khung_tham_chieu_ict_phat_trien_do_thi_thong_minh_phien_ban_1.0": "Thời gian ban hành khung tham chiếu ICT phát triển đô thị thông minh phiên bản 1.0",
+  "co_quan_cung_cap_dich_vu_cong_truc_tuyen": "Cơ quan cung cấp dịch vụ công trực tuyến",
+  "khai_niem_dien_toan_dam_may": "Khái niệm điện toán đám mây",
+  "ma_dinh_danh_dien_tu_co_quan,_to_chuc": "Mã định danh điện tử cơ quan, tổ chức",
+  "khai_niem_du_lieu_mo": "Khái niệm dữ liệu mở",
+  "co_so_du_lieu_quoc_gia_duoc_uu_tien": "Cơ sở dữ liệu quốc gia được ưu tiên",
+  "khai_niem_dich_vu_cong_truc_tuyen_muc_do_4": "Khái niệm dịch vụ công trực tuyến mức độ 4",
+  "nen_tang_tich_hop,_chia_se_du_lieu_quoc_gia": "Nền tảng tích hợp, chia sẻ dữ liệu quốc gia",
+  "danh_ma_dinh_danh_dien_tu": "Đánh mã định danh điện tử",
+  "nhu_cau_ma_dinh_danh_dien_tu": "Nhu cầu mã định danh điện tử",
+  "cong_dich_vu_cong_cap_bo,_cap_tinh": "Cổng dịch vụ công cấp bộ, cấp tỉnh",
+  "lgsp": "LGSP",
+  "cach_ket_noi_nen_tang_tich_hop,_chia_se_du_lieu_quoc_gia": "Cách kết nối nền tảng tích hợp, chia sẻ dữ liệu quốc gia",
+  "ngsp": "NGSP",
+  "thong_tin_ve_su_kien_thach_thuc_cong_nghe_so": "Thông tin về sự kiện Thách thức công nghệ số",
+  "cuoc_thi_viet_solutions": "Cuộc thi Viet Solutions",
+  "khai_niem_du_lieu_lon": "Khái niệm dữ liệu lớn",
+  "mo_hinh_cuc_ao": "Mô hình Cục ảo",
+  "khai_niem_cong_nghe_mo": "Khái niệm Công nghệ mở",
+  "dau_tu_mao_hiem_trong_linh_vuc_cong_nghe_thong_tin": "Đầu tư mạo hiểm trong lĩnh vực công nghệ thông tin",
+  "cong_dich_vu_cong_quoc_gia": "Cổng dịch vụ công quốc gia",
+  "noi_truy_cap_du_lieu_mo": "Nơi truy cập dữ liệu mở",
+  "danh_ma_dinh_danh_dien_tu_co_quan_dang": "Ủy ban nhân dân cấp tỉnh có thể đánh mã định danh cho cơ quan Đảng tại địa phương mình được không?",
+  "cac_nen_tang_da_ket_noi_co_so_du_lieu_quoc_gia": "Các nền tảng đã kết nối cơ sở dữ liệu quốc gia",
+  "ngay_chuyen_doi_so_viet_nam": "Ngày Chuyển đổi số Việt Nam",
+  "thoi_gian_thue_dich_vu_cong_nghe_thong_tin": "Thời gian thuê dịch vụ công nghệ thông tin"
+}

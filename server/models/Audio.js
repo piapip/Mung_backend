@@ -60,6 +60,16 @@ const audioSchema = new mongoose.Schema({
   confidence: {
     type: Number,
     default: 0,
+  },
+
+  input_type: {
+    type: String,
+    default: "",
+  },
+
+  asr_provider: {
+    type: String,
+    default: "",
   }
 }, {
   timestamps: true
