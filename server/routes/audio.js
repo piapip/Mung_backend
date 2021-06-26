@@ -296,6 +296,11 @@ router.post("/saveTestIntent", async (req, res) => {
         }
       })
     }
+  }).catch(error => {
+    if (error) {
+      console.log(error)
+      res.status(400).send({message: "Probably duplicate audio's upload link", error});
+    }
   })
 })
 
