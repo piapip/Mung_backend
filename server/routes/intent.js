@@ -56,23 +56,58 @@ router.post("/import-with-campaign", (req, res) => {
           }
         })
       }
-      // intentList.forEach(intent => {
-      //   count++;
-      //   IntentRecord.create({
-      //     intent: intent.intent,
-      //     description: intent.description,
-      //     campaign: campaignID,
-      //   }, (err, createdIntent) => {
-      //     if (err) {
-      //       console.log(`${count}. Duplicated: ${intent.intent}`)
-      //     }
-      //   })
-      // })
       console.log("Import done.")
       res.status(200).send(`${count} imported`)
     })
   })
 })
+
+router.put("/update-description-by-file", (req, res) => {
+  const { campaignID } = req.body;
+  fs.readFile(path.join(process.cwd(), "server", "config", "intent_v3.json"), (err, data) => {
+    if (err) throw err;
+    let newIntentList = JSON.parse(data);
+    let countCheck = 0;
+    let countUpdate = 0;
+    console.log("Updating...");
+    IntentRecord.find({campaign: campaignID}).then(async batchIntentFound => {
+      // console.log("Intent Tag: ")
+
+      await batchIntentFound.forEach(oldIntent => {
+        countCheck++;
+        if (oldIntent.intent in newIntentList) {
+          if (oldIntent.description !== newIntentList[oldIntent.intent]) countUpdate++;
+          oldIntent.description = newIntentList[oldIntent.intent];
+          oldIntent.save();
+        }
+      });
+
+      if (countCheck === batchIntentFound.length) {
+        console.log("Done updating!")
+        res.status(200).send({success: true, message: `${countCheck} intent checked, ${countUpdate} intent updated`});
+      }
+    })
+  })
+});
+
+router.put("/update-description-by-intent", (req, res) => {
+  const { intent, description, campaignID } = req.body;
+
+  IntentRecord.find({intent: intent, campaign: campaignID}).then(intentFound => {
+    if (intentFound.length === 0) {
+      res.status(400).send({success: false, message: "No intent found in this campaign."})
+    } else {
+      intentFound[0].description = description;
+      intentFound[0].save().then(intentSaved => {
+        res.status(200).send({success: true, message: "Save intent successfully", newIntent: intentSaved})
+      }).catch(error => {
+        res.status(500).send({success: false, message: "Can't save intent."})
+      })
+    }
+  }).catch(error => {
+    res.status(400).send(error)
+  })
+});
 
 // update intent with null campaignID with some ID
 router.put("/fix-intent", (req, res) => {
