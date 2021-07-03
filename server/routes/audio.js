@@ -6,15 +6,12 @@ const { Intent } = require("../models/Intent");
 const { IntentRecord } = require("../models/IntentRecord");
 const axios = require('axios');
 const config = require('./../config/key');
-const path = require('path');
-// const intentSamplePool = require("./../config/intent");
 
 const tmp = require("tmp");
 const fs = require("fs");
 const request = require('request');
 const { getAudioDurationInSeconds } = require('get-audio-duration');
-// const { exec } = require('child_process');
-// const auth = require("../middleware/auth");
+
 const mongoose = require("mongoose");
 function uuidv4() {
   return mongoose.Types.ObjectId();
@@ -57,6 +54,7 @@ router.put("/transcript", (req, res) => {
     if (status === 1) {
       const { transcription } = result;
       console.log(result)
+      console.log("audioID: ", audioID)
       Audio.findById(audioID)
       .then(audioFound => {
         if(!audioFound) {
@@ -79,24 +77,6 @@ router.put("/transcript", (req, res) => {
       console.log("Can't get transcript. Here's the error code: ", status);
       res.status(500).send("Can't get transcript");
     }
-  })
-})
-
-// fix all servant's audio's revertable
-router.put("/cleanse", async (req, res) => {
-  Audio.find({ revertable: false }).populate('intent')
-  .then(audioFound => {
-    let count = 0;
-    for (let i = 0; i < audioFound.length; i++) {
-      const { intent } = audioFound[i];
-      if (!testIntent(intent)) {
-        count++;
-        audioFound[i].revertable = true;
-        audioFound[i].save();
-      }
-    }
-    if (count === 0) res.status(200).send("All clean!");
-    else res.status(200).send(`${count} audio fixed!`);
   })
 })
 
@@ -208,37 +188,46 @@ const updateJSONCount = (target, callback400, callback500, callback200) => {
 
 // Upload an audio for solo feature
 router.post("/solo", async (req, res) => {
-  const { userID, link, duration } = req.body;
+  const { userID, link, duration, campaignID } = req.body;
 
   const { intent, description } = req.body.intent;
-  const newIntent = await Intent.create({ intent, description });
+  const targetIntent = await IntentRecord.find({ intent, description, campaign: campaignID });
+  if (targetIntent.length === 0) 
+    return res.status(500).send({success: false, message: "Can't find the intent for this audio..."})
   Audio.create({ 
     user: userID,
     link,
-    intent: newIntent._id,
+    intent: targetIntent[0]._id,
     duration,
+    campaign: campaignID,
   }).then(audioCreated => {
     if (!audioCreated) {
       res.status(500).send({ success: false, error: "Can't save audio information to the db!"});
     } else {
-      updateJSONCount(intent, () => {
-        res.status(404).send("Can't find intent");
-      }, () => {
-        res.status(500).send("Internal problem :<");
-      }, () => {
+      targetIntent[0].count++;
+      targetIntent[0].save().then(() => {
         User.findById(userID)
         .then(userFound => {
-          if (!userFound) res.status(404).send("Can't find user!!!")
+          if (!userFound) 
+            res.status(404).send({ success: false, error: "Can't find user!!!" })
           else {
             userFound.soloCount++;
             return userFound.save();
           }
         })
+
         return res.status(200).send({
-          audioID: audioCreated._id
+          success: true,
+          audioID: audioCreated._id,
         });
       });
     }
+  }).catch(error => {
+    console.log(error)
+    res.status(500).send({
+      success: false,
+      error,
+    });
   });
 })
 
@@ -246,6 +235,7 @@ router.post("/saveTestIntent", async (req, res) => {
   const { campaign_id, device_id, transcript, post_process_text, input_type, predicted_intent , confidence, asr_provider } = req.body;
   let { asr_audio_link } = req.body;
 
+  // fix this intent
   const newIntent = await Intent.create({ intent: predicted_intent , campaign: campaign_id });
   const targetUser = await User.find({ device: device_id })
   .then(batchUserFound => {
@@ -316,9 +306,9 @@ router.post("/trash", async (req, res) => {
       res.status(200).send({ status: 1 });
     }
   })
-
 })
 
+// fix this api so it works with IntentRecord instead of Intent
 router.post("/accept", (req, res) => {
   const { audioID, transcript, userID } = req.body;
   // console.log("Accepting... ", audioID)
@@ -356,6 +346,7 @@ router.post("/accept", (req, res) => {
   })
 })
 
+// fix this api so it works with IntentRecord instead of Intent
 router.post("/reject", (req, res) => {
   const { audioID, transcript, userID } = req.body;
   // console.log("Rejecting... ", audioID)
@@ -423,6 +414,7 @@ router.get("/findByEmail/:usermail", (req, res) => {
   })
 })
 
+// TODO: Add campaign to this thing
 // Get audio for testing - Solo feature
 router.get("/sample/:userID", async (req, res) => {
   const { userID } = req.params;
@@ -461,78 +453,5 @@ router.get("/sample/:userID", async (req, res) => {
     })
   });
 })
-
-// check if intent is a valid one or not (if it's not full of null)
-const testIntent = (currentIntent) => {
-  if (currentIntent === null || currentIntent === undefined) return false;
-  const { intent, generic_intent } = currentIntent;
-  return !((intent === null || intent === undefined) && (generic_intent === null || generic_intent === undefined));
-}
-
-// const getTranscript = (uri, audioID) => {
-
-//   tmp.file(function _tempFileCreated (err, path, fd, cleanupCallback) {
-//     if (err) throw err;
-//     download(uri, path , function(){
-//       exec(
-//         `python ./server/routes/audio_transcript/main.py ${path}`,
-//         (err, stdout, stderr) => {
-//           if (err) {
-//             console.error(`exec error: ${err}`);
-//             return "";
-//           }
-          
-//           Audio.findById(audioID)
-//           .then(audioFound => {
-//             if(!audioFound) {
-//               console.log("Can't find audio for transcript!");
-//               return null
-//             } else {
-//               audioFound.transcript = stdout;
-//               return audioFound.save();
-//             }
-//           })
-//           .then(audioUpdated => {})
-//           .catch(err => {
-//             console.log(`Error while updating audio ${audioID} transcript... ${err}`)
-//           })
-//         }
-//       )
-//     });
-
-//     cleanupCallback();
-//   })
-// }
-
-const getTranscriptWithGGAPI = (uri, audioID) => {
-  axios.get(`${config.TRANSCRIPT_API}/api/v1/stt?url=${uri}`, {
-    headers: {
-      Authorization: `Bearer ${config.TRANSCRIPT_API_KEY}`,
-    },
-  })
-  .then(response => {
-    const { result, status } = response.data;
-
-    if (status === 1) {
-      const { transcription } = result;
-      Audio.findById(audioID)
-      .then(audioFound => {
-        if(!audioFound) {
-          console.log("Can't find audio for transcript!");
-          return null
-        } else {
-          audioFound.transcript = transcription;
-          return audioFound.save();
-        }
-      })
-      .catch(err => {
-        console.log(`Error while updating audio ${audioID} transcript... ${err}`)
-      })
-    } else {
-      console.log("Can't get transcript. Here's the error code: ", status);
-    }
-  })
-  
-}
 
 module.exports = router;

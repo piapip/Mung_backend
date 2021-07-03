@@ -7,20 +7,24 @@ const { IntentRecord } = require("../models/IntentRecord");
 
 router.get("/", (req, res) => {
   Campaign.find().then((campaignsFound) => {
-    res.status(200).send(campaignsFound)
+    res.status(200).send(campaignsFound);
   });
-})
+});
 
 router.get("/statistic", (req, res) => {
-  Campaign.find().then(async campaignsFound => {
-    let result = {}
+  Campaign.find().then(async (campaignsFound) => {
+    let result = {};
     let count = 0;
-    await campaignsFound.forEach(async campaign => {
-      const audioCount = await Intent.countDocuments({campaign: campaign._id}).then((recordCount) => {
+    await campaignsFound.forEach(async (campaign) => {
+      const audioCount = await Intent.countDocuments({
+        campaign: campaign._id,
+      }).then((recordCount) => {
         count++;
         return recordCount;
       });
-      const intentRecordCount = await IntentRecord.countDocuments({campaign: campaign._id}).then((recordCount) => {
+      const intentRecordCount = await IntentRecord.countDocuments({
+        campaign: campaign._id,
+      }).then((recordCount) => {
         count++;
         return recordCount;
       });
@@ -29,11 +33,11 @@ router.get("/statistic", (req, res) => {
         intentRecordCount,
       };
       if (count === campaignsFound.length * 2) {
-        res.status(200).send(result)
+        res.status(200).send(result);
       }
-    })
+    });
   });
-})
+});
 
 router.post("/createCampaign", (req, res) => {
   const { name, campaignID, quota } = req.body;
@@ -42,18 +46,20 @@ router.post("/createCampaign", (req, res) => {
     name,
     campaignID,
     quota,
-  }).then((campaignCreated) => {
-    if (!campaignCreated) {
-      res
-        .status(500)
-        .send({
+  })
+    .then((campaignCreated) => {
+      if (!campaignCreated) {
+        res.status(500).send({
           success: false,
           error: "Can't save campaign's information to the db!",
         });
-    } else {
-      return res.status(201).send(campaignCreated);
-    }
-  });
+      } else {
+        return res.status(201).send({ success: true, campaignCreated });
+      }
+    })
+    .catch((error) => {
+      res.status(500).send({ success: false, error });
+    });
 });
 
 module.exports = router;

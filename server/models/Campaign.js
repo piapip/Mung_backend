@@ -8,7 +8,12 @@ const campaignSchema = new mongoose.Schema({
 
   campaignID: {
     type: String,
-    unique: true,
+    required: true,
+  },
+
+  requireTranscript: {
+    type: Boolean,
+    default: true,
   },
 
   quota: {
