@@ -36,10 +36,12 @@ router.get("/statistic", (req, res) => {
 })
 
 router.post("/createCampaign", (req, res) => {
-  const { name } = req.body;
+  const { name, campaignID, quota } = req.body;
 
   Campaign.create({
     name,
+    campaignID,
+    quota,
   }).then((campaignCreated) => {
     if (!campaignCreated) {
       res

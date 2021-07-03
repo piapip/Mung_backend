@@ -17,7 +17,7 @@ const audioSchema = new mongoose.Schema({
 
   intent: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Intent',
+    ref: 'IntentRecord',
     default: null,
   },
 
@@ -55,6 +55,12 @@ const audioSchema = new mongoose.Schema({
   duration: {
     type: Number,
     default: -0.05,
+  },
+
+  campaign: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Campaign',
+    default: null,
   },
 
   confidence: {
