@@ -2,8 +2,6 @@ const express = require("express");
 const router = express.Router();
 
 const { Campaign } = require("../models/Campaign");
-const { Intent } = require("../models/Intent");
-const { IntentRecord } = require("../models/IntentRecord");
 
 router.get("/", (req, res) => {
   Campaign.find().then((campaignsFound) => {
@@ -11,32 +9,22 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("/statistic", (req, res) => {
-  Campaign.find().then(async (campaignsFound) => {
-    let result = {};
-    let count = 0;
-    await campaignsFound.forEach(async (campaign) => {
-      const audioCount = await Intent.countDocuments({
-        campaign: campaign._id,
-      }).then((recordCount) => {
-        count++;
-        return recordCount;
-      });
-      const intentRecordCount = await IntentRecord.countDocuments({
-        campaign: campaign._id,
-      }).then((recordCount) => {
-        count++;
-        return recordCount;
-      });
-      result[campaign.name] = {
-        audioCount,
-        intentRecordCount,
-      };
-      if (count === campaignsFound.length * 2) {
-        res.status(200).send(result);
+// campaignID of the manager service, not from this VA service.
+router.get("/:campaignID", (req, res) => {
+  const { campaignID } = req.params;
+  Campaign.find({ campaignID })
+    .then((campaignFound) => {
+      if (campaignFound.length === 0) {
+        res.status(404).send({ success: false, message: "No campaign found!" });
+      } else {
+        res
+          .status(200)
+          .send({ success: true, campaignDetail: campaignFound[0] });
       }
+    })
+    .catch((error) => {
+      res.status(500).send({ success: false, error });
     });
-  });
 });
 
 router.post("/createCampaign", (req, res) => {
@@ -60,6 +48,30 @@ router.post("/createCampaign", (req, res) => {
     .catch((error) => {
       res.status(500).send({ success: false, error });
     });
+});
+
+router.put("/:campaignID", (req, res) => {
+  const { campaignID } = req.params;
+  const { quota, requireTranscript } = req.body;
+
+  Campaign.findById(campaignID).then((campaignFound) => {
+    if (!campaignFound) {
+      res.status(404).send({ success: false, message: "No campaign found!" });
+    } else {
+      if (quota) {
+        campaignFound.quota = quota;
+      }
+      if (requireTranscript) campaignFound.quota = requireTranscript;
+      campaignFound
+        .save()
+        .then((newCampaign) => {
+          res.status(200).send({ success: true, newCampaign });
+        })
+        .catch((error) => {
+          res.status(500).send({ success: false, error });
+        });
+    }
+  });
 });
 
 module.exports = router;

@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const { Audio } = require("../models/Audio");
 const { User } = require("../models/User");
-const { Intent } = require("../models/Intent");
 const { IntentRecord } = require("../models/IntentRecord");
 const axios = require('axios');
 const config = require('./../config/key');
@@ -235,8 +234,17 @@ router.post("/saveTestIntent", async (req, res) => {
   const { campaign_id, device_id, transcript, post_process_text, input_type, predicted_intent , confidence, asr_provider } = req.body;
   let { asr_audio_link } = req.body;
 
-  // fix this intent
-  const newIntent = await Intent.create({ intent: predicted_intent , campaign: campaign_id });
+  let targetIntent = await IntentRecord.find({ intent: predicted_intent, campaign: campaign_id })
+  .then(batchIntentFound => {
+    if (batchIntentFound.length === 0) {
+      return IntentRecord.create({
+        intent: predicted_intent, 
+        campaign: campaign_id,
+      })
+    } else {
+      return batchIntentFound[0]
+    }
+  });
   const targetUser = await User.find({ device: device_id })
   .then(batchUserFound => {
     if (batchUserFound.length === 0) {
@@ -246,14 +254,14 @@ router.post("/saveTestIntent", async (req, res) => {
     }
   })
 
-  if (!asr_audio_link) {
+  if (!asr_audio_link || asr_audio_link.length === 0) {
     asr_audio_link = "No audio " + targetUser.soloCount + " " + uuidv4()
   }
 
   Audio.create({
     user: targetUser._id,
     link: asr_audio_link,
-    intent: newIntent._id,
+    intent: targetIntent._id,
     confidence,
     googleTranscript: transcript,
     transcript: post_process_text,
@@ -268,15 +276,10 @@ router.post("/saveTestIntent", async (req, res) => {
         userFound.soloCount++;
         return userFound.save();
       })
-      IntentRecord.find({intent: predicted_intent , campaign: campaign_id})
-      .then(intentFound => {
-        if (intentFound.length !== 0) {
-          intentFound[0].count++;
-          intentFound[0].save();
-        }
-        
+      targetIntent.count++;
+      targetIntent.save().then(() => {
         return res.status(200).send({
-          recordID: audioCreated._id
+          audioCreated
         });
       })
       .catch(error => {
@@ -284,7 +287,7 @@ router.post("/saveTestIntent", async (req, res) => {
           console.log(error)
           res.status(500).send("Internal problem :<");
         }
-      })
+      });
     }
   }).catch(error => {
     if (error) {
@@ -325,11 +328,8 @@ router.post("/accept", (req, res) => {
         if (!userFound) res.status(404).send({ status: 0 })
         else {
           if (audioFound.rejectBy.length !== 0 && !audioFound.revertable) {
-            IntentRecord.find({intent: audioFound.intent.intent})
-            .then(intentFound => {
-              intentFound[0].count++;
-              intentFound[0].save();
-            })
+            audioFound.intent.count++;
+            audioFound.intent.save();
           }
           audioFound.revertable = true;
           if (audioFound.transcript !== transcript) {
@@ -363,11 +363,8 @@ router.post("/reject", (req, res) => {
         if (!userFound) res.status(404).send({ status: 0 })
         else {
           if (audioFound.rejectBy.length === 0 || (audioFound.rejectBy.length !== 0 && audioFound.revertable)) {
-            IntentRecord.find({intent: audioFound.intent.intent})
-            .then(intentFound => {
-              intentFound[0].count--;
-              intentFound[0].save();
-            })
+            audioFound.intent.count--;
+            audioFound.intent.save();
           }
           if (!audioFound.rejectBy.includes(userID)) {
             audioFound.rejectBy.push(userID);
@@ -416,10 +413,11 @@ router.get("/findByEmail/:usermail", (req, res) => {
 
 // TODO: Add campaign to this thing
 // Get audio for testing - Solo feature
-router.get("/sample/:userID", async (req, res) => {
-  const { userID } = req.params;
+router.get("/sample/:userID/:campaignID", async (req, res) => {
+  const { userID, campaignID } = req.params;
   Audio.countDocuments({ 
     $and: [
+      {campaign: campaignID},
       {user: { $ne: userID }},
       {revertable: false},
       {rejectBy: {
@@ -434,6 +432,7 @@ router.get("/sample/:userID", async (req, res) => {
     const random = Math.floor(Math.random() * count);
     Audio.findOne({
       $and: [
+        {campaign: campaignID},
         {user: { $ne: userID }},
         {revertable: false},
         {rejectBy: {
