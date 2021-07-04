@@ -101,6 +101,21 @@ router.get("/multi-random", async (req, res) => {
   })
 })
 
+router.get("/:campaignID", (req, res) => {
+  const { campaignID } = req.params;
+  IntentRecord.find({campaign: campaignID})
+  .then(intentFound => {
+    res.status(200).send({ 
+      success: true, 
+      message: `${intentFound.length} intents found`, 
+      intentFound, 
+    })
+  })
+  .catch(error => {
+    res.status(500).send({ success: false, error })
+  })
+})
+
 const getRandomFromArray = (arr) => {
   return Math.floor(Math.random() * arr.length);
 }
