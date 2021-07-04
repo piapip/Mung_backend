@@ -61,6 +61,9 @@ router.put("/:campaignID", (req, res) => {
       if (quota) {
         campaignFound.quota = quota;
       }
+      if (req.body.campaignID) {
+        campaignFound.campaignID = req.body.campaignID;
+      }
       if (requireTranscript !== null && requireTranscript !== undefined) campaignFound.requireTranscript = requireTranscript;
       campaignFound
         .save()
