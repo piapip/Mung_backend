@@ -18,7 +18,7 @@ router.post("/", (req, res) => {
       res.status(200).send({ success: true, intentCreated });
     })
     .catch((error) => {
-      res.status(500).send({ success: true, intentCreated });
+      res.status(500).send({ success: false, error });
     });
 });
 
@@ -136,7 +136,7 @@ router.put("/update-description-by-intent", (req, res) => {
           .catch((error) => {
             res
               .status(500)
-              .send({ success: false, message: "Can't save intent." });
+              .send({ success: false, message: "Can't save intent.", error });
           });
       }
     })
@@ -162,7 +162,7 @@ router.get("/multi-random", async (req, res) => {
     })
     .catch((error) => {
       console.log(error);
-      res.status(500).send({ success: false, batchIntent: [] });
+      res.status(500).send({ success: false, batchIntent: [], error });
     });
 });
 
